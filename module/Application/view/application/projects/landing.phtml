@@ -1,0 +1,67 @@
+
+<?php
+echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/panel.css' ) );
+?>
+
+
+
+<style type="text/css">
+#panel {
+	margin: -20px auto 0 auto;
+	padding: 0px;
+	height: 380px;
+}
+
+#galeria-titulo {
+	margin: 40px 40px 0 0;
+}
+
+#titulo{
+	color: #A90000;
+	padding: 20px 10px;
+	font-size: 150%;
+}
+</style>
+
+
+<div id="panel">
+
+	<div class="row">
+		<div class="span6">
+			<h3 id="titulo">Tiendas y Espacios Comerciales</h3>
+			<div id="descripcion">Desarrollo de estrategías de gestión de tiendas
+				(layout, store planning, visual merchandising). Proyectos llave en
+				mano, desde el diseño hasta la implementación de cadenas de tiendas
+				y espacios comerciales; con alcance de operación a nivel nacional.</div>
+				
+				<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>/<?=$this->action?>/gallery" ><?php echo $this->translate('Ver Proyectos') ?> &raquo;</a>
+
+			
+			<span
+					style="float: right;"><a href="<?=$this->url("projects"); ?>"><img
+						src="<?=$this->basePath ('images/volver.png') ?>" border="0"></a><br />Volver</span>
+			
+		</div>
+		
+
+		<div class="span6">
+			<div style="text-align: right;">
+				<img alt="ST" src="<?=$this->basePath('images/st.png')?>">
+			</div>
+		</div>
+	</div>
+	
+	
+		
+	
+	
+
+
+
+
+
+
+</div>
+
+

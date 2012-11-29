@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+#panel{
+	
+	margin: -20px auto 0 auto;
+	padding: 0px;
+	height: 380px;
+}
+
+#informacion{
+	width: 450px;
+	padding: 15px;
+	margin: 20px 40px;
+}
+#titulo{
+	font-size: 15px;
+}
+#descripcion{
+	font-size: 12px;
+	line-height: 1.8em;
+	margin:50px 0 0 0;
+	text-align: justify;
+	height: 150px;
+}
+#opciones{
+	margin: 40px 0;
+}
+#opciones a{
+	text-decoration: none;
+	/*border: solid 1px #B51B03;*/
+	color: #B51B03;
+	padding: 15px 0;
+	font-size: 15px;
+	
+}
+
+#opciones a:hover{
+	font-weight: bold;
+}
+
+#opciones span{
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}

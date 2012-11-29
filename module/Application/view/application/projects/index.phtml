@@ -1,0 +1,60 @@
+<?php
+echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/themes/default/default.css' ) )->prependStylesheet ( $this->basePath ( '/css/nivo-slider.css' ) )->prependStylesheet ( $this->basePath ( '/css/style-nivo.css' ) );
+?>
+	
+<?php 	echo $this->headScript ()->prependFile ( $this->basePath ("js/jquery.nivo.slider.js")); ?>
+
+
+
+
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>
+
+<div class="row">
+	<div id="wrapper">
+		<div class="slider-wrapper theme-default">
+			<div id="slider" class="nivoSlider">
+				<img src='<?php echo $this->basePath ("images-slider/1.jpg"); ?>'
+					data-thumb='<?php echo $this->basePath ("images-slider/1.jpg"); ?>'
+					alt="" data-transition="slideInLeft" /> <img
+					src='<?php echo $this->basePath ("images-slider/4.jpg"); ?>'
+					data-thumb='<?php echo $this->basePath ("images-slider/2.jpg"); ?>'
+					alt="" title="" data-transition="slideInLeft" /> <img
+					src='<?php echo $this->basePath ("images-slider/3.jpg"); ?>'
+					data-thumb='<?php echo $this->basePath ("images-slider/3.jpg"); ?>'
+					alt="" data-transition="slideInLeft" /> <img
+					src='<?php echo $this->basePath ("images-slider/2.jpg"); ?>'
+					data-thumb='<?php echo $this->basePath ("images-slider/4.jpg"); ?>'
+					alt="" title="" data-transition="slideInLeft" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="span3">
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>/tec" target="_blank">&nbsp;&nbsp;<?php echo $this->translate('TIENDAS Y ESPACIOS COMERCIALES') ?> &nbsp;&raquo;</a>
+	</div>
+	<div class="span3">
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>" target="_blank"><?php echo $this->translate('PROYECTOS DE IMAGEN CORPOTARIVA') ?> &raquo;</a>
+	</div>
+	
+	<div class="span3">
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>" target="_blank"><?php echo $this->translate('PROYECTOS DE IMAGEN CORPOTARIVA') ?> &raquo;</a>
+	</div>
+	
+	<div class="span3">
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>" target="_blank"><?php echo $this->translate('PROYECTOS DE IMAGEN CORPOTARIVA') ?> &raquo;</a>
+	</div>
+	
+	
+</div>

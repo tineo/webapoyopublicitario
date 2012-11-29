@@ -1,0 +1,97 @@
+<script type="text/javascript" src="_scripts/jquery.jcarousel.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.jcarousel.css" />
+<link rel="stylesheet" type="text/css"
+	href="css/skins/tango/iframeskin.css" />
+<style type="text/css">
+/**
+ * Overwrite for having a carousel with dynamic width.
+ */
+.grilla {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.grilla td {
+	text-align: center;
+	width: 100px;
+	height: 80px;
+}
+
+#mycarousel li {
+	text-align: center;
+	/*width: 80%;
+	margin: 0 auto;*/
+}
+</style>
+<script type="text/javascript"> 
+ 
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+ 
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+ 
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+ 
+jQuery(document).ready(function() {
+jQuery('#mycarousel').jcarousel({
+vertical: true,
+scroll: 5
+
+    });
+});
+</script>
+
+
+<div id="recuadro">
+
+	<ul id="mycarousel" class="jcarousel-skin-tango">
+		<!-- <ul id="mycarousel" class="jcarousel-skin-tango" > -->
+<?php
+//$dir = dirname ( __FILE__ );
+$dir = realpath(APPLICATION_PATH . '/../public');
+
+$dir_clientes = $dir . "/_images/logos_clientes";
+// echo $dir."/_images/logos_clientes"."<br/>"; 
+// echo APPLICATION_PATH ."<br/>";
+// echo realpath(APPLICATION_PATH . '/../public')."<br/>";
+$lista_clientes = scandir ( $dir_clientes );
+$i = 0;
+foreach ( $lista_clientes as $imagen ) {
+	if (! ($imagen == "." || $imagen == ".." || $imagen == "old" || $imagen == "index.php")) {
+		// if($i%4==0){ echo "<tr>";}
+		
+		if (($i % 5 == 0 && $i > 0)) {
+			echo "</tr></table></li>";
+		}
+		if ($i % 5 == 0) {
+			echo '<li><table class="grilla"><tr>';
+		}
+		echo '<td><img src="_images/logos_clientes/' . $imagen . '" style="max-height:60px; max-width:130px;" /></td>';
+		// if($i%4==0){ echo "</tr></table></li>";}
+		
+		$i ++;
+	}
+}
+
+while ( $i % 5 > 0 ) {
+	echo "<td></td>";
+	$i ++;
+}
+
+echo "</tr></table></li>";
+?>
+</ul>
+
+</div>

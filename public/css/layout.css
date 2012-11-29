@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+
+footer {
+	background: #C1C1C1;
+	font-family: Trebuchet MS;
+	font-size: 10px;
+	color: #444;
+	padding: 10px;
+}
+
+footer tr {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+footer td {
+	padding: 0 10px;
+}

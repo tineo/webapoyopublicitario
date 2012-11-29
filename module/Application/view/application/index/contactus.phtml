@@ -1,0 +1,132 @@
+
+<link rel="stylesheet" type="text/css"
+	href="<?=$this->basePath('js/jqtransformplugin/jqtransform.css'); ?>" />
+<link rel="stylesheet" type="text/css"
+	href="<?=$this->basePath('js/formValidator/validationEngine.jquery.css'); ?>" />
+<link rel="stylesheet" type="text/css"
+	href="<?=$this->basePath('css/demo.css'); ?>" />
+
+<style>
+th,td {
+	padding: 5px;
+} /*
+table {  width:100%; border:none; border-collapse:separate; border-spacing: 5px; }*/
+</style>
+
+<?=$css?>
+<!-- Special CSS rules, created by PHP -->
+
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript"
+	src="<?=$this->basePath('js/jqtransformplugin/jquery.jqtransform.js'); ?>"></script>
+<script type="text/javascript"
+	src="<?=$this->basePath('js/formValidator/jquery.validationEngine.js'); ?>"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#contact-form').jqTransform();
+	$("button").click(function(){
+		$(".formError").hide();
+	});
+	var use_ajax=true;
+	$.validationEngine.settings={};
+	$("#contact-form").validationEngine({
+		inlineValidation: false,
+		promptPosition: "centerRight",
+		success :  function(){use_ajax=true},
+		failure : function(){use_ajax=false;}
+	 });
+	$("#contact-form").submit(function(e){
+		
+			if(!$('#subject').val().length)
+			{
+				$.validationEngine.buildPrompt(".jqTransformSelectWrapper","* This field is required","error")
+				return false;
+			}
+			if(use_ajax)
+			{	
+				//alert(1);
+				$('#loading').css('visibility','visible');
+				$.post('<?=$this->basePath('language'); ?>',$(this).serialize()+'&ajax=1',
+					
+					function(data){
+						//alert("ajax");
+						if(parseInt(data)==-1)
+							$.validationEngine.buildPrompt("#captcha","* Wrong verification number!","error");
+						else
+						{	$('#premisa').html("<h2 style='font-size: 20px'>Gracias por escribirnos.</h2><br/>");
+							$("#contact-form").fadeOut('slow').after('<h1>El mensaje ha sido enviado correctamente.</h1>');
+						}
+						$('#loading').css('visibility','hidden');
+					}
+				);
+			}
+			e.preventDefault();
+	});
+});
+</script>
+<br />
+<div id="main-container">
+	<div id="form-container">
+		<div id="premisa">
+			<h1>Contáctanos</h1>
+			<h2 style="font-size: 16px">Llena este formulario o llámanos a 511
+				717-5333</h2>
+		</div>
+		<form id="contact-form" name="contact-form" method="post"
+			action="<?=$this->basePath('language');?>">
+			<table>
+				<tr>
+					<td width="18%"><label for="name">Nombres y Apellidos</label></td>
+					<td width="45%"><input type="text"
+						class="validate[required,custom[onlyLetter]]" name="name"
+						id="name" value="<?=$_SESSION['post']['name']?>" /></td>
+					<td width="37%" id="errOffset">&nbsp;</td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="text" class="validate[required,custom[email]]"
+						name="email" id="email" value="<?=$_SESSION['post']['email']?>" /></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><label for="subject">Asunto</label></td>
+					<td><input type="text" class="validate[required]" name="subject"
+						id="subject" value="<?=$_SESSION['post']['subject']?>" /></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top"><label for="message">Mensaje</label></td>
+					<td><textarea name="message" id="message"
+							class="validate[required]" cols="25" rows="5"><?=$_SESSION['post']['message']?></textarea></td>
+					<td valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top"><label for="empresa">Empresa</label></td>
+					<td><input type="text" class="validate[required]" name="empresa"
+						id="empresa" value="<?=$_SESSION['post']['empresa']?>" /></td>
+					<td>&nbsp;</td>
+				</tr>
+
+				<tr>
+					<td valign="top"><label for="telefono">Telefono</label></td>
+					<td><input type="text" class="validate[required,custom[telephone]]"
+						name="telefono" id="telefono"
+						value="<?=$_SESSION['post']['telefono']?>" /></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top">&nbsp;</td>
+
+					<td colspan="2"><input type="submit" name="button" id="button"
+						value="Submit" /> <input type="reset" name="button2" id="button2"
+						value="Reset" />
+	<?=$str?>
+	<!-- <img id="loading" src="img/ajax-load.gif" width="16" height="16"
+						alt="loading" /></td> -->
+				</tr>
+			</table>
+		</form>
+	<?=$success?>
+	</div>
+</div>

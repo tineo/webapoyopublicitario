@@ -1,0 +1,81 @@
+<link rel='stylesheet' id='camera-css' href='css/camera.css'
+	type='text/css' media='all'>
+
+
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/camera.min.js'></script>
+
+<style>
+.camera_caption span{
+	color:#A90000;
+	font-weight: bolder;
+	font-size: 120%;
+	
+}
+
+</style>
+
+<script type="text/javascript">
+
+jQuery(function(){
+	
+	jQuery('#camera_wrap_1').camera({
+		thumbnails: false,
+		overlayer: true,
+		pagination: false,
+		navigation: false,
+		alignment: 'center'
+		/*height: '100%'*/
+	});
+});
+
+
+</script>
+
+
+<div class="row">
+	<section id="slider_index">
+		<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+			<div
+				data-thumb="<?=$this->basePath ('_images/quienes_somos/01.jpg'); ?>"
+				data-src="<?=$this->basePath ('_images/quienes_somos/01.jpg'); ?>">
+				<div
+					style="position: absolute; bottom: 5%; color: #fff; padding: 5px; width: 100%"
+					class="camera_caption fadeFromBottom"><span>QUIÉNES SOMOS?</span><br/> Somos una
+					Empresa que opera desde 1996. Lideramos la estrategia y dirección
+					de proyectos corporativos para retail y espacios comerciales, así
+					como diseño y montaje de stands, desde el asesoramiento hasta su
+					ejecución.</div>
+			</div>
+			<div
+				data-thumb="<?=$this->basePath('_images/quienes_somos/02.jpg'); ?>"
+				data-src="<?=$this->basePath('_images/quienes_somos/02.jpg'); ?>">
+				<div class="camera_caption fadeFromBottom"><span>NUESTRA VISIÓN </span><br/>Deseamos
+					ser vistos como el Apoyo Publicitario de cada uno de nuestros
+					clientes; que tengan la confianza de poder entregarnos sus
+					proyectos más ambiciosos.</div>
+			</div>
+			<div
+				data-thumb="<?=$this->basePath('_images/quienes_somos/03.jpg'); ?>"
+				data-src="<?=$this->basePath('_images/quienes_somos/03.jpg'); ?>">
+				<div class="camera_caption fadeFromBottom"><span>POR QUÉ TRABAJAR CON
+					NOSOTROS</span><br/> Porque hacemos más fácil tu trabajo; manejamos proyectos
+					llave en mano, desde el desarrollo y planeamiento hasta la
+					implementación, con alcance de operación a nivel nacional y fuera
+					del país.</div>
+			</div>
+			<div
+				data-thumb="<?=$this->basePath('_images/quienes_somos/04.jpg'); ?>"
+				data-src="<?=$this->basePath('_images/quienes_somos/04.jpg'); ?>">
+				<div class="camera_caption fadeFromBottom"><span> EXPERIENCIA </span><br/> Nuestra
+					experiencia nos permite entender y desarrollar proyectos de diseño
+					de tiendas y espacios comerciales; proyectos corporativos de cambio
+					de imagen; tecnología e interactividad para puntos de venta y
+					proyectos de category en superficies comerciales.</div>
+			</div>
+		</div>
+	</section>
+
+</div>
