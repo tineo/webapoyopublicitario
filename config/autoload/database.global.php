@@ -48,7 +48,7 @@ return array (
 						'orm_default' => array (
 								'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlite\Driver',
 								'params' => array (
-										'path' => '/home/ftpapoyoweb/apoyopublicitario.com/data/apoyo.db'
+										'path' => ''.getcwd().'/data/apoyo.db' 
 								)
 						)
 				)
