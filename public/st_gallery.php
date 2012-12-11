@@ -4,7 +4,7 @@ $dir = dirname ( __FILE__ );
 $imagenes = scandir ( $dir . "/_images/portfolio/" . $_REQUEST ['trend'] );
 ?>
 
-<div class="span11">
+<div class="span11" >
 
 	<div class="camera_wrap camera_magenta_skin "
 		id="camera_<?=$_REQUEST['trend']?>">

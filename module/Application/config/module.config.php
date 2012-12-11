@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -6,7 +7,6 @@
  * @copyright Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-
 namespace Application;
 
 return array (
@@ -75,6 +75,19 @@ return array (
 												'controller' => 'Application\Controller\Index',
 												'action' => 'language' 
 										) 
+								),
+								'may_terminate' => true,
+								'child_routes' => array (
+										'default' => array (
+												'type' => 'Segment',
+												'options' => array (
+														'route' => '/[:lang]',
+														'constraints' => array (
+																'lang' => '[a-zA-Z][a-zA-Z0-9_-]*' 
+														),
+														'defaults' => array () 
+												) 
+										) 
 								) 
 						),
 						
@@ -118,13 +131,17 @@ return array (
 										'default' => array (
 												'type' => 'Segment',
 												'options' => array (
-														'route' => '/[:action[/[:id[/[:section]]]]]',
+														'route' => '/[:section[/[:id[/[:galeria]]]]]',
 														'constraints' => array (
-																'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+																'galeria' => '[a-zA-Z][a-zA-Z0-9_-]*',
 																'id' => '[a-zA-Z][a-zA-Z0-9_-]*',
 																'section' => '[a-zA-Z][a-zA-Z0-9_-]*' 
 														),
-														'defaults' => array () 
+														'defaults' => array (
+																'__NAMESPACE__' => 'Application\Controller',
+																'controller' => 'Projects',
+																'action' => 'landing' 
+														) 
 												) 
 										) 
 								) 

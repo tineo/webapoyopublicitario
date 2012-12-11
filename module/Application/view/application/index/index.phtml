@@ -4,11 +4,30 @@
 
 
 <style>
-#slider_index {
-	/*margin-right: 100px;*/
+#slider_index { /*margin-right: 100px;*/
+	
 }
 
+.botones img {
+	margin: 10px auto;
+}
 
+.botones h4 {
+	font-size: 13px;
+	text-align: center;
+}
+
+.botones p {
+	text-align: center;
+}
+
+.navbar-inner{
+	/*background: none;*/
+}
+
+.navbar .container{
+	margin: 0 auto;
+}
 /*FB*/
 div#fb_color {
 	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
@@ -25,30 +44,32 @@ div#fb_color {
 }
 
 #fb-root {
-    display: none;
+	display: none;
 }
 
 /* To fill the container and nothing else */
-
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    width: 100% !important;
+.fb_iframe_widget,.fb_iframe_widget span,.fb_iframe_widget span iframe[style]
+	{
+	width: 100% !important;
 }
 /*Peru Retail Widget*/
-div#peruretail{
+div#peruretail {
 	border: solid 1px #1799CA;
 }
+
 div#pr-logo {
 	border-bottom: solid 1px #1799CA;
 }
 
-div#pr-logo div {
+div#text_retail {
 	font-weight: bold;
 	color: #1799CA;
 	font-size: 12px;
 	font-family: Trebuchet MS;
-	
+/*	float: right;
+	padding: 10px;*/
 	float: right;
-	padding: 10px;
+	margin: 5px 10px;
 }
 
 div#pr-logo img {
@@ -57,20 +78,17 @@ div#pr-logo img {
 }
 
 div#pr-noticias {
-	padding:8px;
-	
+	padding: 8px;
 	height: 448px;
 	color: #666666;
 }
-
-
 
 div#pr-noticias h1 a,div#pr-noticias h2 a {
 	font-family: "Times New Roman", "Georgia";
 	font-weight: normal;
 	color: #1799CA;
 	font-size: 15px;
-	font-weight:bold;
+	font-weight: bold;
 	line-height: 10px;
 	text-decoration: none;
 }
@@ -94,6 +112,7 @@ div#pr-noticias p {
 			
 			jQuery('#camera_wrap_1').camera({
 				thumbnails: true,
+				time: 3900,
 				height: '40%'
 			});
 //application/index/peruretail
@@ -108,7 +127,7 @@ div#pr-noticias p {
 				    
 				   	//alert('Load was performed.');
 				  },
-				  fail:
+				  error:
 					  function() { $('#pr-noticias').html("Error!"); }
 				});
 
@@ -120,37 +139,43 @@ div#pr-noticias p {
 
 <!-- Slider! -->
 <div class="row">
-	<section id="slider_index">
-		<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-			<div data-thumb="images-slider/slide01-small2.png"
-				data-src="images-slider/slide01.png">
-				<div class="camera_caption fadeFromBottom">Tiendas y Espacios
-					Comerciales</div>
-			</div>
-			<div data-thumb="images-slider/slide04-small2.png"
-				data-src="images-slider/slide04.png">
-				<div class="camera_caption fadeFromBottom">Proyectos de Imagen
-					Corporativa</div>
-			</div>
-			<div data-thumb="images-slider/slide03-small2.png"
-				data-src="images-slider/slide03.png">
-				<div class="camera_caption fadeFromBottom">Tecnología e
-					interactividad para puntos de venta</div>
-			</div>
-			<div data-thumb="images-slider/slide-ptm-small.png"
-				data-src="images-slider/slide-ptm.png">
-				<div class="camera_caption fadeFromBottom">Proyectos de Trade
-					Marketing</div>
-			</div>
-		</div>
-	</section>
+	<div class="span12">
+		<section id="slider_index">
+			<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+				<div data-thumb="images-slider/slide01-small2.png"
+					data-src="images-slider/slide01.png" data-link="/projects/tec">
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Tiendas y Espacios Comerciales'); ?></div>
+				</div>
+				<div data-thumb="images-slider/slide04-small2.png"
+					data-src="images-slider/slide04.png" data-link="/projects/pic">
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Proyectos de Imagen Corporativa') ?></div>
+				</div>
+				<div data-thumb="images-slider/slide03-small2.png"
+					data-src="images-slider/slide03.png" data-link="/projects/tipv">
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Tecnolog&iacute;a e interactividad para puntos de venta') ?></div>
+				</div>
 
+				<div data-thumb="images-slider/slide-ptm-small.png"
+					data-src="images-slider/slide-ptm.png" data-link="/projects/ptm">
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Proyectos de Trade Marketing') ?></div>
+				</div>
+
+				<div data-thumb="images-slider/slide05-small.png"
+					data-src="images-slider/slide05.png" data-link="/stands">
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Stands/Exhibits') ?></div>
+				</div>
+
+
+
+			</div>
+		</section>
+	</div>
 </div>
 <!-- !Slider -->
 
 <div class="row">
 
-	<div class="span4">
+	<div class="span5">
 
 		<div id="fb-root"></div>
 		<script>
@@ -173,7 +198,7 @@ div#pr-noticias p {
      ref.parentNode.insertBefore(js, ref);
    }(document));
 	</script>
-		<div id="fb_color">Contáctanos también por Facebook</div>
+		<div id="fb_color"><?php echo $this->translate('Cont&aacute;ctanos tambi&eacute;n por Facebook') ?></div>
 		<div class="fb-like-box"
 			data-href="http://www.facebook.com/apoyopublicitario"
 			data-width="350" data-height="450" data-show-faces="true"
@@ -182,28 +207,38 @@ div#pr-noticias p {
 
 	</div>
 
-	<div class="span4">
+	<div class="span5">
 		<div id="peruretail">
-		<div id="pr-logo">
-			<a href="http://www.peru-retail.com/" target="_blank"><img
-				src="images/peru-retail-small.png" /></a>
-			<div style="margin: 0 0 0 0; padding: 15px 0 0 0;">Noticias Retail</div>
-		</div>
-		<div id="pr-noticias">
-			<div style="margin: 50% 45%;"><img alt="loading" src="images/loading.gif" ></div>
-		     
-		
-		
-		</div>
+			<div id="pr-logo">
+				<a href="http://www.peru-retail.com/" target="_blank"><img
+					src="images/peru-retail-small.png" /></a>
+				<div id="text_retail"><?php echo $this->translate('Noticias Retail') ?></div>
+			</div>
+			<div id="pr-noticias">
+				<div style="margin: 50% 45%;">
+					<img alt="loading" src="images/loading.gif">
+				</div>
+
+
+
+			</div>
 		</div>
 	</div>
 
-	<div class="span4">
-		<h2><?php echo $this->translate('Help &amp; Support') ?></h2>
-		<p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk.2 on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk.2">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
+	<div class="span2 botones">
+		<h4><?php // echo $this->translate('Operaciones a nivel nacional y fuera del pa&iacute;s') ?>
+		<?=$this->translate('Operaciones Globales') ?>
+		
+		</h4>
+		<p>	<!-- <a href="/stands"><img src="/images/world_map2.gif" /></a> -->
+			<a href="/stands"><img src="/images/global.gif" /></a>
+		</p>
+		<h4><?php echo $this->translate('Nuestros Socios') ?></h4>
 		<p>
-			<a class="btn btn-success"
-				href="http://webchat.freenode.net?channels=zftalk.2" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a>
+			<a href="/stands"><img src="/images/NS-2.gif" /></a>
+		</p>
+		<p>
+			<img src="/images/<?php echo $this->translate('contact_es.png') ?>" />
 		</p>
 	</div>
 </div>

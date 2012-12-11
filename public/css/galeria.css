@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.menubar li{
+	
+	list-style: none;
+}
+
+.menubar li { 
+	
+	background: #DDD;
+	padding: 5px;
+	margin: 10px;
+}

@@ -54,7 +54,8 @@ $(document).ready(function() {
 				
 				
 					$('#camera_'+objTarget).camera({
-						height: '48%',
+						height: '50%',
+						alignment: 'left',
 						loader: 'none',
 						time: 1500,
 						fx: 'curtainTopLeft,curtainTopRight,blindCurtainBottomRight',

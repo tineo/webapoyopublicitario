@@ -12,8 +12,8 @@
         'password'  => 'CHANGEME',
     ),
 );*/
-
-/*return array(
+/*
+return array(
 		'service_manager' => array(
 				'factories' => array(
 						'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
@@ -24,7 +24,38 @@
 				'dsn'      => 'sqlite:' . getcwd() . '/data/users.db',
 		)
 );*/
+/*return array(
+		'doctrine' => array(
+				'connection' => array(
+						'orm_default' => array(
+								'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+								'params' => array(
+										'host'     => 'localhost',
+										'port'     => '3306',
+										'user'     => 'root',
+										'password' => 'noelia',
+										'dbname'   => 'test'
+								)
+						)
+				)
+		),
+);
+*/
+return array (
 
+		'doctrine' => array (
+				'connection' => array (
+						'orm_default' => array (
+								'driverClass' => 'Doctrine\DBAL\Driver\PDOSqlite\Driver',
+								'params' => array (
+										'path' => '/home/ftpapoyoweb/apoyopublicitario.com/data/apoyo.db'
+								)
+						)
+				)
+		)
+);
+
+/*
 return array(
 		'doctrine' => array(
 				'connection' => array(
@@ -40,4 +71,4 @@ return array(
 						)
 				)
 		),
-);
+);*/

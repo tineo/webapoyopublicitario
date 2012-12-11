@@ -3,7 +3,6 @@
 
 
 <?php
-
 echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' ) );
 ?>
 
@@ -56,7 +55,7 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' )
 <script>
 		$(document).ready(function() {
 			$("#galeria-titulo").html("Stands para Ferias");
-			/*$(".screen").hide(1);*/
+			$(".screen").hide(1);
 		});
 </script>
 <div class="row">
@@ -64,12 +63,12 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' )
 	<div class="span4">
 
 		<div class="title-link">
-			<a>Stands</a>
+			<a><?php echo $this->translate('Stands/Exhibits') ?></a>
 		</div>
 	</div>
 
 
-	<div class="span4">
+	<div class="span5">
 		<div class="contents-innerHTML clearfix">
 			<div class="cs-tools-top clearfix">
 				<ul class="cs-navi">
@@ -83,39 +82,293 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' )
 						data-filter=".Extemin2011">Extemin 2011</a></li>
 					<li><a href="javascript:;" id="cs-link-Extemin2009"
 						data-filter=".Extemin2009">Extemin 2009</a></li>
+					<!-- <li><a href="javascript:;" id="cs-link-Expomina"
+						data-filter=".Expomina">Expomina</a></li>
+					<li><a href="javascript:;" id="cs-link-Excom"
+						data-filter=".Excom">Excom</a></li> -->
 					<li><a href="javascript:;" id="cs-link-Otras-Ferias"
 						data-filter=".Otras-Ferias">Otras Ferias</a></li>
-					<!-- <li><a href="javascript:;" id="cs-link-Experience-Design"
-									data-filter=".Experience-Design">Experience Design</a></li>
-								<li><a href="javascript:;" id="cs-link-Web-Mobile"
-									data-filter=".Web-Mobile">Web &amp; Mobile Apps</a></li>
-								 -->
+
 				</ul>
 			</div>
-			<!-- <div style="margin: 20px 0; font-size: 14px;">Soluciones de imagen
-				corporativa y presencia comercial en ferias y eventos; brindamos
-				soluciones integrales en arquitectura y marketing ferial. Cobertura
-				operativa en Europa, Asia y Sudamerica.</div> -->
+
 		</div>
 	</div>
 </div>
 
 <div class="row">
-	<div class=" 1">
+	<div class="span7">
 
-		<div style="margin: 20px 0; font-size: 14px;">Soluciones de imagen
-			corporativa y presencia comercial en ferias y eventos; brindamos
-			soluciones integrales en arquitectura y marketing ferial. Cobertura
-			operativa en Europa, Asia y Sudamerica.</div>
+		<div style="margin: 20px 0; font-size: 14px;">
+		<?=$this->translate ( 'Soluciones de imagen corporativa y presencia comercial en ferias y eventos; brindamos soluciones integrales en arquitectura y marketing ferial. Cobertura operativa en Europa, Asia y Sudamerica.' );?></div>
 	</div>
 </div>
 
 
 
 
-<div>
 
-<div id="cs-item-screen-ferreyros_09" class="screen  Extemin2009"
+
+<div class="row">
+	<div class="span12">
+		<div id="case-study-list-container" class="case-study-list"
+			style="min-height: 630px;">
+			<!-- 
+####################
+LISTADO DE CUADRADOS Y LOGOS
+####################
+ -->
+			<div class="case-study-item Extemin2009" id="cs-item-ferreyros_09">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2009"
+				id="cs-item-angloamerican_09">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2009" id="cs-item-nissan_09">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2009" id="cs-item-petroperu_09">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2009" id="cs-item-varios_09">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-3M_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-ABB_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-Antamina_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-ferreyros_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011"
+				id="cs-item-GeneralElectric_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-Liebherr_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-GoldFields_11">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-TECSUP_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+
+
+			<div class="case-study-item Extemin2011" id="cs-item-Motaengil_11">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-Praxair_11">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-Schulz_11">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-Pecsa_11">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Extemin2011" id="cs-item-varios_11">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			
+			<!-- Expomina
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Expomina"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			 -->
+			
+			
+			
+			
+			
+			<!-- Excom
+			<div class="case-study-item Excom"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Excom"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Excom"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Excom"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"><span class="logo"></span>
+				</a>
+			</div>
+			<div class="case-study-item Excom"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"> <span class="logo"></span>
+				</a>
+			</div>
+			 -->
+			
+			
+			
+			
+
+			<div class="case-study-item Otras-Ferias"
+				id="cs-item-construccion_otras">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Otras-Ferias" id="cs-item-energia_otras">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Otras-Ferias" id="cs-item-mineras_otras">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+
+			<div class="case-study-item Otras-Ferias" id="cs-item-otros_otras">
+				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span>--> <span class="logo"></span>
+				</a>
+			</div>
+			<!-- <div class="case-study-item Featured Research" id="cs-item-sony">
+								<a href="javascript:;" class="thumb"><span class="cs-info"><strong>Sony
+											Creative Center and Sony Mobile: </strong>Proof of Concept and
+										Usability Testing</span><span class="logo"></span></a>
+							</div>  -->
+
+			<div id="case-study-list-navi">
+				<!-- NO NAVI for now -->
+			</div>
+			<!-- 
+#######################
+TEXTOS
+#######################
+ -->
+
+
+
+			<div id="cs-item-screen-ferreyros_09" class="screen  Extemin2009"
 				style="display: block;">
 				<a class="close-cs-item-screen">Close</a>
 				<div class="screen-body">
@@ -202,25 +455,25 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' )
 				<a class="close-cs-item-screen">Close</a>
 				<div class="screen-body"></div>
 			</div>
-			
+
 			<div id="cs-item-screen-Praxair_11" class="screen  Extemin2011"
 				style="display: block;">
 				<a class="close-cs-item-screen">Close</a>
 				<div class="screen-body"></div>
 			</div>
-			
+
 			<div id="cs-item-screen-Schulz_11" class="screen  Extemin2011"
 				style="display: block;">
 				<a class="close-cs-item-screen">Close</a>
 				<div class="screen-body"></div>
 			</div>
-			
+
 			<div id="cs-item-screen-Pecsa_11" class="screen  Extemin2011"
 				style="display: block;">
 				<a class="close-cs-item-screen">Close</a>
 				<div class="screen-body"></div>
 			</div>
-			
+
 			<div id="cs-item-screen-varios_11" class="screen  Extemin2011"
 				style="display: block;">
 				<a class="close-cs-item-screen">Close</a>
@@ -251,186 +504,12 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/main.css' )
 				<div class="screen-body"></div>
 			</div>
 
-</div>
 
 
 
-
-<div id="case-study-list-container" class="case-study-list">
-			<!-- 
-####################
-LISTADO DE CUADRADOS Y LOGOS
-####################
- -->
-			<div class="case-study-item Extemin2009" id="cs-item-ferreyros_09">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2009"
-				id="cs-item-angloamerican_09">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2009" id="cs-item-nissan_09">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2009" id="cs-item-petroperu_09">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2009" id="cs-item-varios_09">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-3M_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-ABB_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-Antamina_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-ferreyros_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011"
-				id="cs-item-GeneralElectric_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-Liebherr_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-GoldFields_11">
-				<a href="javascript:;" class="thumb">
-					<span class="logo"></span>
-				</a>
-			</div>
-			
-			<div class="case-study-item Extemin2011" id="cs-item-TECSUP_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			
-			
-			<div class="case-study-item Extemin2011" id="cs-item-Motaengil_11">
-				<a href="javascript:;" class="thumb">
-					<span class="logo"></span>
-				</a>
-			</div>
-			
-			<div class="case-study-item Extemin2011" id="cs-item-Praxair_11">
-				<a href="javascript:;" class="thumb">
-					<span class="logo"></span>
-				</a>
-			</div>
-			
-			<div class="case-study-item Extemin2011" id="cs-item-Schulz_11">
-				<a href="javascript:;" class="thumb">
-					<span class="logo"></span>
-				</a>
-			</div>
-			
-			<div class="case-study-item Extemin2011" id="cs-item-Pecsa_11">
-				<a href="javascript:;" class="thumb">
-					<span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Extemin2011" id="cs-item-varios_11">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Otras-Ferias"
-				id="cs-item-construccion_otras">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Otras-Ferias" id="cs-item-energia_otras">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Otras-Ferias" id="cs-item-mineras_otras">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-
-			<div class="case-study-item Otras-Ferias" id="cs-item-otros_otras">
-				<a href="javascript:;" class="thumb"> <!-- <span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span>--> <span class="logo"></span>
-				</a>
-			</div>
-			<!-- <div class="case-study-item Featured Research" id="cs-item-sony">
-								<a href="javascript:;" class="thumb"><span class="cs-info"><strong>Sony
-											Creative Center and Sony Mobile: </strong>Proof of Concept and
-										Usability Testing</span><span class="logo"></span></a>
-							</div>  -->
-
-			<div id="case-study-list-navi">
-				<!-- NO NAVI for now -->
-			</div>
-			<!-- 
-#######################
-TEXTOS
-#######################
- -->
-			
 
 		</div>
-	
+	</div>
 
+</div>
+<!-- class row -->

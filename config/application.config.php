@@ -1,9 +1,11 @@
 <?php
 return array (
 		'modules' => array (
+				'EdpModuleLayouts',
 				'Application',
+				'Backend',
 				'DoctrineModule',
-				'DoctrineORMModule',
+				'DoctrineORMModule' 
 		),
 		'module_listener_options' => array (
 				'config_glob_paths' => array (
@@ -13,5 +15,9 @@ return array (
 						'./module',
 						'./vendor' 
 				) 
+		),
+		'module_layouts' => array (
+				'Application' => 'layout/layout',
+				'Backend' => 'layout/backend' 
 		) 
 );

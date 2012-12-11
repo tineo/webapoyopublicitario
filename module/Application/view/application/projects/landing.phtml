@@ -2,66 +2,71 @@
 <?php
 echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/panel.css' ) );
 ?>
-
-
-
 <style type="text/css">
 #panel {
-	margin: -20px auto 0 auto;
-	padding: 0px;
-	height: 380px;
 }
 
 #galeria-titulo {
-	margin: 40px 40px 0 0;
+	margin: 30px 40px 0 0;
 }
 
-#titulo{
+#titulo {
 	color: #A90000;
-	padding: 20px 10px;
-	font-size: 150%;
+	margin: 50px 10px 0 10px;
+	font-size: 25px;
+}
+
+#descripcion {
+	font-size: 15px;
+	margin: 30px 0 75px 0;
+}
+
+.vineta img {
+	
 }
 </style>
-
-
-<div id="panel">
-
-	<div class="row">
-		<div class="span6">
-			<h3 id="titulo">Tiendas y Espacios Comerciales</h3>
-			<div id="descripcion">Desarrollo de estrategías de gestión de tiendas
-				(layout, store planning, visual merchandising). Proyectos llave en
-				mano, desde el diseño hasta la implementación de cadenas de tiendas
-				y espacios comerciales; con alcance de operación a nivel nacional.</div>
+<div class="row">
+	<div class="span7">
+		<?php
+		switch ($this->section) {
+			case "tec" :
+				$titulo = $this->translate ( "Tiendas y Espacios Comerciales" );
+				$descripcion = $this->translate ( "Desarrollo de estrateg&iacute;as de gesti&oacute;n de tiendas (layout, store planning, visual merchandising). Proyectos llave en mano, desde el dise&ntilde;o hasta la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con alcance de operaci&oacute;n a nivel nacional." );
+				break;
+			
+			case "pic" :
+				$titulo = $this->translate ( "Proyectos de Imagen Corporativa" );
+				$descripcion = $this->translate ( "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;cnicas para mantener la imagen de la Empresa." );
 				
-				<a class="btn btn-success"
-			href="<?=$this->url("projects"); ?>/<?=$this->action?>/gallery" ><?php echo $this->translate('Ver Proyectos') ?> &raquo;</a>
-
+				break;
 			
-			<span
-					style="float: right;"><a href="<?=$this->url("projects"); ?>"><img
-						src="<?=$this->basePath ('images/volver.png') ?>" border="0"></a><br />Volver</span>
+			case "tipv" : // TECNOLOG&Iacute;A E INTERACTIVIDAD PARA PUNTOS DE
+			              // VENTA
+				$titulo = $this->translate ( 'Tecnolog&iacute;a e Interactividad para Puntos de Venta' );
+				$descripcion = $this->translate ( "Combinamos experiencias l&uacutedicas e interactividad con sistemas de business intelligence q permiten una eficiente administraci&oacute;n y control de premios, o acciones con reportes que permiten analizar comportamiento de clientes, adem&aacute;s de gestionar de manera independiente cada uno de los puntos de venta dentro de una red." );
+				break;
 			
-		</div>
+			case "ptm" :
+				$titulo = $this->translate ( "Proyectos de Trade Marketing" );
+				$descripcion = $this->translate ( "Desarrollo estrat&eacute;gico y ejecuci&oacuten de proyectos de trade marketing para el canal; dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y apoyo al canal distribuidor." );
+				break;
+		}
 		
+		?>
+			<h3 id="titulo">
+				<?=$titulo ?> </h3>
+		<div id="descripcion"><?=$descripcion?></div>
 
-		<div class="span6">
-			<div style="text-align: right;">
-				<img alt="ST" src="<?=$this->basePath('images/st.png')?>">
-			</div>
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>/<?=$this->section?>/gallery"><?php echo $this->translate('Ver Proyectos') ?> &raquo;</a>
+
+		<span style="float: right;"><a href="<?=$this->url("projects"); ?>"><img
+				src="<?=$this->basePath ('images/volver.png') ?>" border="0"></a><br /><?php echo $this->translate('Volver') ?></span>
+	</div>
+	<div class="span5">
+		<div style="text-align: right;">
+			<img alt="ST" src="<?=$this->basePath($this->imagen_back)?>">
 		</div>
 	</div>
-	
-	
-		
-	
-	
-
-
-
-
-
-
 </div>
-
 

@@ -28,80 +28,119 @@ echo $this->doctype ();
 						'rel' => 'shortcut icon',
 						'type' => 'image/vnd.microsoft.icon',
 						'href' => $this->basePath ( '/images/favicon.ico' ) 
-				) )->prependStylesheet ( $this->basePath ( '/css/bootstrap-responsive.min.css' ) )->prependStylesheet ( $this->basePath ( '/css/style.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap.min.css' ) )->prependStylesheet ( $this->basePath ( '/css/layout.css' ) )?>
+				) )->prependStylesheet ( $this->basePath ( '/css/bootstrap-responsive.css' ) )->prependStylesheet ( $this->basePath ( '/css/style.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap.css' ) )->prependStylesheet ( $this->basePath ( '/css/layout.css' ) )?>
 
     <!-- Scripts -->
     <?php
 				
-				echo $this->headScript ()->prependFile ( $this->basePath () . '/js/html5.js', 'text/javascript', array (
+				echo $this->headScript ()->prependFile ( $this->basePath () . '/js/bootstrap.min.js' )->prependFile ( $this->basePath () . '/js/jquery.js' )->prependFile ( $this->basePath () . '/js/html5.js', 'text/javascript', array (
 						'conditional' => 'lt IE 9' 
-				) )->prependFile ( $this->basePath () . '/js/jquery-1.7.2.min.js' )?>
+				) );
+				?>
 
-<!-- <script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-	type="text/javascript"></script> -->
 <script type="text/javascript">
 
 $(function() {
-	
-	var $scrollingDiv = $("#scrollingDiv");
 
-	$("#scrollingDiv")
-	.css({"marginTop": ($(window).scrollTop() + $(window).height() - $("#scrollingDiv").height() -10) + "px"} );
-	
-	$(window).scroll(function(){			
-		$scrollingDiv
-			.css({"marginTop": ($(window).scrollTop() + $(window).height() - $("#scrollingDiv").height() -10) + "px"} );			
-	});
-	$(window).resize(function() {
-		$scrollingDiv
-		.css({"marginTop": ($(window).scrollTop() + $(window).height() - $("#scrollingDiv").height() ) + "px"} );
+	/*Language*/
+	$("#lang_en").click(function(){
 
-		if($(window).height()<330||$(window).width()<480){$("#scrollingDiv").hide();}
-		if($(window).height()>330||$(window).width()>480){$("#scrollingDiv").show();}
+		$.ajax({
+			  url: "/language/en_US",
+			  context: document.body
+			}).done(function() { 
+				window.location.href=window.location.href;
+			});
 	});
+
+
+	$("#lang_es").click(function(){
+		$.ajax({
+			  url: "/language/es_ES",
+			  context: document.body
+			}).done(function() { 
+				window.location.href=window.location.href;
+			});
+	});	
 });
 </script>
 </head>
 
 <body>
-	<div id="scrollingDiv"
-		style="position: absolute; width: 100%; margin: 0px; padding: 0px; z-index: 9999;">
-		<div id="icono"
-			style="border: solid 1px #CCC; background: #DDD; margin: 0 16%; padding: 10px;"><?php echo $this->translate('All rights reserved.')?>
-		</div>
-	</div>
+
 	<section class="container">
 
 		<header>
-			<div id="banner_logo">
-				<a href="<?php echo $this->url('home') ?>"><img
-					src="<?php echo $this->basePath("_images/logo.jpg"); ?>" /></a>
+			<div class="span3">
+				<div id="banner_logo">
+					<a href="<?php echo $this->url('home') ?>"><img
+						src="<?php echo $this->basePath("_images/logo.jpg"); ?>" /></a>
+				</div>
+			</div>
+			<div class="span8">
+				<div id="slogan">
+					<?php echo $this->translate('Proyectos Corporativos para Retail y Espacios Comerciales')?>
+				</div>
 			</div>
 
 		</header>
 	</section>
 
 
-	<div class="navbar ">
-		<div class="navbar-inner">
-			<div class="container">
-				<div>
-					<ul class="nav">
-						<li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-						<li><a href="<?php echo $this->url('aboutus'); ?>">Qui&eacute;nes
-								Somos</a></li>
-						<li><a href="<?php echo	$this->url('projects'); ?>">Qué hacemos</a></li>
-						<li><a href="<?php echo $this->url("stands"); ?>">Stands para ferias</a></li>
-						<li><a href="<?php echo $this->url('clients'); ?>">Clientes</a></li>
-						<li><a href="<?php echo $this->url('contactus'); ?>">Cont&aacute;ctanos</a></li>
-					</ul>
+
+
+
+	<div class="container">
+
+		<div class="">
+			<div class="navbar navbar-inverse  active">
+
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="btn btn-navbar" data-toggle="collapse"
+							data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span>
+						</a>
+
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+								<li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Inicio') ?></a></li>
+								<li><a href="<?php echo $this->url('aboutus'); ?>"><?php echo $this->translate('Qui&eacute;nes Somos') ?></a></li>
+
+
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown"><?php echo $this->translate('Qu&eacute; hacemos') ?> <b
+										class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="<?=$this->url("projects"); ?>/tec" style="font-size: 11px;"><?php echo $this->translate('Tiendas y Espacios Comerciales') ?></a></li>
+										<li><a href="<?=$this->url("projects"); ?>/pic" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Imagen Corporativa') ?> </a></li>
+										<li><a href="<?=$this->url("projects"); ?>/tipv" style="font-size: 11px;"><?php echo $this->translate('Tecnolog&iacute;a e Interactividad para Puntos de Venta'); ?> </a></li>
+										<li><a href="<?=$this->url("projects"); ?>/ptm" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Trade Marketing') ?> </a></li>
+									</ul></li> 
+
+							</ul>
+							<ul class="nav">
+
+								<li><a href="<?php echo $this->url("stands"); ?>"><?php echo $this->translate('Stands/Exhibits') ?></a></li>
+								<li><a href="<?php echo $this->url('clients'); ?>"><?php echo $this->translate('Clientes') ?></a></li>
+								<li><a href="<?php echo $this->url('contactus'); ?>"><?php echo $this->translate('Cont&aacute;ctanos') ?></a></li>
+
+							</ul>
+							<div class="btn-group  pull-right languages"
+								style="text-align: center;">
+								<button id="lang_en" class="btn btn-inverse">English</button>
+								<button id="lang_es" class="btn btn-inverse">Español</button>
+							</div>
+
+						</div>
+
+
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
-
-
 
 
 	<div class="container">
@@ -110,22 +149,36 @@ $(function() {
 
       <hr>
 
-		<!-- <footer>
-				<table>
-					<tr>
-						<td style="border-right: solid 2px #444;"><?php echo $this->translate('All rights reserved.') ?> - 2011 . Apoyo Publicitario <br />Planta:
-							Av.Libertad 386 -L32 Perú / Of Miramar 180-L32 - Perú</td>
-						<td style="border-right: solid 2px #444;">Fonos 511 717-5333 /
-							566-2800 <br />ventas@apoyopublicitario.com
-						</td>
-						<td style="border-right: solid 2px #444;">Únete a nuestro equipo,
-							<br />envíanos tu CV
-						</td>
-						<td></td>
-					</tr>
-				</table>
+		<footer>
+			<div class="row">
+				<div class="span4">
+				 <?php echo $this->translate('All rights reserved.') ?> - 2011 . Apoyo Publicitario <br />Planta:
+					Av.Libertad 386 -L32 Perú / Of Miramar 180-L32 - Perú
 
-			</footer>-->
+				</div>
+
+				<div class="span3">
+					Fonos 511 717-5333 / 566-2800 <br /> <a
+						href="mailto:ventas@apoyopublicitario.com">ventas@apoyopublicitario.com</a>
+				</div>
+				<div class="span2">
+					<a href="mailto:ventas@apoyopublicitario.com">Únete a nuestro
+						equipo, <br />envíanos tu CV
+					</a>
+				</div>
+				<div class="span3" style="text-align: center">
+					<a target="_blank"
+						href="http://www.facebook.com/pages/Apoyo-Publicitario/113430695352950"><img
+						src="/images/facebook-icon-small.png" /></a> <a target="_blank"
+						href="http://www.youtube.com/user/apoyopublicitario"><img
+						src="/images/Youtube_64x64.png" /></a> <a
+						href="<?php echo $this->url('home') ?>"><img
+						src="/images/home.png" /></a>
+
+				</div>
+			</div>
+
+		</footer>
 
 	</div>
 

@@ -1,111 +1,250 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ZendSkeletonApplication\n"
+"Project-Id-Version: Apoyo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-06 19:07+0100\n"
-"PO-Revision-Date: 2012-07-06 19:09+0100\n"
-"Last-Translator: Adolfo Abegg <adolfoabegg@gmail.com>\n"
-"Language-Team: ZF Contributors <zf-devteam@zend.com>\n"
+"POT-Creation-Date: 2012-12-11 01:19-0500\n"
+"PO-Revision-Date: 2012-12-11 01:19-0500\n"
+"Last-Translator: Cesar Gutierrez Tineo <cesar@tineo.mobi>\n"
+"Language-Team: Makinap <tineo@makinap.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "X-Poedit-KeywordsList: translate\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
+"X-Poedit-Country: PERU\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-msgid "Skeleton Application"
-msgstr "Aplicación Esqueleto"
+#: ../view/layout/layout.phtml:82
+msgid "Proyectos Corporativos para Retail y Espacios Comerciales"
+msgstr ""
 
-msgid "Home"
-msgstr "Inicio"
+#: ../view/layout/layout.phtml:107
+msgid "Inicio"
+msgstr ""
 
+#: ../view/layout/layout.phtml:108
+msgid "Qui&eacute;nes Somos"
+msgstr ""
+
+#: ../view/layout/layout.phtml:112
+msgid "Qu&eacute; hacemos"
+msgstr ""
+
+#: ../view/layout/layout.phtml:115
+#: ../view/application/index/index.phtml:145
+#: ../view/application/projects/landing.phtml:33
+msgid "Tiendas y Espacios Comerciales"
+msgstr ""
+
+#: ../view/layout/layout.phtml:116
+#: ../view/application/index/index.phtml:149
+#: ../view/application/projects/landing.phtml:38
+msgid "Proyectos de Imagen Corporativa"
+msgstr ""
+
+#: ../view/layout/layout.phtml:117
+#: ../view/application/projects/landing.phtml:45
+msgid "Tecnolog&iacute;a e Interactividad para Puntos de Venta"
+msgstr ""
+
+#: ../view/layout/layout.phtml:118
+#: ../view/application/index/index.phtml:158
+#: ../view/application/projects/landing.phtml:50
+msgid "Proyectos de Trade Marketing"
+msgstr ""
+
+#: ../view/layout/layout.phtml:124
+#: ../view/application/stands/index.phtml:66
+#: ../view/application/index/index.phtml:163
+msgid "Stands/Exhibits"
+msgstr ""
+
+#: ../view/layout/layout.phtml:125
+msgid "Clientes"
+msgstr ""
+
+#: ../view/layout/layout.phtml:126
+msgid "Cont&aacute;ctanos"
+msgstr ""
+
+#: ../view/layout/layout.phtml:155
 msgid "All rights reserved."
-msgstr "Todos los derechos reservados"
+msgstr ""
 
-msgid "Welcome to %sZend Framework 2%s"
-msgstr "Bienvenido al %sZend Framework 2%s"
+#: ../view/application/stands/index.phtml:103
+msgid "Soluciones de imagen corporativa y presencia comercial en ferias y eventos; brindamos soluciones integrales en arquitectura y marketing ferial. Cobertura operativa en Europa, Asia y Sudamerica."
+msgstr ""
 
-msgid "Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2."
-msgstr "¡Felicitaciones! Haz instalado correctamente el %sla aplicación esqueleto del ZF2%s. Estás corriendo la versión %s del Zend Framework. Este esqueleto te servirá como un punto de inicio sencillo para empezar a construir tu aplicación con el ZF2."
+#: ../view/application/index/index.phtml:153
+msgid "Tecnolog&iacute;a e interactividad para puntos de venta"
+msgstr ""
 
-msgid "Fork Zend Framework 2 on GitHub"
-msgstr "Hacer un Fork del Zend Framework 2 en GitHub"
+#: ../view/application/index/index.phtml:199
+msgid "Cont&aacute;ctanos tambi&eacute;n por Facebook"
+msgstr ""
 
-msgid "Follow Development"
-msgstr "Seguir el Desarrollo"
+#: ../view/application/index/index.phtml:213
+msgid "Noticias Retail"
+msgstr ""
 
-msgid "Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!"
-msgstr "El Zend Framework 2 está en pleno desarrollo. Si estás interesado en seguir el desarrollo del ZF2, existe un portal especial para el ZF2 en el sitio web oficial del Zend Framework el cual provee enlaces %sa la Wiki%s, %sal Blog de desarrollo%s, %sal issue tracker%s y mucho más. Este es un gran recurso para mantenerte al día con los últimos avances en el desarrollo!"
+#: ../view/application/index/index.phtml:227
+msgid "Operaciones a nivel nacional y fuera del pa&iacute;s"
+msgstr ""
 
-msgid "ZF2 Development Portal"
-msgstr "Portal de Desarrollo del ZF2"
+#: ../view/application/index/index.phtml:231
+msgid "Nuestros Socios"
+msgstr ""
 
-msgid "Discover Modules"
-msgstr "Descubre Módulos"
+#: ../view/application/index/index.phtml:236
+msgid "contact_es.png"
+msgstr ""
 
-msgid "The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2."
-msgstr "La comunidad está trabajando en el desarrollo de una web comunitaria que servirá de repositorio y galería de los módulos del ZF2. El proyecto está disponible %sen GitHub%s. El sitio web está en línea y actualmente posee una lista de algunos módulos que ya están disponibles para el ZF2."
+#: ../view/application/index/aboutus.phtml:46
+msgid "QUIENES SOMOS?"
+msgstr ""
 
-msgid "Explore ZF2 Modules"
-msgstr "Explora los módulos del ZF2"
+#: ../view/application/index/aboutus.phtml:48
+msgid ""
+"Somos especialistas en el desarrollo de proyectos corporativos para retail y trademarketing, brindamos soluciones que van desde el dise&ntilde;o y construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de un cambio de imagen integral para m&uacute;ltiples puntos de venta o agencias a nivel nacional y en el exterior.\n"
+"\t\t\t\t\t\t\tNuestro equipo est&aacute; formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de marketing, todos con experiencia de campo en  retail y proyectos de trademarketing  tanto en el canal moderno como en el tradicional."
+msgstr ""
 
-msgid "Help &amp; Support"
-msgstr "Ayuda &amp; Soporte"
+#: ../view/application/index/aboutus.phtml:60
+msgid "NUESTRA VISION"
+msgstr ""
 
-msgid "If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk.2 on Freenode%s. We'd love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s."
-msgstr "Si necesitas alguna ayuda o soporte mientras estás desarrollando con el ZF2, puedes encontrarnos via IRC: %s#zftalk.2 en Freenode%s. Nos encantaría leer tus preguntas o cualquier feedback que puedas tener en relación a los lanzamientos de las versiones beta. También puedes subscribirte y enviar preguntas %sa la lista de correos%s"
+#: ../view/application/index/aboutus.phtml:61
+msgid "Deseamos ser vistos como el Apoyo Publicitario de cada uno de nuestros clientes; que tengan la confianza de poder entregarnos sus proyectos m&aacute;s ambiciosos."
+msgstr ""
 
-msgid "Ping us on IRC"
-msgstr "Escríbenos en el IRC"
+#: ../view/application/index/aboutus.phtml:70
+msgid "POR QUE TRABAJAR CON NOSOTROS"
+msgstr ""
 
+#: ../view/application/index/aboutus.phtml:73
+msgid ""
+"Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a nivel nacional y fuera del pa&iacute;s.\n"
+"\t\t\t\t\t\t\tPor la red de contactos en las distintas superficies comerciales y un conocimiento profundo de las requisitos particulares y  exigencias de cada de ellas"
+msgstr ""
+
+#: ../view/application/index/aboutus.phtml:82
+msgid "EXPERIENCIA"
+msgstr ""
+
+#: ../view/application/index/aboutus.phtml:84
+msgid ""
+"Aportamos 16 a&ntilde;os de experiencia en proyectos para retail brindando soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y productivo el trabajo de nuestros clientes.\n"
+"\t\t\t\t\t\t\t\tNuestra experiencia permite entender a nuestro cliente y  lo que realmente necesita para desarrollar proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos corporativos de cambio de imagen&#59; tecnolog&iacute;a e interactividad para puntos de venta as&iacute; como proyectos de category en superficies comerciales."
+msgstr ""
+
+#: ../view/application/projects/index.phtml:42
+msgid "TIENDAS Y ESPACIOS COMERCIALES"
+msgstr ""
+
+#: ../view/application/projects/index.phtml:46
+msgid "PROYECTOS DE IMAGEN CORPOTARIVA"
+msgstr ""
+
+#: ../view/application/projects/index.phtml:51
+msgid "TECNOLOG&Iacute;A E INTERACTIVIDAD PARA PUNTOS DE VENTA"
+msgstr ""
+
+#: ../view/application/projects/index.phtml:56
+msgid "PROYECTOS DE TRADE MARKETING"
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:34
+msgid "Desarrollo de estrateg&iacute;as de gesti&oacute;n de tiendas (layout, store planning, visual merchandising). Proyectos llave en mano, desde el dise&ntilde;o hasta la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con alcance de operaci&oacute;n a nivel nacional."
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:39
+msgid "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;cnicas para mantener la imagen de la Empresa."
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:46
+msgid "Combinamos experiencias l&uacutedicas e interactividad con sistemas de business intelligence q permiten una eficiente administraci&oacute;n y control de premios, o acciones con reportes que permiten analizar comportamiento de clientes, adem&aacute;s de gestionar de manera independiente cada uno de los puntos de venta dentro de una red."
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:51
+msgid "Desarrollo estrat&eacute;gico y ejecuci&oacuten de proyectos de trade marketing para el canal; dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y apoyo al canal distribuidor."
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:61
+msgid "Ver Proyectos"
+msgstr ""
+
+#: ../view/application/projects/landing.phtml:64
+#: ../view/application/projects/gallery.phtml:48
+msgid "Volver"
+msgstr ""
+
+#: ../view/error/index.phtml:1
 msgid "An error occurred"
-msgstr "Ha ocurrido un error"
+msgstr ""
 
+#: ../view/error/index.phtml:8
 msgid "Additional information"
-msgstr "Información adicional"
+msgstr ""
 
+#: ../view/error/index.phtml:11
+#: ../view/error/index.phtml:35
 msgid "File"
-msgstr "Archivo"
+msgstr ""
 
+#: ../view/error/index.phtml:15
+#: ../view/error/index.phtml:39
 msgid "Message"
-msgstr "Mensaje"
+msgstr ""
 
+#: ../view/error/index.phtml:19
+#: ../view/error/index.phtml:43
 msgid "Stack trace"
-msgstr "Seguimiento de la pila (stack trace)"
+msgstr ""
 
+#: ../view/error/index.phtml:29
 msgid "Previous exceptions"
-msgstr "Excepciones anteriores"
+msgstr ""
 
+#: ../view/error/index.phtml:58
 msgid "No Exception available"
-msgstr "No hay ninguna Excepción disponible."
+msgstr ""
 
+#: ../view/error/404.phtml:1
 msgid "A 404 error occurred"
-msgstr "Ha ocurrido un error 404"
+msgstr ""
 
+#: ../view/error/404.phtml:10
 msgid "The requested controller was unable to dispatch the request."
-msgstr "El controlador solicitado no pudo ejecutar la petición."
+msgstr ""
 
+#: ../view/error/404.phtml:13
 msgid "The requested controller could not be mapped to an existing controller class."
-msgstr "El controlador solicitado no se pudo mapear con una clase de controlador existente."
+msgstr ""
 
+#: ../view/error/404.phtml:16
 msgid "The requested controller was not dispatchable."
-msgstr "El controlador solicitado no es ejecutable."
+msgstr ""
 
+#: ../view/error/404.phtml:19
 msgid "The requested URL could not be matched by routing."
-msgstr "El ruteador no ha encontrado la ruta para la URL solicitada."
+msgstr ""
 
+#: ../view/error/404.phtml:22
 msgid "We cannot determine at this time why a 404 was generated."
-msgstr "No pudimos determinar por qué un error 404 ha sido generado."
+msgstr ""
 
+#: ../view/error/404.phtml:34
 msgid "Controller"
-msgstr "Controller"
+msgstr ""
 
+#: ../view/error/404.phtml:41
+#, php-format
 msgid "resolves to %s"
-msgstr "se resuelve a %s"
+msgstr ""
 
+#: ../view/error/404.phtml:51
 msgid "Exception"
-msgstr "Excepción"
+msgstr ""
 

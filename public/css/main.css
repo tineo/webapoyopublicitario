@@ -702,9 +702,9 @@ div.processing {
 .case-study-list .screen .screen-body { 
 	/*position:absolute;*/
 	background: #e5e5e5;
-	/*padding: 7px;*/
-	/*height:500px;*/
-	/*width: auto;*/
+	padding: 3px;
+	height:600px;
+	width: auto;
 }
 
 .case-study-list .screen a.close-cs-item-screen {

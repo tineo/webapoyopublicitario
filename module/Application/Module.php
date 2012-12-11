@@ -19,6 +19,16 @@ use Zend\I18n\Translator\Translator;
 
 class Module {
 	public function onBootstrap($e) {
+		$e->getApplication ()->getEventManager ()->getSharedManager ()->attach ( 'Zend\Mvc\Controller\AbstractActionController', 'dispatch', function ($e) {
+			$controller = $e->getTarget ();
+			$controllerClass = get_class ( $controller );
+			$moduleNamespace = substr ( $controllerClass, 0, strpos ( $controllerClass, '\\' ) );
+			$config = $e->getApplication ()->getServiceManager ()->get ( 'config' );
+			if (isset ( $config ['module_layouts'] [$moduleNamespace] )) {
+				$controller->layout ( $config ['module_layouts'] [$moduleNamespace] );
+			}
+		}, 100 );
+		
 		$session = new Container ( 'base' );
 		
 		if (! $session->offsetExists ( 'language' )) {
@@ -28,9 +38,8 @@ class Module {
 				$session->offsetSet ( 'language', "en_US" );
 			}
 		}
-
-		$e->getApplication ()->getServiceManager ()->get ( 'translator' )->setLocale($session->offsetGet('language'));
-
+		
+		$e->getApplication ()->getServiceManager ()->get ( 'translator' )->setLocale ( $session->offsetGet ( 'language' ) );
 		
 		$e->getApplication ()->getServiceManager ()->get ( 'translator' );
 		$eventManager = $e->getApplication ()->getEventManager ();

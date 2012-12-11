@@ -1,4 +1,3 @@
-
 <link rel='stylesheet' href='/css/galeria.css' type='text/css'
 	media='all'>
 
@@ -11,7 +10,7 @@
 <script type='text/javascript' src='/js/camera.min.js'></script>
 <script type="text/javascript">
 $(function(){
-	$('#slide-tiendas').camera({
+	$('#main-slider').camera({
 		height: '400px',
 		loader: 'bar',
 		pagination: false,
@@ -19,278 +18,51 @@ $(function(){
 		time: 4000,
 		transPeriod: 1000
 	});
-
-	$("#galeria-titulo").html("Tiendas y Espacios Comerciales<br/>");
-	$("#galeria-titulo").append('<span style="font-size:15px;" >Tiendas y retailers<div>');
-	
-	$("#silde-centros").hide();
-	$("#silde-espacios").hide();
-
-	
-	$('#menubar a').click(function(){
-	});
-
-	$('#link1').click(function(){
-		$("#galeria-titulo").html("Tiendas y Espacios Comerciales<br/>");
-		$("#galeria-titulo").append('<span style="font-size:15px;" >Tiendas y retailers</div>');
-		
-		
-		$('#slide-centros').fadeOut(500,function(){
-			$("#slide-espacios").fadeOut(500,function(){
-				$("#slide-tiendas").fadeIn(500);
-			});
-		});
-		
-	});
-	
-	$('#link2').click(function(){
-		$("#galeria-titulo").html("Tiendas y Espacios Comerciales<br/>");
-		$("#galeria-titulo").append('<span style="font-size:15px;" >Centros y/o agencias atención</span>');
-		//.fadeIn(500);$("#galeria-titulo").fadeOut(500,function(){$(this).text("Centros y/o Agencias de Atención",function(){$(this).fadeIn(500);})});
-		
-		
-
-		$("#slide-tiendas").fadeOut(500,function(){
-			$("#slide-espacios").fadeOut(500,function(){
-				$("#slide-centros").fadeIn(500,function(){
-					
-					if( $('#slide-centros').is('.loaded') ){}else{
-
-						$('#slide-centros').camera({
-							height: '100%',
-							loader: 'bar',
-							pagination: false,
-							thumbnails: true,
-							time: 4000,
-							transPeriod: 1000
-						});
-						$('#slide-centros').addClass("loaded");
-					}
-					
-				});
-			});
-		});
-		
-	});
-
-	$('#link3').click(function(){
-		$("#galeria-titulo").html("Tiendas y Espacios Comerciales<br/>");
-		$("#galeria-titulo").append('<span style="font-size:15px;" >Espacios comerciales menores</span>');
-
-		
-		
-
-		$('#slide-centros').fadeOut(500,function(){
-			$("#slide-tiendas").fadeOut(500,function(){
-				$("#slide-espacios").fadeIn(500,function(){
-
-					if( $('#slide-espacios').is('.loaded') ){ }else{
-						$('#slide-espacios').camera({
-							height: '400px',
-							loader: 'bar',
-							pagination: false,
-							thumbnails: true,
-							time: 4000,
-							transPeriod: 1000
-						});
-						$('#slide-espacios').addClass("loaded");
-
-					}
-				});
-			});
-		});
-		
-	});
-
-
-
-
-	
 });
 </script>
+<!-- 
+<div>Galleria : <?=$this->galeria;?> | Secction : <?=$this->section;?></div>
 
-
+<?php foreach ($this->items as $item) {?>
+<div>
+					data-thumb :<?=$item->getPath_thumb(); ?>|
+					data-src: <?=$item->getPath(); ?>|
+					<?=$item->getDescripcion(); ?>
+				</div>
+<?php } ?>
+ -->
 <div class="row">
+
+
+
+
 	<div class="span3">
-	<div class="menubar">
-		<ul>
-			<li id="link1"><a href="<?=$this->url("projects"); ?>/<?=$this->action?>/gallery/tiendas">Tiendas y retailers </a></li>
-			<li id="link2"><a href="<?=$this->url("projects"); ?>/<?=$this->action?>/gallery/centros">Centros y/o agencias atención</a></li>
-			<li id="link3"><a href="<?=$this->url("projects"); ?>/<?=$this->action?>/gallery/tiendas">Espacios comerciales menores</a></li>
+		<ul class="nav nav-tabs nav-stacked">
+				<?php foreach ($this->secciones as $seccion) {?>
+				<li id="link3"><a href="<?=$seccion->getUrl();?>"><?=$seccion->getDescripcion();?></a></li>
+				<?php } ?>
+				 <li class="divider"></li>
+
 		</ul>
+		<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>"><?php echo $this->translate('Volver') ?> 
+		</a>
+		<br/>
+	</div>
 
-	</div>
-	</div>
+
 	<div class="span9">
-
-		<div id="slider">
-
-
-			<div class="camera_wrap camera_magenta_skin" id="slide-tiendas">
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/01.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/01.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">KS Depor-CAT,
-						ambientación en retailer</div>
-				</div>
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/02.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/02.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">KS Depor-Umbro,
-						ambientación en retailer</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/03.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/03.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">KS Depor-Umbro,
-						ambientación en retailer</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/04.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/04.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">KS Depor-Umbro,
-						ambientación en retailer</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/05.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/05.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">KS Depor-Umbro,
-						ambientación en retailer</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/06.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/06.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">Rincón del Pisco, tienda
-						tematica</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/07.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/07.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">Rincón del Pisco, tienda
-						temática</div>
-				</div>
-
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/08.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/08.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">Proyecto de store
-						planning</div>
-				</div>
-				<div
-					data-thumb="<?=$this->basePath('_images/_galerias/TEC/Tiendas/thumbs/09.jpg'); ?>"
-					data-src="<?=$this->basePath('_images/_galerias/TEC/Tiendas/09.jpg'); ?>">
-					<div class="camera_caption fadeFromBottom">T-Copia, implementación
-						cadena de tiendas</div>
-				</div>
+		<div class="camera_wrap camera_magenta_skin" id="main-slider">
+						<?php foreach ($this->items as $item) { ?>
+						<div data-thumb="<?=$item->getPath_thumb(); ?>"
+				data-src="<?=$item->getPath(); ?>">
+				<div class="camera_caption fadeFromBottom"><?=$item->getDescripcion(); ?></div>
 			</div>
-			
-			
-			
-					<!--#### Centros y/o Agencias de Atención  -->
-		<div class="camera_wrap camera_magenta_skin" id="slide-centros">
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/01.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/01.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Claro, centro de atención a clientes</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/02.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/02.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Claro, centro de atención a clientes</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/03.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/03.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Banco Cencosud, nueva agencia (Miraflores)</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/04.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/04.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Banco Cencosud, nueva agencia (Miraflores)</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/05.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/05.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Banco Cencosud, nueva agencia (Miraflores)</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/06.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/06.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Edelnor, centro de atención
-				</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/07.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/07.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Edelnor, centro de atención
-				</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/08.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/08.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Wong, centro de tarjetas
-				</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/09.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/09.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Wong, centro de tarjetas
-				</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/10.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/10.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Metro, centro de tarjetas
-				</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Centros/thumbs/11.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Centros/11.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Metro, centro de tarjetas
-				</div>
-			</div>
-		</div>
-		<!--#### Tiendas y Retailers  -->
-
-
-
-
-
-
-		<!--#### Tiendas y Retailers  -->
-		<div class="camera_wrap camera_magenta_skin" id="slide-espacios">
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/01.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/01.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">DirecTV, isla de
-					experiencia y exhibición</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/02.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/02.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">DirecTV, isla de
-					experiencia y exhibición</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/03.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/03.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">DirecTV, proyecto especial</div>
-			</div>
-			
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/04.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/04.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Perfumerías Unidas, isla
-					retailer Chanel</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/05.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/05.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Perfumerías Unidas, isla
-					de venta centros comerciales</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/06.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/06.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Claro, isla retailer</div>
-			</div>
-			<div data-thumb="<?=$this->basePath('_images/_galerias/TEC/Espacios/thumbs/07.jpg'); ?>"
-				 data-src="<?=$this->basePath('_images/_galerias/TEC/Espacios/07.jpg'); ?>">
-				<div class="camera_caption fadeFromBottom">Isla de venta para
-					retailer</div>
-			</div>
-		</div>
-		<!--#### Tiendas y Retailers  -->
-			
-			
-		</div>
+						<?php } ?>
+					</div>
 	</div>
+
+
+
+
 </div>
