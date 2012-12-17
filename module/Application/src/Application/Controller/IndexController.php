@@ -29,9 +29,9 @@ class IndexController extends AbstractActionController {
 		$session = new Container ( 'base' );
 		// $session->offsetSet ( 'language', "es_ES" );
 		//$session->offsetSet ( 'language', "en_US" );
-		
+		if($this->getEvent ()->getRouteMatch ()->getParam ( 'lang' )!=""){
 		$session->offsetSet ( 'language', $this->getEvent ()->getRouteMatch ()->getParam ( 'lang' ) );
-		
+		}
 		$result = new JsonModel ( array (
 				// 'language' => substr ( $_SERVER ['HTTP_ACCEPT_LANGUAGE'], 0,
 				// 2 ),

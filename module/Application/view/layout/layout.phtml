@@ -43,8 +43,7 @@ echo $this->doctype ();
 $(function() {
 
 	/*Language*/
-	$("#lang_en").click(function(){
-
+	$("#en_US").click(function(){
 		$.ajax({
 			  url: "/language/en_US",
 			  context: document.body
@@ -54,7 +53,7 @@ $(function() {
 	});
 
 
-	$("#lang_es").click(function(){
+	$("#es_ES").click(function(){
 		$.ajax({
 			  url: "/language/es_ES",
 			  context: document.body
@@ -62,6 +61,14 @@ $(function() {
 				window.location.href=window.location.href;
 			});
 	});	
+	
+	$.getJSON('/language/', function(data) {
+		$("#"+data['language']).css("font-weight","bold").css("color","#A90000").addClass("active");
+	});
+	
+	$("#id<?php echo str_replace("/", "", $this->url()); ?>").css("font-weight","bold").css("color","#A90000").addClass("active");
+	
+	
 });
 </script>
 </head>
@@ -102,13 +109,13 @@ $(function() {
 							class="icon-bar"></span> <span class="icon-bar"></span>
 						</a>
 
-						<div class="nav-collapse collapse">
+						<div class="nav-collapse collapse" >
 							<ul class="nav">
-								<li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Inicio') ?></a></li>
-								<li><a href="<?php echo $this->url('aboutus'); ?>"><?php echo $this->translate('Qui&eacute;nes Somos') ?></a></li>
+								<li><a id="id<?php echo str_replace("/", "", $this->url('home')) ?>" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Inicio') ?></a></li>
+								<li><a id="id<?php echo str_replace("/", "", $this->url('aboutus')) ?>" href="<?php echo $this->url('aboutus'); ?>"><?php echo $this->translate('Qui&eacute;nes Somos') ?></a></li>
 
 
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
+								<li class="dropdown" ><a id="id<?php echo str_replace("/", "", $this->url('projects')) ?>" href="#" class="dropdown-toggle" 
 									data-toggle="dropdown"><?php echo $this->translate('Qu&eacute; hacemos') ?> <b
 										class="caret"></b></a>
 									<ul class="dropdown-menu">
@@ -121,15 +128,15 @@ $(function() {
 							</ul>
 							<ul class="nav">
 
-								<li><a href="<?php echo $this->url("stands"); ?>"><?php echo $this->translate('Stands/Exhibits') ?></a></li>
-								<li><a href="<?php echo $this->url('clients'); ?>"><?php echo $this->translate('Clientes') ?></a></li>
-								<li><a href="<?php echo $this->url('contactus'); ?>"><?php echo $this->translate('Cont&aacute;ctanos') ?></a></li>
+								<li><a id="id<?php echo str_replace("/", "", $this->url('stands')) ?>" href="<?php echo $this->url("stands"); ?>"><?php echo $this->translate('Stands/Exhibits') ?></a></li>
+								<li><a id="id<?php echo str_replace("/", "", $this->url('clients')) ?>" href="<?php echo $this->url('clients'); ?>"><?php echo $this->translate('Clientes') ?></a></li>
+								<li><a id="id<?php echo str_replace("/", "", $this->url('contactus')) ?>" href="<?php echo $this->url('contactus'); ?>"><?php echo $this->translate('Cont&aacute;ctanos') ?></a></li>
 
 							</ul>
 							<div class="btn-group  pull-right languages"
 								style="text-align: center;">
-								<button id="lang_en" class="btn btn-inverse">English</button>
-								<button id="lang_es" class="btn btn-inverse">Español</button>
+								<button id="en_US" class="btn btn-inverse">English</button>
+								<button id="es_ES" class="btn btn-inverse">Español</button>
 							</div>
 
 						</div>
@@ -142,7 +149,7 @@ $(function() {
 		</div>
 	</div>
 
-
+	
 	<div class="container">
 
       <?php echo $this->content; ?>
