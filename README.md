@@ -2,7 +2,8 @@ Apoyo Publicitario Web
 ======================
 
 
-Para instalar (--recursive para que se instale el ZF2) 
+Para instalar (--recursive para que se instale el ZF2)
+ 
 $ git clone --recursive git://github.com/tineo/webapoyopublicitario.git
 
 Luego en la carperta del proyecto
