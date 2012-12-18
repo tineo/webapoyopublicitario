@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
-
+body{
+font-family: Trebuchet MS;
+}
 
 footer {
 	background: #C1C1C1;
@@ -30,8 +32,11 @@ footer img{
 }
 
 #slogan{
+	color: #888;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: right;
-	margin: 35px 0;
+	margin: 35px -40px 20px 0;
+	line-height:150%;
+	
 }
