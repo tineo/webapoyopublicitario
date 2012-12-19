@@ -11,8 +11,26 @@
 .camera_caption span {
 	color: #A90000;
 	font-weight: bolder;
-	font-size: 120%;
+	font-size: 110%;
 }
+
+.mini span{
+	color: #344;
+	font-size: 70%;
+	
+}
+
+.span2{
+text-align: center;
+}
+.well{
+	margin-bottom: 5px;
+	margin-left: 7px;
+}
+/*
+#mini1{
+background: #CCC;}
+*/
 </style>
 
 <script type="text/javascript">
@@ -24,9 +42,38 @@ jQuery(function(){
 		overlayer: true,
 		pagination: false,
 		navigation: false,
-		alignment: 'center'
+		alignment: 'center',
+		height: '62%',
+		onLoaded: function(){
+		//var ind = t.find('.camera_target .cameraSlide.cameranext').index();
+		},
+		onEndTransition: function() { 
+			//alert($('#camera_wrap_1').find('.camera_target .cameraSlide.cameranext').index()); 
+			$("#mini"+$('#camera_wrap_1').find('.camera_target .cameraSlide.cameranext').index()).css('background','#CCC');
+		},
+		onStartTransition: function() {
+			$(".well").css('background','rgb(245,245,245)');
+		}
 		/*height: '100%'*/
 	});
+	
+	$(".mini .span2").click(function(){
+		
+		var numero = $(this).attr("id").substr(4);
+		//alert(numero);
+		jQuery(".cameraContents").children().removeClass("cameracurrent").css("display","none");
+		jQuery(".cameraCont").children().removeClass("cameracurrent").css("display","none").css("z-index","1");
+		jQuery(".cameraContents").children().removeClass("cameranext");
+		
+		
+		jQuery(".cameraContents").children().eq(numero).addClass("cameracurrent").css("display","block");
+		jQuery(".cameraSlide_"+(numero-1)).css("display","block").css("z-index","999");
+		jQuery(".cameraSlide_"+(numero)).addClass("cameranext");
+		//jQuery('#camera_wrap_1').cameraPause();
+		//alert(".cameraSlide_"+(numero-1));
+	})
+	//alert($(".cameraContents").children().length);
+
 });
 
 
@@ -34,19 +81,18 @@ jQuery(function(){
 
 
 <div class="row">
-	<div class="span12">
+	<div class="span10">
 		<section id="slider_index">
-			<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+			<div class="camera_wrap camera_azure_skin " id="camera_wrap_1">
 				<div
 					data-thumb="<?=$this->basePath ('_images/quienes_somos/01.jpg'); ?>"
 					data-src="<?=$this->basePath ('_images/quienes_somos/01.jpg'); ?>">
 					<div
-						style="font-size: 1.2em; line-height: 1.5em;"
+						style="font-size: 0.9em; line-height: 1.5em;text-align:justify;"
 						class="camera_caption fadeFromBottom">
-						<span><?=$this->translate ( 'QUIENES SOMOS?'); ?></span><br />
+						<span><?=$this->translate ( 'QUI&Eacute;NES SOMOS?'); ?></span><br />
 					<?//=$this->translate ( 'Somos una Empresa que opera desde 1996. Lideramos la estrategia y direcci&oacute;n de proyectos corporativos para retail y espacios comerciales, as&iacute; como dise&ntilde;o y montaje de stands, desde el asesoramiento hasta su ejecuci&oacute;n.' );?>
-					<?=$this->translate ( 'Somos especialistas en el desarrollo de proyectos corporativos para retail y trademarketing, brindamos soluciones que van desde el dise&ntilde;o y construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de un cambio de imagen integral para m&uacute;ltiples puntos de venta o agencias a nivel nacional y en el exterior.
-							Nuestro equipo est&aacute; formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de marketing, todos con experiencia de campo en  retail y proyectos de trademarketing  tanto en el canal moderno como en el tradicional.');
+					<?=$this->translate ( 'Somos especialistas en el desarrollo de proyectos corporativos para retail y trademarketing; brindamos soluciones que van desde el dise&ntilde;o y construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de un cambio de imagen integral para m&uacute;ltiples puntos de venta o agencias a nivel nacional y en el exterior. Nuestro equipo est&aacute; formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de marketing, todos con experiencia de campo en  retail y proyectos de trademarketing  tanto en el canal moderno como en el tradicional.');
 					?>
 					</div>
 						
@@ -55,38 +101,64 @@ jQuery(function(){
 					data-thumb="<?=$this->basePath('_images/quienes_somos/02.jpg'); ?>"
 					data-src="<?=$this->basePath('_images/quienes_somos/02.jpg'); ?>">
 					<div 
-					style="font-size: 1.2em; line-height: 1.5em;"
+					style="font-size: 0.9em; line-height: 1.5em;text-align:justify;"
 					class="camera_caption fadeFromBottom">
-						<span><?=$this->translate ( 'NUESTRA VISION'); ?> </span><br />
-					<?=$this->translate ( 'Deseamos ser vistos como el Apoyo Publicitario de cada uno de nuestros clientes; que tengan la confianza de poder entregarnos sus proyectos m&aacute;s ambiciosos.' );?>
+						<span><?=$this->translate ( 'ALCANCE DE NUESTROS SERVICIOS'); ?> </span><br />
+					<?=$this->translate ( 'Ofrecemos la ejecuci&oacute;n de proyectos de modo integral: conceptualizaci&oacute;n y dise&ntilde;o;planificaci&oacute;n del proyecto y las operaciones relacionadas; gerenciamiento del proyecto y obras;negociaci&oacute;n de espacios y coordinaciones con las superficies comerciales;elaboraci&oacute;n de planos y memorias; suministro de mobiliario y equipamiento;coordinaci&oacute;n con subcontratistas y proveedores; presentaci&oacute;n de reportes e informes;alcance a nivel nacional e internacional' );?>
 					</div>
 				</div>
 				<div
 					data-thumb="<?=$this->basePath('_images/quienes_somos/03.jpg'); ?>"
 					data-src="<?=$this->basePath('_images/quienes_somos/03.jpg'); ?>">
 					<div 
-					style="font-size: 1.2em; line-height: 1.5em;"
+					style="font-size: 0.9em; line-height: 1.5em;text-align:justify;"
 					class="camera_caption fadeFromBottom">
-						<span><?=$this->translate ( 'POR QUE TRABAJAR CON NOSOTROS'); ?></span><br />
+						<span><?=$this->translate ( 'POR QU&Eacute; TRABAJAR CON NOSOTROS'); ?></span><br />
 					<?//=$this->translate ( ' Porque hacemos m&aacute;s f&aacute;cil tu trabajo; manejamos proyectos llave en mano, desde el desarrollo y planeamiento hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a nivel nacional y fuera del pa&iacute;s.' );?>
-					<?=$this->translate('Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a nivel nacional y fuera del pa&iacute;s.
-							Por la red de contactos en las distintas superficies comerciales y un conocimiento profundo de las requisitos particulares y  exigencias de cada de ellas');?>
+					<?=$this->translate('Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a nivel nacional y fuera del pa&iacute;s.Por la red de contactos en las distintas superficies comerciales y un conocimiento profundo de las requisitos particulares y  exigencias de cada de ellas');?>
 					</div>
 					</div>
 				<div
 					data-thumb="<?=$this->basePath('_images/quienes_somos/04.jpg'); ?>"
 					data-src="<?=$this->basePath('_images/quienes_somos/04.jpg'); ?>">
 					<div 
-					style="font-size: 1.2em; line-height: 1.5em;"
+					style="font-size: 0.9em; line-height: 1.5em;text-align:justify;"
 					class="camera_caption fadeFromBottom">
 						<span><?=$this->translate ( 'EXPERIENCIA'); ?> </span><br />
 						<?//=$this->translate ( 'Nuestra experiencia nos permite entender y desarrollar proyectos de dise&ntilde;o de tiendas y espacios comerciales; proyectos corporativos de cambio de imagen; tecnolog&iacute;a e interactividad para puntos de venta y proyectos de category en superficies comerciales.' );?>
-						<?=$this->translate ( 'Aportamos 16 a&ntilde;os de experiencia en proyectos para retail brindando soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y productivo el trabajo de nuestros clientes.
-								Nuestra experiencia permite entender a nuestro cliente y  lo que realmente necesita para desarrollar proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos corporativos de cambio de imagen&#59; tecnolog&iacute;a e interactividad para puntos de venta as&iacute; como proyectos de category en superficies comerciales.'); ?>
+						<?=$this->translate ( 'Aportamos 16 a&ntilde;os de experiencia en proyectos para retail brindando soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y productivo el trabajo de nuestros clientes.Nuestra experiencia permite entender a nuestro cliente y  lo que realmente necesita para desarrollar proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos corporativos de cambio de imagen&#59; tecnolog&iacute;a e interactividad para puntos de venta as&iacute; como proyectos de category en superficies comerciales.'); ?>
 						
 						</div>
 				</div>
 			</div>
 		</section>
 	</div>
+	
+	<div class="span2 mini" >
+	
+	<div class="row">
+		<div class="span2  well well-small pag_nav_0" id="mini1" >
+		<img src="<?=$this->basePath('_images/quienes_somos/01.jpg'); ?>" />
+		<span><?=$this->translate ( 'QUI&Eacute;NES SOMOS?'); ?>
+		</div>
+	
+	 <div class="span2  well well-small" id="mini2" >
+		<img src="<?=$this->basePath('_images/quienes_somos/02.jpg'); ?>" />
+		<span><?=$this->translate ( 'ALCANCE DE NUESTROS SERVICIOS'); ?> </span>
+	 </div>
+	 
+	
+		<div class="span2  well well-small pag_nav_1" id="mini3" >
+		<img src="<?=$this->basePath('_images/quienes_somos/03.jpg'); ?>" />
+		<span><?=$this->translate ( 'POR QU&Eacute; TRABAJAR CON NOSOTROS'); ?></span>
+		</div>
+	 
+	 <div class="span2  well well-small" id="mini4">
+		<img src="<?=$this->basePath('_images/quienes_somos/04.jpg'); ?>" />
+		<span><?=$this->translate ( 'EXPERIENCIA'); ?> </span>
+	</div>
+	</div>
+	
+	 </div>
+	
 </div>

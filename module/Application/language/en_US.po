@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apoyo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-18 13:05-0500\n"
-"PO-Revision-Date: 2012-12-18 13:06-0500\n"
+"POT-Creation-Date: 2012-12-19 12:32-0500\n"
+"PO-Revision-Date: 2012-12-19 12:32-0500\n"
 "Last-Translator: Ana Deza <adeza@apoyopublicitario.com>\n"
 "Language-Team: Makinap <tineo@tineo.mobi>\n"
 "Language: en_US\n"
@@ -15,21 +15,22 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../view/application/index/aboutus.phtml:46
-msgid "QUIENES SOMOS?"
+#: ../view/application/index/aboutus.phtml:66
+#: ../view/application/index/aboutus.phtml:114
+msgid "QUI&Eacute;NES SOMOS?"
 msgstr "WHO WE ARE"
 
-#: ../view/application/index/aboutus.phtml:48
+#: ../view/application/index/aboutus.phtml:68
 msgid ""
 "Somos especialistas en el desarrollo de proyectos corporativos para retail y "
-"trademarketing, brindamos soluciones que van desde el dise&ntilde;o y "
+"trademarketing; brindamos soluciones que van desde el dise&ntilde;o y "
 "construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de "
 "un cambio de imagen integral para m&uacute;ltiples puntos de venta o "
-"agencias a nivel nacional y en el exterior.\n"
-"\t\t\t\t\t\t\tNuestro equipo est&aacute; formado por ingenieros, "
-"arquitectos, dise&ntilde;adores, proyectistas y profesionales de marketing, "
-"todos con experiencia de campo en  retail y proyectos de trademarketing  "
-"tanto en el canal moderno como en el tradicional."
+"agencias a nivel nacional y en el exterior. Nuestro equipo est&aacute; "
+"formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y "
+"profesionales de marketing, todos con experiencia de campo en  retail y "
+"proyectos de trademarketing  tanto en el canal moderno como en el "
+"tradicional."
 msgstr ""
 "We specialize in the development of corporate projects for retail and "
 "trademarketing; we provide solutions ranging from the design and "
@@ -39,51 +40,62 @@ msgstr ""
 "and marketing professionals, all with experience in retail and field "
 "projects in the modern channel  and the traditional as well."
 
-#: ../view/application/index/aboutus.phtml:60
-msgid "NUESTRA VISION"
-msgstr "OUR VISION"
+#: ../view/application/index/aboutus.phtml:79
+#: ../view/application/index/aboutus.phtml:121
+msgid "ALCANCE DE NUESTROS SERVICIOS"
+msgstr "REACH OF OUR SERVICES"
 
-#: ../view/application/index/aboutus.phtml:61
+#: ../view/application/index/aboutus.phtml:80
 msgid ""
-"Deseamos ser vistos como el Apoyo Publicitario de cada uno de nuestros "
-"clientes; que tengan la confianza de poder entregarnos sus proyectos "
-"m&aacute;s ambiciosos."
+"Ofrecemos la ejecuci&oacute;n de proyectos de modo integral: "
+"conceptualizaci&oacute;n y dise&ntilde;o;planificaci&oacute;n del proyecto y "
+"las operaciones relacionadas; gerenciamiento del proyecto y obras;"
+"negociaci&oacute;n de espacios y coordinaciones con las superficies "
+"comerciales;elaboraci&oacute;n de planos y memorias; suministro de "
+"mobiliario y equipamiento;coordinaci&oacute;n con subcontratistas y "
+"proveedores; presentaci&oacute;n de reportes e informes;alcance a nivel "
+"nacional e internacional"
 msgstr ""
-"We want to be seen as the advertising support each of our clients with the "
-"confidence to deliver their most ambitious projects."
+"We offer the execution of integral projects: conceptualization and design; "
+"project planning and related operations; project Management and Works; "
+"negotiating spaces and coordination with commercial spaces; development of "
+"plans and reports; supply of furniture and equipment; coordination with "
+"subcontractors and suppliers; reporting and reports; achieve national and "
+"international."
 
-#: ../view/application/index/aboutus.phtml:70
-msgid "POR QUE TRABAJAR CON NOSOTROS"
+#: ../view/application/index/aboutus.phtml:89
+#: ../view/application/index/aboutus.phtml:128
+msgid "POR QU&Eacute; TRABAJAR CON NOSOTROS"
 msgstr "WHY WORK WITH US?"
 
-#: ../view/application/index/aboutus.phtml:72
+#: ../view/application/index/aboutus.phtml:91
 msgid ""
 "Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la "
 "necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a "
-"nivel nacional y fuera del pa&iacute;s.\n"
-"\t\t\t\t\t\t\tPor la red de contactos en las distintas superficies "
-"comerciales y un conocimiento profundo de las requisitos particulares y  "
-"exigencias de cada de ellas"
+"nivel nacional y fuera del pa&iacute;s.Por la red de contactos en las "
+"distintas superficies comerciales y un conocimiento profundo de las "
+"requisitos particulares y  exigencias de cada de ellas"
 msgstr ""
 "Because we our job reaches since the conceptualization and definition of the "
 "requirements to the implementation, with an operating range nationally and "
 "abroad. And because of our contact network in different stores and a "
 "thorough knowledge of the particular requirements and needs of each of them"
 
-#: ../view/application/index/aboutus.phtml:82
+#: ../view/application/index/aboutus.phtml:100
+#: ../view/application/index/aboutus.phtml:136
 msgid "EXPERIENCIA"
 msgstr "EXPERIENCE"
 
-#: ../view/application/index/aboutus.phtml:84
+#: ../view/application/index/aboutus.phtml:102
 msgid ""
 "Aportamos 16 a&ntilde;os de experiencia en proyectos para retail brindando "
 "soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y "
-"productivo el trabajo de nuestros clientes.\n"
-"\t\t\t\t\t\t\t\tNuestra experiencia permite entender a nuestro cliente y  lo "
-"que realmente necesita para desarrollar proyectos de dise&ntilde;o de "
-"tiendas y espacios comerciales&#59; proyectos corporativos de cambio de "
-"imagen&#59; tecnolog&iacute;a e interactividad para puntos de venta "
-"as&iacute; como proyectos de category en superficies comerciales."
+"productivo el trabajo de nuestros clientes.Nuestra experiencia permite "
+"entender a nuestro cliente y  lo que realmente necesita para desarrollar "
+"proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos "
+"corporativos de cambio de imagen&#59; tecnolog&iacute;a e interactividad "
+"para puntos de venta as&iacute; como proyectos de category en superficies "
+"comerciales."
 msgstr ""
 "We bring 16 years of experience in retail projects providing turnkey "
 "solutions that make it easier and productive work of our clientsOur "
@@ -322,6 +334,17 @@ msgstr "Contact us"
 #: ../view/layout/layout.phtml:162
 msgid "All rights reserved."
 msgstr ""
+
+#~ msgid "NUESTRA VISION"
+#~ msgstr "OUR VISION"
+
+#~ msgid ""
+#~ "Deseamos ser vistos como el Apoyo Publicitario de cada uno de nuestros "
+#~ "clientes; que tengan la confianza de poder entregarnos sus proyectos "
+#~ "m&aacute;s ambiciosos."
+#~ msgstr ""
+#~ "We want to be seen as the advertising support each of our clients with "
+#~ "the confidence to deliver their most ambitious projects."
 
 #~ msgid "Operaciones a nivel nacional y fuera del pa&iacute;s"
 #~ msgstr "Operating nationally and in foreign countries"
