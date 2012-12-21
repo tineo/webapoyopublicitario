@@ -2,6 +2,8 @@
 <?php
 echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/panel.css' ) );
 ?>
+
+
 <style type="text/css">
 #panel {
 }
@@ -73,4 +75,9 @@ hr{ padding: 0 0 0 0; margin:0 0 0 0;}
 		</div>
 	</div>
 </div>
-
+<script>
+ jQuery(function(){
+	$("#slogan").html("<?=$titulo ?> ");
+	
+ });
+</script>

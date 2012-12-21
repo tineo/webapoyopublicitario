@@ -89,6 +89,9 @@ class ProjectsController extends AbstractActionController {
 			$galeria = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Gallery' )->findOneBy ( array (
 					'slug' => $slug 
 			) );
+			
+			$vars["galeria_loaded"] = $galeria->getDescripcion();
+			
 			if (count ( $galeria ) > 0) {
 				
 				$g = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Gallery' )->findBy ( array (

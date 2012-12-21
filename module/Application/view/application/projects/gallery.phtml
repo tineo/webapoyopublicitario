@@ -1,23 +1,30 @@
-<link rel='stylesheet' href='/css/galeria.css' type='text/css'
-	media='all'>
+<!-- <link rel='stylesheet' href='/css/galeria.css' type='text/css'
+	media='all'> -->
 
-<link rel='stylesheet' id='camera-css' href='/css/camera.css'
-	type='text/css' media='all'>
+<? 
 
-<script type="text/javascript" src="/_scripts/jquery-1.7.2.min.js"></script>
-<script type='text/javascript' src='/js/jquery.mobile.customized.min.js'></script>
-<script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>
-<script type='text/javascript' src='/js/camera.min.js'></script>
+$this->headLink()
+->prependStylesheet ( $this->basePath ( '/css/camera.css' ) );
+
+?>
+
+<?
+$this->headScript ()
+
+
+->prependFile ( $this->basePath () . '/js/galerias.js' )
+->prependFile ( $this->basePath () . '/js/camera.min.js' )
+->prependFile ( $this->basePath () . '/js/jquery.easing.1.3.js' )
+->prependFile ( $this->basePath () . '/js/jquery.mobile.customized.min.js' )
+
+
+;	
+?>	
+
 <script type="text/javascript">
-$(function(){
-	$('#main-slider').camera({
-		height: '400px',
-		loader: 'bar',
-		pagination: false,
-		thumbnails: true,
-		time: 4000,
-		transPeriod: 1000
-	});
+jQuery(function(){
+	
+	//alert(1);
 });
 </script>
 <!-- 
@@ -53,19 +60,42 @@ $(function(){
 		<br/>
 	</div>
 
-
+	<div class="row">
 	<div class="span9">
 		<div class="camera_wrap camera_magenta_skin" id="main-slider">
-						<?php foreach ($this->items as $item) { ?>
-						<div data-thumb="<?=$item->getPath_thumb(); ?>"
-				data-src="<?=$item->getPath(); ?>">
+			<?php foreach ($this->items as $item) { ?>
+				<div data-thumb="<?=$item->getPath_thumb(); ?>"	data-src="<?=$item->getPath(); ?>">
 				<div class="camera_caption fadeFromBottom"><?=$item->getDescripcion(); ?></div>
-			</div>
-						<?php } ?>
-					</div>
+				</div>
+				<?php } ?>
+		</div>
+	</div>
 	</div>
 
-
-
-
 </div>
+
+<?php
+		switch ($this->section) {
+			case "tec" :
+				$titulo = $this->translate ( "Tiendas y Espacios Comerciales" );
+				break;
+			
+			case "pic" :
+				$titulo = $this->translate ( "Proyectos de Imagen Corporativa" );
+				break;
+			
+			case "tipv" : 
+				$titulo = $this->translate ( 'Tecnolog&iacute;a e Interactividad para Puntos de Venta' );
+				break;
+			
+			case "ptm" :
+				$titulo = $this->translate ( "Proyectos de Trade Marketing" );
+				break;
+		}
+		?>
+<script>
+ jQuery(function(){
+	$("#slogan").html("<?=$this->translate( $titulo); ?> <br/> <h4><?=$this->translate( "$this->galeria_loaded" ); ?> </h4>");
+	
+ });
+</script>
