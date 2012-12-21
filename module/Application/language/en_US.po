@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apoyo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-20 13:16-0500\n"
-"PO-Revision-Date: 2012-12-20 13:16-0500\n"
+"POT-Creation-Date: 2012-12-21 11:14-0500\n"
+"PO-Revision-Date: 2012-12-21 11:26-0500\n"
 "Last-Translator: Ana Deza <adeza@apoyopublicitario.com>\n"
 "Language-Team: Makinap <tineo@tineo.mobi>\n"
 "Language: en_US\n"
@@ -158,7 +158,43 @@ msgstr "Stores and Commercial Spaces"
 msgid "Centros y/o agencias atenci&oacute;n"
 msgstr "Customer service centers and agencies"
 
-#: ../view/application/projects/gallery.phtml:48
+#: ../view/application/projects/galeria_lista.phtml:3
+msgid "Espacios comerciales menores"
+msgstr "Stores and Commercial Spaces"
+
+#: ../view/application/projects/galeria_lista.phtml:4
+msgid "BBVA: proyecto nueva imagen"
+msgstr "BBVA: new image project"
+
+#: ../view/application/projects/galeria_lista.phtml:5
+msgid "Cambio de imagen BIF &#45; Ban Bif"
+msgstr "Makeover project BIF - Ban Bif"
+
+#: ../view/application/projects/galeria_lista.phtml:6
+msgid "Cofide: proyecto desarrollo nueva oficina"
+msgstr "Cofide: new office development project"
+
+#: ../view/application/projects/galeria_lista.phtml:7
+msgid "Interactividad para Espacios Comerciales"
+msgstr "Interactivity for Commercial Spaces"
+
+#: ../view/application/projects/galeria_lista.phtml:8
+msgid "Aplicaciones para Promociones"
+msgstr "Applications for Promotions"
+
+#: ../view/application/projects/galeria_lista.phtml:9
+msgid "Proyecto categor&iacute;a electro (SONY)"
+msgstr "Category projects: electro (SONY)"
+
+#: ../view/application/projects/galeria_lista.phtml:10
+msgid "Proyecto categor&iacute;a gourmet (Cencosud-Wong)"
+msgstr "Category projects: gourmet (Cencosud-Wong)"
+
+#: ../view/application/projects/galeria_lista.phtml:11
+msgid "Proyecto categor&iacute;a electrohogar (OSTER)"
+msgstr "Category projects:  home appliance (OSTER)"
+
+#: ../view/application/projects/gallery.phtml:51
 #: ../view/application/projects/landing.phtml:68
 msgid "Volver"
 msgstr "Return"
