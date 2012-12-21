@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apoyo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-19 12:32-0500\n"
-"PO-Revision-Date: 2012-12-19 12:32-0500\n"
+"POT-Creation-Date: 2012-12-20 13:16-0500\n"
+"PO-Revision-Date: 2012-12-20 13:16-0500\n"
 "Last-Translator: Ana Deza <adeza@apoyopublicitario.com>\n"
 "Language-Team: Makinap <tineo@tineo.mobi>\n"
 "Language: en_US\n"
@@ -15,22 +15,21 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../view/application/index/aboutus.phtml:66
-#: ../view/application/index/aboutus.phtml:114
+#: ../view/application/index/aboutus.phtml:86
+#: ../view/application/index/aboutus.phtml:135
 msgid "QUI&Eacute;NES SOMOS?"
 msgstr "WHO WE ARE"
 
-#: ../view/application/index/aboutus.phtml:68
+#: ../view/application/index/aboutus.phtml:88
 msgid ""
 "Somos especialistas en el desarrollo de proyectos corporativos para retail y "
-"trademarketing; brindamos soluciones que van desde el dise&ntilde;o y "
+"trademarketing; nuestras soluciones van desde el dise&ntilde;o y "
 "construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de "
-"un cambio de imagen integral para m&uacute;ltiples puntos de venta o "
-"agencias a nivel nacional y en el exterior. Nuestro equipo est&aacute; "
-"formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y "
-"profesionales de marketing, todos con experiencia de campo en  retail y "
-"proyectos de trademarketing  tanto en el canal moderno como en el "
-"tradicional."
+"un cambio de imagen para m&uacute;ltiples puntos de venta o agencias, a "
+"nivel nacional y en el exterior. Nuestro equipo est&aacute; formado por "
+"ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de "
+"marketing, todos con experiencia en  retail y proyectos de trademarketing en "
+"el canal moderno como en el tradicional."
 msgstr ""
 "We specialize in the development of corporate projects for retail and "
 "trademarketing; we provide solutions ranging from the design and "
@@ -40,21 +39,21 @@ msgstr ""
 "and marketing professionals, all with experience in retail and field "
 "projects in the modern channel  and the traditional as well."
 
-#: ../view/application/index/aboutus.phtml:79
-#: ../view/application/index/aboutus.phtml:121
+#: ../view/application/index/aboutus.phtml:99
+#: ../view/application/index/aboutus.phtml:140
 msgid "ALCANCE DE NUESTROS SERVICIOS"
 msgstr "REACH OF OUR SERVICES"
 
-#: ../view/application/index/aboutus.phtml:80
+#: ../view/application/index/aboutus.phtml:100
 msgid ""
 "Ofrecemos la ejecuci&oacute;n de proyectos de modo integral: "
-"conceptualizaci&oacute;n y dise&ntilde;o;planificaci&oacute;n del proyecto y "
-"las operaciones relacionadas; gerenciamiento del proyecto y obras;"
+"conceptualizaci&oacute;n y dise&ntilde;o; planificaci&oacute;n del proyecto "
+"y las operaciones relacionadas; gerencia del proyecto y obras; "
 "negociaci&oacute;n de espacios y coordinaciones con las superficies "
-"comerciales;elaboraci&oacute;n de planos y memorias; suministro de "
-"mobiliario y equipamiento;coordinaci&oacute;n con subcontratistas y "
-"proveedores; presentaci&oacute;n de reportes e informes;alcance a nivel "
-"nacional e internacional"
+"comerciales; elaboraci&oacute;n de planos y memorias; suministro de "
+"mobiliario y equipamiento; coordinaci&oacute;n con subcontratistas y "
+"proveedores; presentaci&oacute;n de reportes e informes; alcance a nivel "
+"nacional e internacional."
 msgstr ""
 "We offer the execution of integral projects: conceptualization and design; "
 "project planning and related operations; project Management and Works; "
@@ -63,39 +62,39 @@ msgstr ""
 "subcontractors and suppliers; reporting and reports; achieve national and "
 "international."
 
-#: ../view/application/index/aboutus.phtml:89
-#: ../view/application/index/aboutus.phtml:128
+#: ../view/application/index/aboutus.phtml:109
+#: ../view/application/index/aboutus.phtml:146
 msgid "POR QU&Eacute; TRABAJAR CON NOSOTROS"
 msgstr "WHY WORK WITH US?"
 
-#: ../view/application/index/aboutus.phtml:91
+#: ../view/application/index/aboutus.phtml:111
 msgid ""
 "Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la "
 "necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a "
-"nivel nacional y fuera del pa&iacute;s.Por la red de contactos en las "
-"distintas superficies comerciales y un conocimiento profundo de las "
-"requisitos particulares y  exigencias de cada de ellas"
+"nivel nacional y fuera del pa&iacute;s. Por la red de contactos en las "
+"distintas superficies comerciales y un conocimiento profundo de los "
+"requisitos particulares y exigencias de cada una de ellas."
 msgstr ""
 "Because we our job reaches since the conceptualization and definition of the "
 "requirements to the implementation, with an operating range nationally and "
 "abroad. And because of our contact network in different stores and a "
 "thorough knowledge of the particular requirements and needs of each of them"
 
-#: ../view/application/index/aboutus.phtml:100
-#: ../view/application/index/aboutus.phtml:136
+#: ../view/application/index/aboutus.phtml:120
+#: ../view/application/index/aboutus.phtml:151
 msgid "EXPERIENCIA"
 msgstr "EXPERIENCE"
 
-#: ../view/application/index/aboutus.phtml:102
+#: ../view/application/index/aboutus.phtml:122
 msgid ""
-"Aportamos 16 a&ntilde;os de experiencia en proyectos para retail brindando "
+"Aportamos 16 a&ntilde;os de experiencia en proyectos para retail, brindando "
 "soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y "
-"productivo el trabajo de nuestros clientes.Nuestra experiencia permite "
-"entender a nuestro cliente y  lo que realmente necesita para desarrollar "
-"proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos "
-"corporativos de cambio de imagen&#59; tecnolog&iacute;a e interactividad "
-"para puntos de venta as&iacute; como proyectos de category en superficies "
-"comerciales."
+"productivo el trabajo de nuestros clientes. La experiencia que tenemos nos "
+"permite entender a nuestros clientes y lo que realmente necesitan para "
+"desarrollar proyectos de dise&ntilde;o de tiendas y espacios "
+"comerciales&#59; proyectos corporativos de cambio de imagen&#59; "
+"interactividad para puntos de venta as&iacute; como proyectos de category en "
+"superficies comerciales."
 msgstr ""
 "We bring 16 years of experience in retail projects providing turnkey "
 "solutions that make it easier and productive work of our clientsOur "
@@ -105,13 +104,13 @@ msgstr ""
 "commercial areas."
 
 #: ../view/application/index/index.phtml:180
-#: ../view/application/projects/landing.phtml:33
+#: ../view/application/projects/landing.phtml:35
 #: ../view/layout/layout.phtml:122
 msgid "Tiendas y Espacios Comerciales"
 msgstr "Stores and Commercial Spaces"
 
 #: ../view/application/index/index.phtml:184
-#: ../view/application/projects/landing.phtml:38
+#: ../view/application/projects/landing.phtml:41
 #: ../view/layout/layout.phtml:123
 msgid "Proyectos de Imagen Corporativa"
 msgstr "Corporate Image Projects"
@@ -121,7 +120,7 @@ msgid "Tecnolog&iacute;a e interactividad para puntos de venta"
 msgstr "Technology and Interactivity for POS"
 
 #: ../view/application/index/index.phtml:193
-#: ../view/application/projects/landing.phtml:50
+#: ../view/application/projects/landing.phtml:53
 #: ../view/layout/layout.phtml:125
 msgid "Proyectos de Trade Marketing"
 msgstr "Trade Marketing Projects"
@@ -151,8 +150,16 @@ msgstr "Our Partners"
 msgid "contact_es.png"
 msgstr "contact_en.png"
 
+#: ../view/application/projects/galeria_lista.phtml:1
+msgid "Tiendas y retailers"
+msgstr "Stores and Commercial Spaces"
+
+#: ../view/application/projects/galeria_lista.phtml:2
+msgid "Centros y/o agencias atenci&oacute;n"
+msgstr "Customer service centers and agencies"
+
 #: ../view/application/projects/gallery.phtml:48
-#: ../view/application/projects/landing.phtml:64
+#: ../view/application/projects/landing.phtml:68
 msgid "Volver"
 msgstr "Return"
 
@@ -172,38 +179,40 @@ msgstr "TECHNOLOGY AND INTERACTIVITY FOR POS"
 msgid "PROYECTOS DE TRADE MARKETING"
 msgstr "TRADE MARKETING PROJECTS"
 
-#: ../view/application/projects/landing.phtml:34
+#: ../view/application/projects/landing.phtml:37
 msgid ""
-"Desarrollo de estrateg&iacute;as de gesti&oacute;n de tiendas (layout, store "
-"planning, visual merchandising). Proyectos llave en mano, desde el "
-"dise&ntilde;o hasta la implementaci&oacute;n de cadenas de tiendas y "
-"espacios comerciales; con alcance de operaci&oacute;n a nivel nacional."
+"Soluciones integrales (layout, store planning, visual merchandising). "
+"Proyectos llave en mano, desde el dise&ntilde;o y conceptualizaci&oacute;n "
+"de la imagen corporativa necesaria para llegar a su cliente objetivo, hasta "
+"la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con "
+"alcance de operaci&oacute;n a nivel nacional e internacional."
 msgstr ""
 "Developing management strategies shops (layout, store planning, visual "
 "merchandising). Turnkey projects, from design to implementation of chain "
-"stores and commercial spaces, with operating range nationally."
+"stores and commercial spaces, with operating range nationally and other "
+"countries."
 
-#: ../view/application/projects/landing.phtml:39
+#: ../view/application/projects/landing.phtml:43
 msgid ""
 "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y "
 "remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; "
 "como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de "
 "ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el "
 "equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;"
-"cnicas para mantener la imagen de la Empresa."
+"cnicas para mantener la imagen de la empresa."
 msgstr ""
 "Project management for corporate makeover, design and remodeling agencies "
 "and centers, as well as expansion projects nationwide. Formed by a team of "
 "engineers, architects and construction supervisors, who achieved the perfect "
 "balance between creative design and technical standards to maintain the "
-"image of the Company."
+"image of the company."
 
-#: ../view/application/projects/landing.phtml:45
+#: ../view/application/projects/landing.phtml:48
 #: ../view/layout/layout.phtml:124
 msgid "Tecnolog&iacute;a e Interactividad para Puntos de Venta"
 msgstr "Technology and Interactivity for POS"
 
-#: ../view/application/projects/landing.phtml:46
+#: ../view/application/projects/landing.phtml:49
 msgid ""
 "Combinamos experiencias l&uacutedicas e interactividad con sistemas de "
 "business intelligence q permiten una eficiente administraci&oacute;n y "
@@ -216,17 +225,18 @@ msgstr ""
 "reports that analyze customer behavior, in addition to independently manage "
 "each of the outlets within a network."
 
-#: ../view/application/projects/landing.phtml:51
+#: ../view/application/projects/landing.phtml:55
 msgid ""
-"Desarrollo estrat&eacute;gico y ejecuci&oacuten de proyectos de trade "
-"marketing para el canal; dise&ntilde;o y mejora del visual por "
-"categor&iacute;as dentro de tienda y apoyo al canal distribuidor."
+"Desarrollo estrat&eacute;gico, la negociaci&oacute;n con el canal hasta la "
+"gerencia de la ejecuci&oacute;n de los proyectos de trade marketing; "
+"dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y "
+"apoyo al canal distribuidor."
 msgstr ""
-"Strategic development and execution of trade marketing for the channel, and "
-"improved visual design by categories within the channel store and dealer "
-"support."
+"Strategic development, negotiation with the channel to the management of the "
+"project implementation of trade marketing, design and visual improvement "
+"categories within the channel store and dealer support."
 
-#: ../view/application/projects/landing.phtml:61
+#: ../view/application/projects/landing.phtml:65
 msgid "Ver Proyectos"
 msgstr "See projects"
 

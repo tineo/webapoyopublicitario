@@ -39,8 +39,11 @@ $(function(){
 	<div class="span3">
 		<ul class="nav nav-tabs nav-stacked">
 				<?php foreach ($this->secciones as $seccion) {?>
-				<li id="link3"><a href="<?=$seccion->getUrl();?>"><?=$seccion->getDescripcion();?></a></li>
+				<li id="link3"><a href="<?=$seccion->getUrl();?>"><?=$this->translate( htmlspecialchars( $seccion->getDescripcion() , ENT_QUOTES) );?> </a></li>
+				
 				<?php } ?>
+				
+				
 				 <li class="divider"></li>
 
 		</ul>
