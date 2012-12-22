@@ -8,12 +8,14 @@
 <script type="text/javascript">
 $(function() {
 $(".new-gallery").click(function(){
-	alert($(this).attr("section"));
+	alert("backend/item/add/gallery/"+$(this).attr("section"));
+	window.location = "backend/index/add/gallery/"+$(this).attr("section");
 	
 });
 
 $(".new-item").click(function(){
-	alert($(this).attr("gallery"));
+	alert("backend/item/add/item/"+$(this).attr("gallery"));
+	window.location =  "backend/index/add/item/"+$(this).attr("gallery");
 });
 });
 </script>
