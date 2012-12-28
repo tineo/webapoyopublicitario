@@ -54,7 +54,7 @@ class IndexController extends AbstractActionController {
       echo "Creating thumbnail for {$fname} <br />";
 
       // load image and get image size
-      $img = imagecreatefromjpeg( "{$pathToImages}{$fname}" );
+      $img = imagecreatefromjpeg( "{$pathToImages}/{$fname}" );
       $width = imagesx( $img );
       $height = imagesy( $img );
 
@@ -69,7 +69,7 @@ class IndexController extends AbstractActionController {
       imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
 
       // save thumbnail into a file
-      imagejpeg( $tmp_img, "{$pathToThumbs}{$fname}" );
+      imagejpeg( $tmp_img, "{$pathToThumbs}/{$fname}" );
      
     }
   }
