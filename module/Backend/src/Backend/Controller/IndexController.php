@@ -66,7 +66,7 @@ class IndexController extends AbstractActionController {
       $tmp_img = imagecreatetruecolor( $new_width, $new_height );
 
       // copy and resize old image into new image
-      imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+      imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, 100, 100, $width, $height );
 
       // save thumbnail into a file
       imagejpeg( $tmp_img, "{$pathToThumbs}/{$fname}" );
@@ -197,7 +197,7 @@ class IndexController extends AbstractActionController {
 					$adapter->setDestination(getcwd() . $g->getPath());
 					chmod(getcwd() . $g->getPath() .$File['name'], 0777);
 					
-					$this->createThumbs(getcwd() . $g->getPath(), getcwd() . $g->getPath()."/thumbs",100);
+					
 					
 					
 					/*if (!copy(getcwd() . $g->getPath()."/".$File['name'], getcwd() . $g->getPath()."/thumbs"."/".$File['name'])) {
@@ -238,6 +238,8 @@ class IndexController extends AbstractActionController {
 						//	$profile->exchangeArray($form->getData());
 						//	echo 'Profile Name '.$profile->profilename.' upload '.$profile->fileupload;
 					}
+					
+					$this->createThumbs(getcwd() . $g->getPath(), getcwd() . $g->getPath()."/thumbs",100);
 
 				}
 				/******/
