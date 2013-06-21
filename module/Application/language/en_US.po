@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apoyo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-21 11:14-0500\n"
-"PO-Revision-Date: 2012-12-21 11:26-0500\n"
-"Last-Translator: Ana Deza <adeza@apoyopublicitario.com>\n"
+"POT-Creation-Date: 2013-05-29 18:10-0500\n"
+"PO-Revision-Date: 2013-05-29 18:13-0500\n"
+"Last-Translator: Cesar Gutierrez Tineo <cesar@tineo.mobi>\n"
 "Language-Team: Makinap <tineo@tineo.mobi>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
@@ -14,139 +14,220 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../..\n"
 
-#: ../view/application/index/aboutus.phtml:86
-#: ../view/application/index/aboutus.phtml:135
-msgid "QUI&Eacute;NES SOMOS?"
-msgstr "WHO WE ARE"
-
-#: ../view/application/index/aboutus.phtml:88
-msgid ""
-"Somos especialistas en el desarrollo de proyectos corporativos para retail y "
-"trademarketing; nuestras soluciones van desde el dise&ntilde;o y "
-"construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de "
-"un cambio de imagen para m&uacute;ltiples puntos de venta o agencias, a "
-"nivel nacional y en el exterior. Nuestro equipo est&aacute; formado por "
-"ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de "
-"marketing, todos con experiencia en  retail y proyectos de trademarketing en "
-"el canal moderno como en el tradicional."
+#: ../view/error/404.phtml:1
+msgid "A 404 error occurred"
 msgstr ""
-"We specialize in the development of corporate projects for retail and "
-"trademarketing; we provide solutions ranging from the design and "
-"construction of a store or retail space to a complete makeover management  "
-"for multiple points of sale or agencies, with a national cover and other "
-"countries.Our team consists of engineers, architects, designers, planners "
-"and marketing professionals, all with experience in retail and field "
-"projects in the modern channel  and the traditional as well."
 
-#: ../view/application/index/aboutus.phtml:99
-#: ../view/application/index/aboutus.phtml:140
-msgid "ALCANCE DE NUESTROS SERVICIOS"
-msgstr "REACH OF OUR SERVICES"
-
-#: ../view/application/index/aboutus.phtml:100
-msgid ""
-"Ofrecemos la ejecuci&oacute;n de proyectos de modo integral: "
-"conceptualizaci&oacute;n y dise&ntilde;o; planificaci&oacute;n del proyecto "
-"y las operaciones relacionadas; gerencia del proyecto y obras; "
-"negociaci&oacute;n de espacios y coordinaciones con las superficies "
-"comerciales; elaboraci&oacute;n de planos y memorias; suministro de "
-"mobiliario y equipamiento; coordinaci&oacute;n con subcontratistas y "
-"proveedores; presentaci&oacute;n de reportes e informes; alcance a nivel "
-"nacional e internacional."
+#: ../view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
 msgstr ""
-"We offer the execution of integral projects: conceptualization and design; "
-"project planning and related operations; project Management and Works; "
-"negotiating spaces and coordination with commercial spaces; development of "
-"plans and reports; supply of furniture and equipment; coordination with "
-"subcontractors and suppliers; reporting and reports; achieve national and "
-"international."
 
-#: ../view/application/index/aboutus.phtml:109
-#: ../view/application/index/aboutus.phtml:146
-msgid "POR QU&Eacute; TRABAJAR CON NOSOTROS"
-msgstr "WHY WORK WITH US?"
-
-#: ../view/application/index/aboutus.phtml:111
-msgid ""
-"Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la "
-"necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a "
-"nivel nacional y fuera del pa&iacute;s. Por la red de contactos en las "
-"distintas superficies comerciales y un conocimiento profundo de los "
-"requisitos particulares y exigencias de cada una de ellas."
+#: ../view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
 msgstr ""
-"Because we our job reaches since the conceptualization and definition of the "
-"requirements to the implementation, with an operating range nationally and "
-"abroad. And because of our contact network in different stores and a "
-"thorough knowledge of the particular requirements and needs of each of them"
 
-#: ../view/application/index/aboutus.phtml:120
-#: ../view/application/index/aboutus.phtml:151
-msgid "EXPERIENCIA"
-msgstr "EXPERIENCE"
-
-#: ../view/application/index/aboutus.phtml:122
-msgid ""
-"Aportamos 16 a&ntilde;os de experiencia en proyectos para retail, brindando "
-"soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y "
-"productivo el trabajo de nuestros clientes. La experiencia que tenemos nos "
-"permite entender a nuestros clientes y lo que realmente necesitan para "
-"desarrollar proyectos de dise&ntilde;o de tiendas y espacios "
-"comerciales&#59; proyectos corporativos de cambio de imagen&#59; "
-"interactividad para puntos de venta as&iacute; como proyectos de category en "
-"superficies comerciales."
+#: ../view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
 msgstr ""
-"We bring 16 years of experience in retail projects providing turnkey "
-"solutions that make it easier and productive work of our clientsOur "
-"experience allows us to understand our customers and what they really need "
-"to develop design projects shops and commercial spaces, corporate projects "
-"makeover, technology and interactivity for POS as well as projects in "
-"commercial areas."
 
-#: ../view/application/index/index.phtml:180
-#: ../view/application/projects/landing.phtml:35
-#: ../view/layout/layout.phtml:122
-msgid "Tiendas y Espacios Comerciales"
-msgstr "Stores and Commercial Spaces"
+#: ../view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
 
-#: ../view/application/index/index.phtml:184
-#: ../view/application/projects/landing.phtml:41
-#: ../view/layout/layout.phtml:123
-msgid "Proyectos de Imagen Corporativa"
-msgstr "Corporate Image Projects"
+#: ../view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
 
-#: ../view/application/index/index.phtml:188
-msgid "Tecnolog&iacute;a e interactividad para puntos de venta"
-msgstr "Technology and Interactivity for POS"
+#: ../view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
 
-#: ../view/application/index/index.phtml:193
-#: ../view/application/projects/landing.phtml:53
-#: ../view/layout/layout.phtml:125
-msgid "Proyectos de Trade Marketing"
-msgstr "Trade Marketing Projects"
+#: ../view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
 
-#: ../view/application/index/index.phtml:198
-#: ../view/application/stands/index.phtml:66 ../view/layout/layout.phtml:131
+#: ../view/error/404.phtml:51
+msgid "Exception"
+msgstr ""
+
+#: ../view/error/404.phtml:55
+#: ../view/error/index.phtml:19
+#: ../view/error/index.phtml:43
+msgid "Stack trace"
+msgstr ""
+
+#: ../view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: ../view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: ../view/error/index.phtml:11
+#: ../view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: ../view/error/index.phtml:15
+#: ../view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: ../view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: ../view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: ../view/application/stands-orig/index.phtml:66
+#: ../view/application/stands-orig/index.phtml:519
+#: ../view/application/stands/index.phtml:64
 msgid "Stands/Exhibits"
 msgstr "Exhibits"
 
-#: ../view/application/index/index.phtml:234
+#: ../view/application/stands-orig/index.phtml:103
+#: ../view/application/stands/index.phtml:65
+msgid "Dise&ntilde;o y producci&oacute;n de stands y exhibiciones corporativas para ferias comerciales. Soluciones integrales en cualquier parte del mundo; contamos con operaciones en Asia, Europa y Sudam&eacute;rica gracias a nuestras afiliaciones internacionales y partnerships que  hemos construido a lo largo de nuestros m&aacute;s de diez a&ntilde;os de experiencia en el rubro."
+msgstr "Design and production of corporate booths and exhibits for trade shows. Comprehensive solutions anywhere in the world; we have operations in Asia, Europe and South America through our international affiliations and partnerships we have built over our more than ten years of experience in the field."
+
+#: ../view/application/stands/membresias.phtml:14
+msgid "Membres&iacute;as"
+msgstr "Memberships"
+
+#: ../view/application/stands/membresias.phtml:15
+msgid "Ser miembros de estas asociaciones, nos acredita y obliga como Empresa a cumplir con los m&aacute;s altos est&aacute;ndares internacionales de calidad y de servicios."
+msgstr "Be member of these associations,  gives us the accreditation and forces us as a company to meet the highest international standards of quality and services:"
+
+#: ../view/application/stands/membresias.phtml:21
+msgid "La EDPA es The Exhibit Designers and Producers Association (EDPA), fundada en 1954, es una asociaci&oacute;n reconocida internacionalmente con m&aacute;s de 300 miembros corporativos de 18 pa&iacute;ses que participan en el dise&ntilde;o, fabricaci&oacute;n, transporte, instalaci&oacute;n y servicio de stands y exhibiciones para ferias y exposiciones."
+msgstr "The EDPA is The Exhibit Designers and Producers Association (EDPA), founded in 1954, is an internationally recognized association with over 300 corporate members from 18 countries participating in the design, manufacture, transport, installation and servicing of exhibits  for trade shows and exhibitions."
+
+#: ../view/application/stands/membresias.phtml:27
+msgid "IFES es The International Federation of Exhibition and Event services.  La federaci&oacute;n est&aacute; activa desde 1985 y desde entonces ayuda a sus miembros a tener un mejor servicio con sus clientes que participan en ferias y exhibiciones a nivel internacional."
+msgstr "IFES is the International Federation of Exhibition and Event Services. The federation is active since 1985 and since then helps its members to have a better service to their customers who participate in fairs and exhibitions worldwide.\t"
+
+#: ../view/application/stands/membresias.phtml:33
+msgid "La Asociaci&oacute;n de Ferias del Per&uacute;, \"AFEP\", agrupa a los Organizadores de Ferias Nacionales e Internacionales que se desarrollan en el Per&uacute;, autorizadas por el Ministerio de Comercio Exterior y Turismo (MINCETUR). Fundada en el 2009 se crea con el objeto de representar, coordinar, defender y fomentar las actividades feriales de sus asociados."
+msgstr "The Asociación de Ferias del Perú, \"AFEP\", gathers the organizers national and international fairs that take place in Peru, authorized by the Ministry of Foreign Trade and Tourism (MINCETUR). Founded in 2009 in order to represent, coordinate, defend and promote the exhibition activities of its associates. "
+
+#: ../view/application/stands/index.phtml:68
+msgid "Ver Proyectos"
+msgstr "See projects"
+
+#: ../view/application/stands/index.phtml:84
+#: ../view/application/stands/proyectos.phtml:90
+#, fuzzy
+msgid "Stands / Exhibits"
+msgstr "Exhibits"
+
+#: ../view/application/stands/proveedores.phtml:14
+msgid "Proveedores Oficiales"
+msgstr "Official Suppliers"
+
+#: ../view/application/stands/proveedores.phtml:15
+msgid "Gracias a nuestros est&aacute;ndares de calidad y servicio, y a nuestra experiencia en el dise&ntilde;o y producci&oacute;n de stands para ferias, hemos calificado como proveedores oficiales para:"
+msgstr "Because to our  standards of quality and service, and our  experience in the design and production of exhibits for trade shows, we qualified as official suppliers:"
+
+#: ../view/application/stands/proveedores.phtml:21
+msgid "Despu&eacute;s de una rigurosa selecci&oacute;n hemos calificado como &uacute;nico proveedor oficial de stands con homologaci&oacute;n internacional para Extemin 2013.  Esta feria congrega a los principales proveedores de la miner&iacute;a mundial. M&aacute;s de mil empresas dan a conocer sus productos y novedades en equipos y servicios, as&iacute; como los avances tecnol&oacute;gicos de la industria minera y otras actividades afines."
+msgstr "After a rigorous selection we have qualified as the only official supplier of stands with international approval for Extemin 2013.  Thos trade show, gathers top global mining suppliers. More than a thousand companies unveil their products and innovations in equipment and services, as well as the technological advances of the mining industry and other related activities."
+
+#: ../view/application/stands/proveedores.phtml:27
+msgid "Es la feria internacional de alimentos, bebidas, maquinaria, equipos, insumos, envases y embalajes, servicios, restaurantes y gastronom&iacute;a m&aacute;s grande de la regi&oacute;n, la cual se constituye como el punto de encuentro internacional de empresas exportadoras y compradores de los cinco continentes."
+msgstr "Is the international fair of food, beverages, machinery, equipment, supplies, packaging, services, restaurants and gastronomy of the region's largest, which was established as a meeting point for international exporters and buyers from five continents ."
+
+#: ../view/application/index/aboutus.phtml:196
+#: ../view/application/index/aboutus.phtml:199
+msgid "QUI&Eacute;NES SOMOS?"
+msgstr "WHO WE ARE"
+
+#: ../view/application/index/aboutus.phtml:200
+msgid "Somos especialistas en el desarrollo de proyectos corporativos para retail y trademarketing; nuestras soluciones van desde el dise&ntilde;o y construcci&oacute;n de una tienda o espacio comercial hasta la gerencia de un cambio de imagen para m&uacute;ltiples puntos de venta o agencias a nivel nacional y en el exterior. Nuestro equipo est&aacute; formado por ingenieros, arquitectos, dise&ntilde;adores, proyectistas y profesionales de marketing, con experiencia en retail y proyectos de trademarketing en el canal moderno y tradicional."
+msgstr "We specialize in the development of corporate projects for retail and trademarketing; we provide solutions ranging from the design and construction of a store or retail space to a complete makeover management  for multiple points of sale or agencies, with a national cover and other countries.Our team consists of engineers, architects, designers, planners and marketing professionals, all with experience in retail and field projects in the modern channel  and the traditional as well."
+
+#: ../view/application/index/aboutus.phtml:205
+#: ../view/application/index/aboutus.phtml:208
+msgid "NUESTROS SERVICIOS"
+msgstr "OUR SERVICES"
+
+#: ../view/application/index/aboutus.phtml:209
+msgid "Ejecuci&oacute;n integral de proyectos: conceptualizaci&oacute;n y dise&ntilde;o; planificaci&oacute;n del proyecto y operaciones relacionadas; gerencia del proyecto y obras; negociaci&oacute;n de espacios y coordinaci&oacute;n con las superficies comerciales; elaboraci&oacute;n de planos y memorias; suministro de mobiliario y equipamiento; coordinaci&oacute;n con subcontratistas y proveedores; presentaci&oacute;n de reportes e informes; alcance a nivel nacional e internacional."
+msgstr "We offer the execution of integral projects: conceptualization and design; project planning and related operations; project Management and Works; negotiating spaces and coordination with commercial spaces; development of plans and reports; supply of furniture and equipment; coordination with subcontractors and suppliers; reporting and reports; achieve national and international."
+
+#: ../view/application/index/aboutus.phtml:216
+msgid "POR QU&Eacute; NOSOTROS?"
+msgstr "WHY US?"
+
+#: ../view/application/index/aboutus.phtml:219
+msgid "POR QU&Eacute; TRABAJAR CON NOSOTROS"
+msgstr "WHY WORK WITH US?"
+
+#: ../view/application/index/aboutus.phtml:220
+msgid "Porque estamos desde la conceptualizaci&oacute;n y definici&oacute;n de la necesidad hasta la implementaci&oacute;n, con alcance de operaci&oacute;n a nivel nacional y fuera del pa&iacute;s. Por la red de contactos en las distintas superficies comerciales y un conocimiento profundo de los requisitos particulares y exigencias de cada una de ellas."
+msgstr "Because we our job reaches since the conceptualization and definition of the requirements to the implementation, with an operating range nationally and abroad. And because of our contact network in different stores and a thorough knowledge of the particular requirements and needs of each of them"
+
+#: ../view/application/index/aboutus.phtml:227
+msgid "NUESTRA EXPERIENCIA"
+msgstr "EXPERIENCE"
+
+#: ../view/application/index/aboutus.phtml:230
+msgid "EXPERIENCIA"
+msgstr "EXPERIENCE"
+
+#: ../view/application/index/aboutus.phtml:231
+msgid "Aportamos 16 a&ntilde;os de experiencia en proyectos para retail, brindando soluciones integrales llave en mano que hace m&aacute;s f&aacute;cil y productivo el trabajo de nuestros clientes. La experiencia que tenemos nos permite entender a nuestros clientes y lo que realmente necesitan para desarrollar proyectos de dise&ntilde;o de tiendas y espacios comerciales&#59; proyectos corporativos de cambio de imagen&#59; interactividad para puntos de venta as&iacute; como proyectos de category en superficies comerciales."
+msgstr "We bring 16 years of experience in retail projects providing turnkey solutions that make it easier and productive work of our clientsOur experience allows us to understand our customers and what they really need to develop design projects shops and commercial spaces, corporate projects makeover, technology and interactivity for POS as well as projects in commercial areas."
+
+#: ../view/application/index/index.phtml:182
+#: ../view/application/projects/landing.phtml:37
+#: ../view/layout/layout.phtml:124
+msgid "Dise&ntilde;o de Tiendas y Espacios Comerciales"
+msgstr "Design of Stores and Commercial Spaces"
+
+#: ../view/application/index/index.phtml:186
+#: ../view/application/projects/index.phtml:54
+#: ../view/application/projects/gallery.phtml:84
+#: ../view/application/projects/landing.phtml:43
+#: ../view/layout/layout.phtml:125
+msgid "Proyectos de Imagen Corporativa"
+msgstr "Corporate Image Projects"
+
+#: ../view/application/index/index.phtml:190
+#, fuzzy
+msgid "Tecnolog&iacute;a e interactividad para espacios comerciales"
+msgstr "Technology and Interactivity for POS"
+
+#: ../view/application/index/index.phtml:195
+#: ../view/application/projects/index.phtml:60
+#: ../view/application/projects/gallery.phtml:92
+#: ../view/application/projects/landing.phtml:55
+#: ../view/layout/layout.phtml:127
+msgid "Proyectos de Trade Marketing"
+msgstr "Trade Marketing Projects"
+
+#: ../view/application/index/index.phtml:236
 msgid "Cont&aacute;ctanos tambi&eacute;n por Facebook"
 msgstr "Contact us also for facebook"
 
-#: ../view/application/index/index.phtml:248
+#: ../view/application/index/index.phtml:250
 msgid "Noticias Retail"
 msgstr "Retail News"
 
-#: ../view/application/index/index.phtml:263
+#: ../view/application/index/index.phtml:265
 msgid "Operaciones Globales"
 msgstr "Global Operations"
 
-#: ../view/application/index/index.phtml:285
+#: ../view/application/index/index.phtml:291
 msgid "Nuestros Socios"
 msgstr "Our Partners"
 
-#: ../view/application/index/index.phtml:292
+#: ../view/application/index/index.phtml:298
 msgid "contact_es.png"
 msgstr "contact_en.png"
 
@@ -194,192 +275,105 @@ msgstr "Category projects: gourmet (Cencosud-Wong)"
 msgid "Proyecto categor&iacute;a electrohogar (OSTER)"
 msgstr "Category projects:  home appliance (OSTER)"
 
-#: ../view/application/projects/gallery.phtml:51
-#: ../view/application/projects/landing.phtml:68
+#: ../view/application/projects/index.phtml:51
+#, fuzzy
+msgid "Dise&ntilde;o Tiendas y Espacios Comerciales"
+msgstr "Design of Stores and Commercial Spaces"
+
+#: ../view/application/projects/index.phtml:57
+#, fuzzy
+msgid "Tecnolog&iacute;a e Interactividad "
+msgstr "Technology and Interactivity for POS"
+
+#: ../view/application/projects/gallery.phtml:58
 msgid "Volver"
 msgstr "Return"
 
-#: ../view/application/projects/index.phtml:42
-msgid "TIENDAS Y ESPACIOS COMERCIALES"
-msgstr "STORES AND COMMERCIAL SPACES"
+#: ../view/application/projects/gallery.phtml:80
+msgid "Tiendas y Espacios Comerciales"
+msgstr "Stores and Commercial Spaces"
 
-#: ../view/application/projects/index.phtml:46
-msgid "PROYECTOS DE IMAGEN CORPOTARIVA"
-msgstr "CORPORATE IMAGE PROJECTS"
-
-#: ../view/application/projects/index.phtml:51
-msgid "TECNOLOG&Iacute;A E INTERACTIVIDAD PARA PUNTOS DE VENTA"
-msgstr "TECHNOLOGY AND INTERACTIVITY FOR POS"
-
-#: ../view/application/projects/index.phtml:56
-msgid "PROYECTOS DE TRADE MARKETING"
-msgstr "TRADE MARKETING PROJECTS"
-
-#: ../view/application/projects/landing.phtml:37
-msgid ""
-"Soluciones integrales (layout, store planning, visual merchandising). "
-"Proyectos llave en mano, desde el dise&ntilde;o y conceptualizaci&oacute;n "
-"de la imagen corporativa necesaria para llegar a su cliente objetivo, hasta "
-"la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con "
-"alcance de operaci&oacute;n a nivel nacional e internacional."
-msgstr ""
-"Developing management strategies shops (layout, store planning, visual "
-"merchandising). Turnkey projects, from design to implementation of chain "
-"stores and commercial spaces, with operating range nationally and other "
-"countries."
-
-#: ../view/application/projects/landing.phtml:43
-msgid ""
-"Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y "
-"remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; "
-"como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de "
-"ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el "
-"equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;"
-"cnicas para mantener la imagen de la empresa."
-msgstr ""
-"Project management for corporate makeover, design and remodeling agencies "
-"and centers, as well as expansion projects nationwide. Formed by a team of "
-"engineers, architects and construction supervisors, who achieved the perfect "
-"balance between creative design and technical standards to maintain the "
-"image of the company."
-
-#: ../view/application/projects/landing.phtml:48
-#: ../view/layout/layout.phtml:124
+#: ../view/application/projects/gallery.phtml:88
+#: ../view/application/projects/landing.phtml:50
+#: ../view/layout/layout.phtml:126
 msgid "Tecnolog&iacute;a e Interactividad para Puntos de Venta"
 msgstr "Technology and Interactivity for POS"
 
-#: ../view/application/projects/landing.phtml:49
-msgid ""
-"Combinamos experiencias l&uacutedicas e interactividad con sistemas de "
-"business intelligence q permiten una eficiente administraci&oacute;n y "
-"control de premios, o acciones con reportes que permiten analizar "
-"comportamiento de clientes, adem&aacute;s de gestionar de manera "
-"independiente cada uno de los puntos de venta dentro de una red."
-msgstr ""
-"Combine entertaining and interactive experiences with business intelligence "
-"systems q allow efficient management and control of awards, or actions with "
-"reports that analyze customer behavior, in addition to independently manage "
-"each of the outlets within a network."
+#: ../view/application/projects/landing.phtml:39
+msgid " Soluciones integrales (store planning, visual merchandising) Proyectos llave en mano que van desde el dise&ntilde;o de la imagen corporativa hasta la construcci&oacute;n. Mobiliario, equipamiento y ambientes &rdquo;mundos&rdquo; para tiendas por departamentos, agencias de atenci&oacute;n y ventas."
+msgstr " Integral solutions (layout, store planning, visual merchandising). Turnkey projects from design to corporate image building, furnishing and equipping of chain stores and commercial spaces."
 
-#: ../view/application/projects/landing.phtml:55
-msgid ""
-"Desarrollo estrat&eacute;gico, la negociaci&oacute;n con el canal hasta la "
-"gerencia de la ejecuci&oacute;n de los proyectos de trade marketing; "
-"dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y "
-"apoyo al canal distribuidor."
-msgstr ""
-"Strategic development, negotiation with the channel to the management of the "
-"project implementation of trade marketing, design and visual improvement "
-"categories within the channel store and dealer support."
+#: ../view/application/projects/landing.phtml:45
+msgid " Gerencia integral de proyectos para cambio de imagen: dise&ntilde;o y adaptaci&oacute;n de la arquitectura a la nueva estructura de operaciones  formato comercial. Ejecutamos la remodelaci&oacute;n de agencias, centros de atenci&oacute;n y puntos de venta a nivel nacional, interviniendo en las obras de infraestructura, mobiliario, equipamiento, se&ntilde;alizaci&oacute;n, etc."
+msgstr " Project Management for corporate makeover: design and adaptation of architecture to the new structure and format of commercial operations, and the implementation of the redevelopment agencies, call centers and retail outlets nationwide."
 
-#: ../view/application/projects/landing.phtml:65
-msgid "Ver Proyectos"
-msgstr "See projects"
+#: ../view/application/projects/landing.phtml:51
+msgid " Nuestras alianzas globales nos permiten presentar propuestas para actualizar e innovar espacios comerciales con las &uacute;ltimas tendencias de innovaci&oacute;n y tecnolog&iacute;a del momento. Combinamos experiencias l&uacute;dicas e interactividad con sistemas de business intelligence que permiten generar experiencias o informaci&oacute;n con acciones y reportes que permiten analizar el comportamiento de clientes, adem&aacute;s de gestionar de manera independiente cada punto de venta de una red."
+msgstr " Combine entertaining and interactive experiences with business intelligence systems q allow efficient management and control of awards, or actions with reports that analyze customer behavior, in addition to independently manage each of the outlets within a network."
 
-#: ../view/application/stands/index.phtml:103
-msgid ""
-"Soluciones de imagen corporativa y presencia comercial en ferias y eventos; "
-"brindamos soluciones integrales en arquitectura y marketing ferial. "
-"Cobertura operativa en Europa, Asia y Sudamerica."
-msgstr ""
-"Corporate image solutions and commercial presence in fairs and events; we "
-"offer solutions in architecture and exhibition marketing. Operational "
-"coverage in Europe, Asia and Suadamérica."
+#: ../view/application/projects/landing.phtml:57
+msgid " Desarrollo estrat&eacute;gico y operativo para dar soporte y mejorar los puntos de atenci&oacute;n y exhibici&oacute;n o venta de sus distribuidores y partners comerciales, desde la negociaci&oacute;n de ubicaciones con el canal hasta la gerencia de la ejecuci&oacute;n de los proyectos de trade marketing. <h4>Proyectos de Category: </h4>An&aacute;lisis, dise&ntilde;o y mejora de exhibiciones por categor&iacute;as dentro de tienda."
+msgstr " Strategic development, negotiation with the channel to the management of the project implementation of trade marketing, design and visual improvement categories within the channel store and dealer support."
 
-#: ../view/error/404.phtml:1
-msgid "A 404 error occurred"
-msgstr ""
-
-#: ../view/error/404.phtml:10
-msgid "The requested controller was unable to dispatch the request."
-msgstr ""
-
-#: ../view/error/404.phtml:13
-msgid ""
-"The requested controller could not be mapped to an existing controller class."
-msgstr ""
-
-#: ../view/error/404.phtml:16
-msgid "The requested controller was not dispatchable."
-msgstr ""
-
-#: ../view/error/404.phtml:19
-msgid "The requested URL could not be matched by routing."
-msgstr ""
-
-#: ../view/error/404.phtml:22
-msgid "We cannot determine at this time why a 404 was generated."
-msgstr ""
-
-#: ../view/error/404.phtml:34
-msgid "Controller"
-msgstr ""
-
-#: ../view/error/404.phtml:41
-#, php-format
-msgid "resolves to %s"
-msgstr ""
-
-#: ../view/error/404.phtml:51
-msgid "Exception"
-msgstr ""
-
-#: ../view/error/404.phtml:55 ../view/error/index.phtml:19
-#: ../view/error/index.phtml:43
-msgid "Stack trace"
-msgstr ""
-
-#: ../view/error/index.phtml:1
-msgid "An error occurred"
-msgstr ""
-
-#: ../view/error/index.phtml:8
-msgid "Additional information"
-msgstr ""
-
-#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
-msgid "File"
-msgstr ""
-
-#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
-msgid "Message"
-msgstr ""
-
-#: ../view/error/index.phtml:29
-msgid "Previous exceptions"
-msgstr ""
-
-#: ../view/error/index.phtml:58
-msgid "No Exception available"
-msgstr ""
-
-#: ../view/layout/layout.phtml:89
-msgid "Proyectos Corporativos para Retail<br/> y Espacios Comerciales"
+#: ../view/layout/layout.phtml:91
+#, fuzzy
+msgid "Apoyo Publicitario: Proyectos Corporativos<br/> para Retail y Espacios Comerciales"
 msgstr "Retail Corporate Projects<br/> and Commercial Spaces"
 
-#: ../view/layout/layout.phtml:114
+#: ../view/layout/layout.phtml:116
 msgid "Inicio"
 msgstr "Home"
 
-#: ../view/layout/layout.phtml:115
+#: ../view/layout/layout.phtml:117
 msgid "Qui&eacute;nes Somos"
 msgstr "Who we are"
 
-#: ../view/layout/layout.phtml:119
+#: ../view/layout/layout.phtml:121
 msgid "Qu&eacute; hacemos"
 msgstr "What we do"
 
-#: ../view/layout/layout.phtml:132
+#: ../view/layout/layout.phtml:134
 msgid "Clientes"
 msgstr "Clients"
 
-#: ../view/layout/layout.phtml:133
+#: ../view/layout/layout.phtml:135
 msgid "Cont&aacute;ctanos"
 msgstr "Contact us"
 
-#: ../view/layout/layout.phtml:162
-msgid "All rights reserved."
-msgstr ""
+#~ msgid "DISE&Ntilde;O TIENDAS Y ESPACIOS COMERCIALES"
+#~ msgstr "DESIGN OF STORES AND COMMERCIAL SPACES"
+
+#~ msgid "PROYECTOS DE IMAGEN CORPORATIVA"
+#~ msgstr " CORPORATE IMAGE PROJECTS"
+
+#~ msgid "TECNOLOG&Iacute;A E INTERACTIVIDAD PARA ESPACIOS COMERCIALES"
+#~ msgstr " TECHNOLOGY AND INTERACTIVITY<br/> FOR POS"
+
+#~ msgid "PROYECTOS DE TRADE MARKETING"
+#~ msgstr "TRADE MARKETING PROJECTS"
+
+#~ msgid ""
+#~ "Soluciones de imagen corporativa y presencia comercial en ferias y "
+#~ "eventos; brindamos soluciones integrales en arquitectura y marketing "
+#~ "ferial. Cobertura operativa en Europa, Asia y Sudamerica."
+#~ msgstr ""
+#~ "Corporate image solutions and commercial presence in fairs and events; we "
+#~ "offer solutions in architecture and exhibition marketing. Operational "
+#~ "coverage in Europe, Asia and Suadamérica."
+
+#~ msgid ""
+#~ "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y "
+#~ "remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; "
+#~ "como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff "
+#~ "de ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran "
+#~ "el equilibrio perfecto entre el dise&ntilde;o creativo y las normas "
+#~ "t&eacute;cnicas para mantener la imagen de la empresa."
+#~ msgstr ""
+#~ "Project management for corporate makeover, design and remodeling agencies "
+#~ "and centers, as well as expansion projects nationwide. Formed by a team "
+#~ "of engineers, architects and construction supervisors, who achieved the "
+#~ "perfect balance between creative design and technical standards to "
+#~ "maintain the image of the company."
 
 #~ msgid "NUESTRA VISION"
 #~ msgstr "OUR VISION"

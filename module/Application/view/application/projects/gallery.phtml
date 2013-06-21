@@ -10,8 +10,6 @@ $this->headLink()
 
 <?
 $this->headScript ()
-
-
 ->prependFile ( $this->basePath () . '/js/galerias.js' )
 ->prependFile ( $this->basePath () . '/js/camera.min.js' )
 ->prependFile ( $this->basePath () . '/js/jquery.easing.1.3.js' )
@@ -21,12 +19,58 @@ $this->headScript ()
 ;	
 ?>	
 
-<script type="text/javascript">
-jQuery(function(){
-	
-	//alert(1);
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+ <script>
+function getCookieValue(key)
+{
+    currentcookie = document.cookie;
+    if (currentcookie.length > 0)
+    {
+        firstidx = currentcookie.indexOf(key + "=");
+        if (firstidx != -1)
+        {
+            firstidx = firstidx + key.length + 1;
+            lastidx = currentcookie.indexOf(";",firstidx);
+            if (lastidx == -1)
+            {
+                lastidx = currentcookie.length;
+            }
+            return unescape(currentcookie.substring(firstidx, lastidx));
+        }
+    }
+    return "";
+}
+
+
+
+$(function() {
+
+$( "#accordion" ).accordion({
+	heightStyle: "content",
+	activate: function( event, ui ) {
+		var index = jQuery(this).find("h3").index(ui.newHeader[0]);
+  		console.log('tab ' + index);
+  		document.cookie="tabselected="+index;
+  		console.log(document.cookie);
+  		
+	},
+	active : getCookieValue("tabselected")
+});
+
+if(getCookieValue("tabselected")==""){
+	console.log("t: "+getCookieValue("tabselected"));
+	$('#accordion').accordion({ active: 0 });
+}else{
+	console.log("t: "+getCookieValue("tabselected"));
+	$('#accordion').accordion({ active: parseInt( getCookieValue("tabselected") ) });
+}
+
 });
 </script>
+
 <!-- 
 <div>Galleria : <?=$this->galeria;?> | Secction : <?=$this->section;?></div>
 
@@ -38,16 +82,92 @@ jQuery(function(){
 				</div>
 <?php } ?>
  -->
+
+ <style>
+ .milista{
+ 	list-style: none;
+ 	margin: 0 0;
+ 	padding: 0 0;
+ }
+ .milista a {
+ 	color: #333;
+ 	font-size: 10px;
+ 	text-decoration: none;
+ 	padding: 7px 0;
+ 	margin: 10px 15px;
+
+ }
+ .milista li {
+ 	color: #333;
+ 	margin: 0 0;
+ 	padding: 5px 0;
+ }
+ .milista li:hover{
+ 	background: #ddd;
+ }
+ </style>
 <div class="row">
 
 
 
-
+	
 	<div class="span3">
+	<? if($this->section=="tec"){?>
+		<?php $i = 0;?>
+	<div id="accordion">
+		<h3>Tiendas y retailers</h3>
+		<div>
+			<ul class="milista">
+			<?php foreach ($this->secciones as $seccion) {?>
+				<?php $i++; if($i<4) {  ?>
+				<li><a href="<?=$seccion->getUrl();?>"><?=$this->translate(  $seccion->getDescripcion() );?>  <?/*=$seccion->getSlug() */?>  </a></li>
+				<?php } ?>
+			<?php } ?>
+			<ul/>
+		</div>
+
+		<h3>Agencias y Centros de Atención</h3>
+		<div>
+			<ul class="milista">
+			<?php $i = 0;?>
+			<?php foreach ($this->secciones as $seccion) {?>
+				<?php $i++; if($i>3&&$i<6) {  ?>
+				<li><a href="<?=$seccion->getUrl();?>"><?=$this->translate(  $seccion->getDescripcion() );?> <?/*=$seccion->getSlug() */?> </a></li>
+				<?php } ?>
+			<?php } ?>
+			</ul>
+		</div>
+		
+		<h3>Espacios Comerciales menores</h3>
+		<div>
+			<ul class="milista">
+			<?php $i = 0;?>
+			<?php foreach ($this->secciones as $seccion) {?>
+				<?php $i++; if($i>5) {  ?>
+				<li><a href="<?=$seccion->getUrl();?>"><?=$this->translate(  $seccion->getDescripcion() );?> <?/*=$seccion->getSlug() */?></a></li>
+				<?php } ?>
+			<?php } ?>
+			</ul>
+		</div>
+		
+	</div>
+	<br/>
+	<a class="btn btn-success"
+			href="<?=$this->url("projects"); ?>"><?php echo $this->translate('Volver') ?> 
+	</a>
+	<? }else{?>
+	
 		<ul class="nav nav-tabs nav-stacked">
-				<?php foreach ($this->secciones as $seccion) {?>
-				<li id="link3"><a href="<?=$seccion->getUrl();?>"><?=$this->translate(  $seccion->getDescripcion() );?> </a></li>
 				
+				<?php foreach ($this->secciones as $seccion) {?>
+
+				
+
+				<li id="link3"><a href="<?=$seccion->getUrl();?>"><?=$this->translate(  $seccion->getDescripcion() );?> <?=$i;?></a></li>
+				
+
+
+
 				<?php } ?>
 				
 				
@@ -58,6 +178,7 @@ jQuery(function(){
 			href="<?=$this->url("projects"); ?>"><?php echo $this->translate('Volver') ?> 
 		</a>
 		<br/>
+	<? } ?>
 	</div>
 
 	<div class="row">
@@ -96,6 +217,8 @@ jQuery(function(){
 <script>
  jQuery(function(){
 	$("#slogan").html("<?=$this->translate( $titulo); ?> <br/> <h4><?=$this->translate( "$this->galeria_loaded" ); ?> </h4>");
-	
+	$(".ui-accordion .ui-accordion-content").css("padding","0px");
+	$("#accordion").css("font-size","12px");
+	//$("#accordion li a").css("color","#0088CC");
  });
 </script>

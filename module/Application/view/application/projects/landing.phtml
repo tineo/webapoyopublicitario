@@ -34,27 +34,27 @@ hr{ padding: 0 0 0 0; margin:0 0 0 0;}
 		<?php
 		switch ($this->section) {
 			case "tec" :
-				$titulo = $this->translate ( "Tiendas y Espacios Comerciales" );
+				$titulo = $this->translate ( "Dise&ntilde;o de Tiendas y Espacios Comerciales" );
 				//$descripcion = $this->translate ( "Desarrollo de estrateg&iacute;as de gesti&oacute;n de tiendas (layout, store planning, visual merchandising). Proyectos llave en mano, desde el dise&ntilde;o hasta la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con alcance de operaci&oacute;n a nivel nacional." );
-				$descripcion = $this->translate("Soluciones integrales (layout, store planning, visual merchandising). Proyectos llave en mano, desde el dise&ntilde;o y conceptualizaci&oacute;n de la imagen corporativa necesaria para llegar a su cliente objetivo, hasta la implementaci&oacute;n de cadenas de tiendas y espacios comerciales; con alcance de operaci&oacute;n a nivel nacional e internacional.");
+				$descripcion = $this->translate(" Soluciones integrales (store planning, visual merchandising) Proyectos llave en mano que van desde el dise&ntilde;o de la imagen corporativa hasta la construcci&oacute;n. Mobiliario, equipamiento y ambientes &rdquo;mundos&rdquo; para tiendas por departamentos, agencias de atenci&oacute;n y ventas.");
 				break;
 			
 			case "pic" :
 				$titulo = $this->translate ( "Proyectos de Imagen Corporativa" );
 				//$descripcion = $this->translate ( "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;cnicas para mantener la imagen de la Empresa." );
-				$descripcion = $this->translate ( "Gerencia de proyectos corporativos para cambio de imagen, dise&ntilde;o y remodelaci&oacute;n de agencias y centros de atenci&oacute;n; as&iacute; como proyectos de expansi&oacute;n a nivel nacional. Formado por un staff de ingenieros, arquitectos y supervisores de obra, qui&eacute;nes logran el equilibrio perfecto entre el dise&ntilde;o creativo y las normas t&eacute;cnicas para mantener la imagen de la empresa.");
+				$descripcion = $this->translate ( " Gerencia integral de proyectos para cambio de imagen: dise&ntilde;o y adaptaci&oacute;n de la arquitectura a la nueva estructura de operaciones  formato comercial. Ejecutamos la remodelaci&oacute;n de agencias, centros de atenci&oacute;n y puntos de venta a nivel nacional, interviniendo en las obras de infraestructura, mobiliario, equipamiento, se&ntilde;alizaci&oacute;n, etc.");
 				break;
 			
 			case "tipv" : // TECNOLOG&Iacute;A E INTERACTIVIDAD PARA PUNTOS DE
 			              // VENTA
-				$titulo = $this->translate ( 'Tecnolog&iacute;a e Interactividad para Puntos de Venta' );
-				$descripcion = $this->translate ( "Combinamos experiencias l&uacutedicas e interactividad con sistemas de business intelligence q permiten una eficiente administraci&oacute;n y control de premios, o acciones con reportes que permiten analizar comportamiento de clientes, adem&aacute;s de gestionar de manera independiente cada uno de los puntos de venta dentro de una red." );
+				$titulo = $this->translate ( "Tecnolog&iacute;a e Interactividad para Puntos de Venta" );
+				$descripcion = $this->translate ( " Nuestras alianzas globales nos permiten presentar propuestas para actualizar e innovar espacios comerciales con las &uacute;ltimas tendencias de innovaci&oacute;n y tecnolog&iacute;a del momento. Combinamos experiencias l&uacute;dicas e interactividad con sistemas de business intelligence que permiten generar experiencias o informaci&oacute;n con acciones y reportes que permiten analizar el comportamiento de clientes, adem&aacute;s de gestionar de manera independiente cada punto de venta de una red." );
 				break;
 			
 			case "ptm" :
 				$titulo = $this->translate ( "Proyectos de Trade Marketing" );
 				//$descripcion = $this->translate ( "Desarrollo estrat&eacute;gico y ejecuci&oacuten de proyectos de trade marketing para el canal; dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y apoyo al canal distribuidor." );
-				$descripcion = $this->translate("Desarrollo estrat&eacute;gico, la negociaci&oacute;n con el canal hasta la gerencia de la ejecuci&oacute;n de los proyectos de trade marketing; dise&ntilde;o y mejora del visual por categor&iacute;as dentro de tienda y apoyo al canal distribuidor.");
+				$descripcion = $this->translate(" Desarrollo estrat&eacute;gico y operativo para dar soporte y mejorar los puntos de atenci&oacute;n y exhibici&oacute;n o venta de sus distribuidores y partners comerciales, desde la negociaci&oacute;n de ubicaciones con el canal hasta la gerencia de la ejecuci&oacute;n de los proyectos de trade marketing. <h4>Proyectos de Category: </h4>An&aacute;lisis, dise&ntilde;o y mejora de exhibiciones por categor&iacute;as dentro de tienda.");
 				break;
 		}
 		
@@ -62,12 +62,12 @@ hr{ padding: 0 0 0 0; margin:0 0 0 0;}
 			<h3 id="titulo">
 				<?=$titulo ?> </h3>
 		<div id="descripcion"><?=$descripcion?></div>
-
-		<a class="btn btn-success"
+		<div style="height: 32px;"></div>
+		<a class="btn btn-success" style="margin-left:10px"
 			href="<?=$this->url("projects"); ?>/<?=$this->section?>/gallery"><?php echo $this->translate('Ver Proyectos') ?> &raquo;</a>
 
 		<span style="float: right;"><a href="<?=$this->url("projects"); ?>"><img
-				src="<?=$this->basePath ('images/volver.png') ?>" border="0"></a><br /><?php echo $this->translate('Volver') ?></span>
+				src="<?=$this->basePath ('images/volver.png') ?>" border="0"></a><br /></span>
 	</div>
 	<div class="span5">
 		<div style="text-align: right;" class="img_section">

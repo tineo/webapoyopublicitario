@@ -5,193 +5,193 @@ echo $this->doctype ();
 <html>
 <head>
 <meta charset="utf-8">
-    <?php //echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false)?>
+
     <?php echo $this->headTitle('Apoyo Publicitario')?>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <?php  $this->headMeta()->appendName('description', $this->layout()->description )?>
-	<?php  $this->headMeta()->appendName('author', 'César Gutiérrez Tineo')?>
-	<?php  $this->headMeta()->appendName('ZendFramework', \Zend\Version\Version::VERSION)?>
-	<?php  $this->headMeta()->appendName('keywords', $this->layout()->keywords)?>
-	<?php  $this->headMeta()->appendName('robots', 'index, follow, all')?>
-	<?php  $this->headMeta()->appendName('expires', 'never')?>
-	
-	<?php  $this->headMeta()->appendName('revisit', '1 days')?>
-	<?php  $this->headMeta()->appendName('revisit-after', '1 days')?>
-	<?php  $this->headMeta()->appendName('distribution', 'global')?>
-	<?php echo $this->headMeta()->appendName('generator', 'Zend Framework '.\Zend\Version\Version::VERSION)?>
-	
+  <?php  $this->headMeta()->appendName('author', 'Apoyo Publicitario')?>
+  <?php  $this->headMeta()->appendName('ZendFramework', \Zend\Version\Version::VERSION)?>
+  <?php  $this->headMeta()->appendName('robots', 'index, follow, all')?>
+  <?php  $this->headMeta()->appendName('expires', 'never')?>
+  
+  <?php  $this->headMeta()->appendName('revisit', '1 days')?>
+  <?php  $this->headMeta()->appendName('revisit-after', '1 days')?>
+  <?php  $this->headMeta()->appendName('distribution', 'global')?>
+  <?php echo $this->headMeta()->appendName('generator', 'Zend Framework '.\Zend\Version\Version::VERSION)?>
+<meta name="description" content="Apoyo Publicitario, Somos especialistas en el desarrollo de proyectos corporativos para retail y trademarketing, brindamos soluciones que van desde el diseño y construcción de una tienda o espacio comercial hasta la gerencia de un cambio de imagen integral para múltiples puntos de venta o agencias a nivel nacional y en el exterior.">
+  
+
+<meta name="keywords" content="Apoyo Publicitario, Espacios comerciales, Tiendas, Retail, Retailers, Imagen corporativa, Cambio de imagen, Punto de venta, Trade marketing, Category, Canal, Stands, Ferias, Exhibits, Exhibición, Arquitectos, Arquitectura, Arquitectura comercial, Arquitectura retail, Diseño mobiliario, Visual merchandising, Gestión, Proyectos">
+  
     <!-- Le styles -->
     <?php
-				
-				echo $this->headLink ( array (
-						'rel' => 'shortcut icon',
-						'type' => 'image/vnd.microsoft.icon',
-						'href' => $this->basePath ( '/images/favicon.ico' ) 
-				) )->prependStylesheet ( $this->basePath ( '/css/layout.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap-responsive.css' ) )->prependStylesheet ( $this->basePath ( '/css/style.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap.css' ) )?>
+        
+        echo $this->headLink ( array (
+            'rel' => 'shortcut icon',
+            'type' => 'image/vnd.microsoft.icon',
+            'href' => $this->basePath ( '/images/favicon.ico' ) 
+        ) )->prependStylesheet ( $this->basePath ( '/css/layout.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap-responsive.css' ) )->prependStylesheet ( $this->basePath ( '/css/style.css' ) )->prependStylesheet ( $this->basePath ( '/css/bootstrap.css' ) )?>
 
     <!-- Scripts -->
     <?php
-				
-				echo $this->headScript ()->prependFile ( $this->basePath () . '/js/bootstrap.min.js' )->prependFile ( $this->basePath () . '/js/jquery.js' )->prependFile ( $this->basePath () . '/js/html5.js', 'text/javascript', array (
-						'conditional' => 'lt IE 9' 
-				) );
-				?>
+        
+        echo $this->headScript ()->prependFile ( $this->basePath () . '/js/bootstrap.min.js' )->prependFile ( $this->basePath () . '/js/jquery.js' )->prependFile ( $this->basePath () . '/js/html5.js', 'text/javascript', array (
+            'conditional' => 'lt IE 9' 
+        ) );
+        ?>
 
 <script type="text/javascript">
 
 $(function() {
 
-	/*Language*/
-	$("#en_US").click(function(){
-		$.ajax({
-			  url: "/language/en_US",
-			  context: document.body
-			}).done(function() { 
-				window.location.href=window.location.href;
-			});
-	});
+  /*Language*/
+  $("#en_US").click(function(){
+    $.ajax({
+        url: "/language/en_US",
+        context: document.body
+      }).done(function() { 
+        window.location.href=window.location.href;
+      });
+  });
 
 
-	$("#es_ES").click(function(){
-		$.ajax({
-			  url: "/language/es_ES",
-			  context: document.body
-			}).done(function() { 
-				window.location.href=window.location.href;
-			});
-	});	
-	
-	$.getJSON('/language/', function(data) {
-		$("#"+data['language']).css("font-weight","bold").css("color","#A90000").addClass("active");
-	});
-	
-	$("#id<?php echo str_replace("/", "", $this->url()); ?>").css("font-weight","bold").css("color","#A90000").addClass("active");
-	
-	
+  $("#es_ES").click(function(){
+    $.ajax({
+        url: "/language/es_ES",
+        context: document.body
+      }).done(function() { 
+        window.location.href=window.location.href;
+      });
+  });  
+  
+  $.getJSON('/language/', function(data) {
+    $("#"+data['language']).css("font-weight","bold").css("color","#A90000").addClass("active");
+  });
+  
+  
+  
+  
 });
 </script>
 </head>
 
-<body>
+<body >
 
-	<section class="container">
+  <section class="container">
 
-		<header>
-			<div class="span3">
-				<div id="banner_logo">
-					<a href="<?php echo $this->url('home') ?>"><img
-						src="<?php echo $this->basePath("_images/logo.jpg"); ?>" /></a>
-				</div>
-			</div>
-			<div class="span8">
-				<div id="slogan">
-					<?php echo $this->translate('Proyectos Corporativos para Retail<br/> y Espacios Comerciales')?>
-				</div>
-			</div>
+    <header>
+      <div class="span3">
+        <div id="banner_logo">
+          <a href="<?php echo $this->url('home') ?>"><img
+            src="<?php echo $this->basePath("_images/logo.jpg"); ?>" alt="Apoyo Publicitario"/></a>
+        </div>
+      </div>
+      <div class="span8">
+        <div id="slogan">
+          <?php echo $this->translate('Apoyo Publicitario: Proyectos Corporativos<h3> para Retail y Espacios Comerciales<h3>')?>
+        </div>
+      </div>
 
-		</header>
-	</section>
-
-
+    </header>
+  </section>
 
 
 
-	<div class="container">
-
-		<div class="">
-			<div class="navbar navbar-inverse  active">
-
-				<div class="navbar-inner">
-					<div class="container">
-						<a class="btn btn-navbar" data-toggle="collapse"
-							data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span>
-						</a>
-
-						<div class="nav-collapse collapse" >
-							<ul class="nav">
-								<li><a id="id<?php echo str_replace("/", "", $this->url('home')) ?>" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Inicio') ?></a></li>
-								<li><a id="id<?php echo str_replace("/", "", $this->url('aboutus')) ?>" href="<?php echo $this->url('aboutus'); ?>"><?php echo $this->translate('Qui&eacute;nes Somos') ?></a></li>
 
 
-								<li class="dropdown" ><a id="id<?php echo str_replace("/", "", $this->url('projects')) ?>" href="#" class="dropdown-toggle" 
-									data-toggle="dropdown"><?php echo $this->translate('Qu&eacute; hacemos') ?> <b
-										class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="<?=$this->url("projects"); ?>/tec" style="font-size: 11px;"><?php echo $this->translate('Tiendas y Espacios Comerciales') ?></a></li>
-										<li><a href="<?=$this->url("projects"); ?>/pic" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Imagen Corporativa') ?> </a></li>
-										<li><a href="<?=$this->url("projects"); ?>/tipv" style="font-size: 11px;"><?php echo $this->translate('Tecnolog&iacute;a e Interactividad para Puntos de Venta'); ?> </a></li>
-										<li><a href="<?=$this->url("projects"); ?>/ptm" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Trade Marketing') ?> </a></li>
-									</ul></li> 
+  <div class="container">
 
-							</ul>
-							<ul class="nav">
+    <div class="">
+      <div class="navbar navbar-inverse  active">
 
-								<li><a id="id<?php echo str_replace("/", "", $this->url('stands')) ?>" href="<?php echo $this->url("stands"); ?>"><?php echo $this->translate('Stands/Exhibits') ?></a></li>
-								<li><a id="id<?php echo str_replace("/", "", $this->url('clients')) ?>" href="<?php echo $this->url('clients'); ?>"><?php echo $this->translate('Clientes') ?></a></li>
-								<li><a id="id<?php echo str_replace("/", "", $this->url('contactus')) ?>" href="<?php echo $this->url('contactus'); ?>"><?php echo $this->translate('Cont&aacute;ctanos') ?></a></li>
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse"
+              data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span>
+            </a>
 
-							</ul>
-							<div class="btn-group  pull-right languages"
-								style="text-align: center;">
-								<button id="en_US" class="btn btn-inverse">English</button>
-								<button id="es_ES" class="btn btn-inverse">Español</button>
-							</div>
-
-						</div>
+            <div class="nav-collapse collapse" >
+              <ul class="nav">
+                <li><a id="id<?php echo str_replace("/", "", $this->url('home')) ?>" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Inicio') ?></a></li>
+                <li><a id="id<?php echo str_replace("/", "", $this->url('aboutus')) ?>" href="<?php echo $this->url('aboutus'); ?>"><?php echo $this->translate('Qui&eacute;nes Somos') ?></a></li>
 
 
-					</div>
-				</div>
-			</div>
+                <li class="dropdown" ><a id="id<?php echo str_replace("/", "", $this->url('projects')) ?>" href="#" class="dropdown-toggle" 
+                  data-toggle="dropdown"><?php echo $this->translate('Qu&eacute; hacemos') ?> <b
+                    class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="<?=$this->url("projects"); ?>/tec" style="font-size: 11px;"><?php echo $this->translate('Dise&ntilde;o de Tiendas y Espacios Comerciales') ?></a></li>
+                    <li><a href="<?=$this->url("projects"); ?>/pic" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Imagen Corporativa') ?> </a></li>
+                    <li><a href="<?=$this->url("projects"); ?>/tipv" style="font-size: 11px;"><?php echo $this->translate('Tecnolog&iacute;a e Interactividad para Puntos de Venta'); ?> </a></li>
+                    <li><a href="<?=$this->url("projects"); ?>/ptm" style="font-size: 11px;"><?php echo $this->translate('Proyectos de Trade Marketing') ?> </a></li>
+                  </ul></li> 
 
-		</div>
-	</div>
+              </ul>
+              <ul class="nav">
 
-	
-	<div class="container">
+                <li><a id="id<?php echo str_replace("/", "", $this->url('stands')) ?>" href="<?php echo $this->url("stands"); ?>"><?php echo $this->translate('Stands/Exhibits') ?></a></li>
+                <li><a id="id<?php echo str_replace("/", "", $this->url('clients')) ?>" href="<?php echo $this->url('clients'); ?>"><?php echo $this->translate('Clientes') ?></a></li>
+                <li><a id="id<?php echo str_replace("/", "", $this->url('contactus')) ?>" href="<?php echo $this->url('contactus'); ?>"><?php echo $this->translate('Cont&aacute;ctanos') ?></a></li>
+
+              </ul>
+              <div class="btn-group  pull-right languages"
+                style="text-align: center;">
+                <button id="en_US" class="btn btn-inverse">English</button>
+                <button id="es_ES" class="btn btn-inverse">Español</button>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <div class="container">
 
       <?php echo $this->content; ?>
 
       <hr>
 
-		<footer>
-			<div class="row">
-				<div class="span4">
-				 <?php echo $this->translate('All rights reserved.') ?> - 2011 . Apoyo Publicitario <br />Planta:
-					Av.Libertad 386 -L32 Perú / Of Miramar 180-L32 - Perú
+    <footer>
+      <div class="row">
+        <div class="span_footer" style="width: 270px;">
+                                        &copy; <?php echo date("Y") ?> Todos los derechos reservados <br />
+                                        Apoyo Publicitario<br />
+        </div>
 
-				</div>
+        <div class="span_footer" style="width: 330px;">
+                                        <img src="/images/peru-flag.jpg" style="width: 16px; height: 11px;"> Perú: Km 18 Panamericana Sur, L29<br />
+<!--                                        <img src="/images/chile-flag.jpg" style="width: 16px; height: 11px;"> Chile: Catedral 1310 Of. 702, Santiago de Chile<br /> -->
+        </div>
+        <div class="span_footer" style="width: 270px;">
+                                        Fono (51 1) 717 5333 / <a href="mailto:ventas@apoyopublicitario.com">ventas@apoyopublicitario</a><br />
+          <a href="mailto:ventas@apoyopublicitario.com">Únete a nuestro equipo, envíanos tu CV</a>
+        </div>
+        <div class="span_footer" style="width: 200px; text-align: right">
+          <a target="_blank"
+            href="http://www.facebook.com/pages/Apoyo-Publicitario/113430695352950"><img
+            src="/images/facebook-icon-small.png" /></a> <a target="_blank"
+            href="http://www.youtube.com/user/apoyopublicitario"><img
+            src="/images/Youtube_64x64.png" /></a> <a
+            href="<?php echo $this->url('home') ?>"><img
+            src="/images/home.png" /></a>
 
-				<div class="span3">
-					Fonos 511 717-5333 / 566-2800 <br /> <a
-						href="mailto:ventas@apoyopublicitario.com">ventas@apoyopublicitario.com</a>
-				</div>
-				<div class="span2">
-					<a href="mailto:ventas@apoyopublicitario.com">Únete a nuestro
-						equipo, <br />envíanos tu CV
-					</a>
-				</div>
-				<div class="span3" style="text-align: center">
-					<a target="_blank"
-						href="http://www.facebook.com/pages/Apoyo-Publicitario/113430695352950"><img
-						src="/images/facebook-icon-small.png" /></a> <a target="_blank"
-						href="http://www.youtube.com/user/apoyopublicitario"><img
-						src="/images/Youtube_64x64.png" /></a> <a
-						href="<?php echo $this->url('home') ?>"><img
-						src="/images/home.png" /></a>
+        </div>
+      </div>
 
-				</div>
-			</div>
+    </footer>
 
-		</footer>
+  </div>
 
-	</div>
-
-	<!-- /container -->
-	
-	
+  <!-- /container -->
+  
+  
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -205,7 +205,7 @@ $(function() {
   })();
 
 </script>
-	
+  
   <?php echo $this->inlineScript()?>
   </body>
 </html>

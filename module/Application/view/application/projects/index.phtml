@@ -4,7 +4,13 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/themes/defa
 	
 <?php 	echo $this->headScript ()->prependFile ( $this->basePath ("js/jquery.nivo.slider.js")); ?>
 
+<style type="text/css">
+.botones a{
+	margin-right: 5px;
+	margin-left: 5px;
+}
 
+</style>
 
 
 
@@ -15,6 +21,7 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/themes/defa
 </script>
 
 <div class="row">
+	<div class="span12"  style="text-align:center">
 	<div id="wrapper">
 		<div class="slider-wrapper theme-default">
 			<div id="slider" class="nivoSlider">
@@ -33,27 +40,24 @@ echo $this->headLink ()->prependStylesheet ( $this->basePath ( '/css/themes/defa
 			</div>
 		</div>
 	</div>
+	</div>
 </div>
 
 
-<div class="row">
-	<div class="span3">
+<div class="row" >
+	<div  class="span12 botones"  style="text-align:center">
+
 		<a class="btn btn-success" href="<?=$this->url("projects"); ?>/tec"
-			target="_blank" style="height: 38px;padding: 4px 20px;"><?php echo $this->translate('TIENDAS Y ESPACIOS COMERCIALES') ?>&raquo;</a>
-	</div>
-	<div class="span3">
+			target="_blank" style="width:200px;"><?php echo $this->translate('Dise&ntilde;o Tiendas y Espacios Comerciales') ?></a>
+	
 		<a class="btn btn-success" href="<?=$this->url("projects"); ?>/pic"
-			target="_blank" style="height: 38px;padding: 4px 40px;"><?php echo $this->translate('PROYECTOS DE IMAGEN CORPOTARIVA') ?> &raquo;</a>
-	</div>
-
-	<div class="span3">
+			target="_blank" style="width:200px;"style="width:200px;"style="width:200px;"><?php echo $this->translate('Proyectos de Imagen Corporativa') ?></a>
+	
 		<a class="btn btn-success" href="<?=$this->url("projects"); ?>/tipv"
-			target="_blank" style="height: 38px;"><?php echo $this->translate('TECNOLOG&Iacute;A E INTERACTIVIDAD PARA PUNTOS DE VENTA') ?> &raquo;</a>
-	</div>
-
-	<div class="span3">
+			target="_blank" style="width:200px;"style="width:200px;"><?php echo $this->translate('Tecnolog&iacute;a e Interactividad ') ?> </a>
+	
 		<a class="btn btn-success" href="<?=$this->url("projects"); ?>/ptm"
-			target="_blank" style="height: 38px;padding: 4px 40px; "><?php echo $this->translate('PROYECTOS DE TRADE MARKETING') ?> &raquo;</a>
+			target="_blank" style="width:200px;"><?php echo $this->translate('Proyectos de Trade Marketing') ?></a>
 	</div>
 
 

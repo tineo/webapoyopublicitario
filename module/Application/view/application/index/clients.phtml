@@ -56,42 +56,102 @@ scroll: 5
 
 <div id="recuadro">
 
-	<ul id="mycarousel" class="jcarousel-skin-tango">
-		<!-- <ul id="mycarousel" class="jcarousel-skin-tango" > -->
-<?php
-//$dir = dirname ( __FILE__ );
-$dir = ('/home/ftpapoyoweb/apoyopublicitario.com/public');
+<h2>Nuestros Clientes</h2>
 
-$dir_clientes = $dir . "/_images/logos_clientes";
-// echo $dir."/_images/logos_clientes"."<br/>"; 
-// echo APPLICATION_PATH ."<br/>";
-// echo realpath(APPLICATION_PATH . '/../public')."<br/>";
-$lista_clientes = scandir ( $dir_clientes );
+		<!-- <ul id="mycarousel" class="jcarousel-skin-tango" > -->
+<center>
+<table width="90%" border="0" cellpadding="10" cellspacing="0">
+<?php
+$clientes = array(
+  "15_BanBif.jpg",
+  "19_BBVA.png",
+  "23_directv.jpg",
+  "precor.png",
+  "17_Tecsup.jpg",
+  
+  "34_Schulz.jpg",
+  "italgrif.png",
+  "36_oster.jpg",
+  "25_General_Electric.jpg",
+  "lepono.png",
+
+  "40_lucky.jpg",
+  "26_airport.jpg",
+  "nissan.png",
+  "24_AngloAmerican.jpg",
+  "mobil.jpg",
+
+  "35_Perfumerias_Unidas.png",
+  "30_rimac.jpg",
+  "20_logo_abb.jpg",
+  "22_CrediScotia.png",
+  "plazavea.jpg",
+
+  "14_sony.jpg",
+  "27_Converse.png",
+  "08_Cofide.png",
+  "28_Liebher.jpg",
+  "39_Umbro.png",
+
+  "31_Intralot.png",
+  "16_Supermercados_Peruanos.jpg",
+  "29_Praxair.jpg",
+  "18_movistar_logo.jpg",
+  "21_interbank.jpg",
+
+  "37_Logo_3M.jpg",
+  "11_LOGO_CLARO.jpg",
+  "12_mattel.jpg",
+  "09_wong.jpg",
+  "42_Pecsa.jpg",
+
+  "bmw.png",
+  "33_GoldFields.jpg",
+  "01_Cencosud.png",
+  "38_Logo_ANTAMINA.jpg",
+  "paris.jpg",
+
+  "10_Metro.png",
+  "32_ferreyros.jpg",
+  "41_MontaEngil.jpg",
+  "case.png",
+  "05_CAT.png",
+
+  "02_Banco_Cencosud.png",
+  "pmp.png",
+  "cinepolis.jpg",
+  "03_BCP.png",
+  "04_Caja_Arequipa.png",
+
+/*
+  "06_plazavea.jpg",
+  "07_PetroPerú.jpg",
+  "33_t08_mobil.jpg",
+  "goldfields.jpg",
+  "schulz.jpg",
+*/
+);
+
+
 $i = 0;
-foreach ( $lista_clientes as $imagen ) {
+foreach ( $clientes as $imagen ) {
 	if (! ($imagen == "." || $imagen == ".." || $imagen == "old" || $imagen == "index.php")) {
 		// if($i%4==0){ echo "<tr>";}
 		
 		if (($i % 5 == 0 && $i > 0)) {
-			echo "</tr></table></li>";
+			echo '</tr>';
 		}
 		if ($i % 5 == 0) {
-			echo '<li><table class="grilla"><tr>';
+			echo '<tr>';
 		}
-		echo '<td><img src="_images/logos_clientes/' . $imagen . '" style="max-height:60px; max-width:130px;" /></td>';
+		echo '<td align="center"><img src="_images/logos_clientes/' . $imagen . '" style="max-height:60px; max-width:130px;" /></td>';
 		// if($i%4==0){ echo "</tr></table></li>";}
 		
 		$i ++;
 	}
 }
-
-while ( $i % 5 > 0 ) {
-	echo "<td></td>";
-	$i ++;
-}
-
-echo "</tr></table></li>";
 ?>
-</ul>
+</table>
+</center>
 
 </div>

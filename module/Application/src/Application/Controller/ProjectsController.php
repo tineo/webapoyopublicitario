@@ -75,7 +75,7 @@ class ProjectsController extends AbstractActionController {
 						'descripcion' => strtoupper ( $this->getEvent ()->getRouteMatch ()->getParam ( 'section' ) ) 
 				) );
 				$gx = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Gallery' )->findBy ( array (
-						'id_section' => $sx->getId () 
+						'id_section' => $sx->getId () , 'visible' => 1
 				) );
 				$slug = $gx [0]->getSlug ();
 			} else {
@@ -83,11 +83,11 @@ class ProjectsController extends AbstractActionController {
 			}
 			
 			$section = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Section' )->findOneBy ( array (
-					'descripcion' => strtoupper ( $this->getEvent ()->getRouteMatch ()->getParam ( 'section' ) ) 
+					'descripcion' => strtoupper ( $this->getEvent ()->getRouteMatch ()->getParam ( 'section' ) ) , 'visible' => 1
 			) );
 			
 			$galeria = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Gallery' )->findOneBy ( array (
-					'slug' => $slug 
+					'slug' => $slug , 'visible' => 1
 			) );
 			
 			$vars["galeria_loaded"] = $galeria->getDescripcion();
@@ -95,10 +95,10 @@ class ProjectsController extends AbstractActionController {
 			if (count ( $galeria ) > 0) {
 				
 				$g = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Gallery' )->findBy ( array (
-						'id_section' => $section->getId() 
+						'id_section' => $section->getId() , 'visible' => 1
 				) );
 				$i = $this->getEntityManager ()->getRepository ( 'Backend\Entity\Item' )->findBy ( array (
-						'id_gallery' => $galeria->getId () 
+						'id_gallery' => $galeria->getId (), 'visible' => 1
 				) );
 				
 				$viewModel->setTemplate ( "projects/gallery" );

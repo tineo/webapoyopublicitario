@@ -1,27 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
-/*
-@font-face {
-	font-family: 'AdelleBasicBold';
-	src: url('_fonts/AdelleBasic_Bold.eot');
-	src: local('_fonts/Adelle Basic'), local('_fonts/AdelleBasic-Bold'), url('_fonts/AdelleBasic_Bold.woff') format('woff'), url('_fonts/AdelleBasic_Bold.otf') format('opentype');
-}
-*/
-body { 	
-	
-	/*color: #e5e5e5;
-	font: 13px/1.0 Helvetica, Arial, Verdana, Sans-Serif;
-	text-align: left;
-	margin: 0;
-	position: relative;
-	
-	background-attachment: fixed !important;
-	-webkit-background-size: 1920px 1500px;
-	background-color: #121315;*/
-	
-}
-
 
 #IE6 #bg1,#IE6 #bg2 {
 	background: none;
@@ -34,34 +11,7 @@ body {
 img {
 	border: 0;
 }
-/*
-h1,h2,h3,h4 {
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
-	line-height: 1.2em;
-}
 
-h4 {
-	font-size: 18px;
-	margin-bottom: 10px;
-	color: #8bb2bc;
-}
-
-p {
-	margin: 0 0 25px 0;
-	line-height: 1.4em;
-}
-*/
-/*a {
-	color: #3da8c3;
-	outline: none;
-}
-
-a:hover {
-	color: #9FF;
-		background-color:#3da8c3; 
-}*/
 ul {
 	line-height: 1.4em;
 }
@@ -75,28 +25,6 @@ hr {
 	border-left: none;
 }
 
-/* ///// Form */
-/*form {
-	margin: 0;
-	padding: 0;
-}*/
-/*
-#page {
-	width: 970px;
-	margin: 0 auto 0px 0;
-}*/
-
-/* ///// Header */
-
-/* Header fix treatment is in the main HTML :http://www.howtocreate.co.uk/fixedPosition.html */
-/*#header a#logo {
-	display: block;
-	width: 166px;
-	height: 34px;
-	text-indent: -9999px;
-	z-index: 500;
-	background: url( /_images/go2-logo.png) no-repeat 0 0;
-}*/
 ul#navi-top {
 	width: 166px;
 	display: block;
@@ -148,19 +76,9 @@ ul#navi-top li a {
 	position: relative;
 }
 
-#statement h1 { /*	color:#FFF;
-	font-size:44px;
-	line-height:0.4em;
-	margin:0px 0 20px 0;
-	padding:0;
-	font-family:'AdelleBasicBold',Helvetica, Arial, Verdana, Sans-Serif ;
-	text-transform:lowercase;
-	font-weight: bold;
-*/
+#statement h1 { 
 	color: #FFF;
 	font-family: "Bitter", serif;
-	/*font-size:50px;
-	line-height:0.4em;*/
 	font-size: 44px;
 	line-height: 1em;
 	margin: 0px 0 20px 0;
@@ -169,12 +87,7 @@ ul#navi-top li a {
 	font-weight: 100;
 }
 
-#statement h1 strong { /*
-	font-size:76px;
-	line-height:1.4em;
-*/
-	/*font-size:86px;
-	line-height:1.4em;*/
+#statement h1 strong { 
 	font-size: 76px;
 	line-height: 1.3em;
 }
@@ -236,7 +149,6 @@ ul#navi-top li a {
 .title-link a {
 	display: inline-block;
 	clear: both;
-	/*titulo*/
 	font-size: 45px;
 	color: #CD2626;
 	letter-spacing: -1px;
@@ -247,13 +159,10 @@ ul#navi-top li a {
 	padding: 6px 8px 4px 8px;
 	text-transform: capitalize;
 	text-decoration: none;
-	/*	background:url( /_images/title-link-bg-left.gif) no-repeat 0 0;*/
-	/*	background:url( /_images/title-link-bg-bottom.gif) no-repeat 0 100%; */
 }
 
 .title-link a.selectedtitle,.title-link a.selectedtitle:visited {
 	color: #FFF;
-	/*	background:url( /_images/title-link-bg.jpg) no-repeat 0 0;*/
 	background: #3da8c3;
 	cursor: default;
 }
@@ -266,16 +175,11 @@ div.processing {
 	height: 5px;
 	margin: 0 0 -14px 5px;
 }
-/* ///// Contents */
 .contents {
 	
 }
 
-.contents-innerHTML { /*	clear: both;
-	padding: 25px 0 80px 0px;
-	position: relative;
-*/
-	
+.contents-innerHTML {	
 }
 
 .our-service-content-navi {
@@ -338,11 +242,8 @@ div.processing {
 	clear: both;
 }
 
-/* ///// Case Studies */
 .case-study-list {
 	position: relative;
-	/*height: 540px;*/
-	/*width: 716px;*/
 }
 
 .case-study-item {
@@ -351,11 +252,6 @@ div.processing {
 	float: left;
 	margin: 0;
 	border: 2px solid #fff;
-	/*
-	border-top:2px solid #000;
-	border-right:2px solid #000;
-	border-bottom:2px solid #000;
-	border-left:2px solid #000;*/
 	position: relative;
 	background: #222;
 }
@@ -397,8 +293,7 @@ div.processing {
 }
 
 #cs-item-angloamerican_09 a.thumb {
-	background: url( /_images/portfolio/angloamerican_09/thumb.jpg) no-repeat
-		0 0;
+	background: url( /_images/portfolio/angloamerican_09/thumb.jpg) no-repeat 0 0;
 }
 
 #cs-item-ferreyros_09 a.thumb {
@@ -479,6 +374,10 @@ div.processing {
 	background: url( /_images/portfolio/energia_otras/thumb.jpg) no-repeat 0 0;
 }
 
+#cs-item-textiles_otras a.thumb {
+	background: url( /_images/portfolio/textiles_otras/thumb.jpg) no-repeat 0 0;
+}
+
 #cs-item-mineras_otras a.thumb {
 	background: url( /_images/portfolio/mineras_otras/thumb.jpg) no-repeat 0 0;
 }
@@ -486,6 +385,75 @@ div.processing {
 #cs-item-otros_otras a.thumb {
 	background: url( /_images/portfolio/otros_otras/thumb.jpg) no-repeat 0 0;
 }
+
+
+
+/*Expomina*/
+#cs-item-case a.thumb {
+	background: url( /_images/portfolio/case/thumb.jpg) no-repeat 0 0;
+}
+
+#cs-item-flowserve a.thumb {
+	background: url( /_images/portfolio/flowserve/thumb.jpg) no-repeat 0 0;
+}
+
+#cs-item-nissan a.thumb {
+	background: url( /_images/portfolio/nissan/thumb.jpg) no-repeat 0 0;
+}
+
+#cs-item-motaengil a.thumb {
+	background: url( /_images/portfolio/motaengil/thumb.jpg) no-repeat 0 0;
+}
+
+#cs-item-otros_expomin a.thumb {
+	background: url( /_images/portfolio/otros_expomin/thumb.jpg) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+#cs-item-case a span.logo {
+	background: url( /_images/portfolio/case_construction.png) no-repeat 0 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#cs-item-flowserve a span.logo {
+	background: url( /_images/portfolio/flowserve.png) no-repeat 0 0; 
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#cs-item-nissan a span.logo {
+	background: url( /_images/portfolio/nissan.png) no-repeat 0 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#cs-item-motaengil a span.logo {
+	background: url( /_images/portfolio/motaengil.png) no-repeat 0 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#cs-item-otros_expomin a span.logo {
+	background: url( /_images/logos.png) no-repeat 0px -185px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Motorshow*/
+
+#cs-item-bmw a.thumb {
+	background: url( /_images/portfolio/bmw/thumb.jpg) no-repeat 0 0;
+}
+
+
+
+#cs-item-bmw a span.logo{
+	background: url( /_images/portfolio/bmw.png) no-repeat 0px 0px;
+	background-color: rgba(0, 0, 0, 0.7);	
+}
+
+
+/*motaengil*/
+
 
 .case-study-item a span.logo {
 	width: 175px;
@@ -605,6 +573,11 @@ div.processing {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
+#cs-item-textiles_otras a span.logo {
+	background: url( /_images/portfolio/textiles.png) no-repeat 0px 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
 #cs-item-otros_otras a span.logo {
 	background: url( /_images/logos.png) no-repeat 0px -718px;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -647,24 +620,19 @@ div.processing {
 	color: #666;
 	text-decoration: none;
 	cursor: default;
+	
 }
-/*	.cs-tools-top a.close{
-		display:block;
-		text-indent:-9999px;
-		width:13px;
-		height:12px;
-		background:url( /_images/portfolio/all-thumb.gif) no-repeat 0 0;}
-	.cs-tools-top a.close:hover{
-		background:url( /_images/portfolio/all-thumb.gif) no-repeat 0 -12px;}*/
+
 .cs-tools-top a:hover {
 	color: #666;
-	/*text-decoration: underline;*/
 }
 
 .cs-tools-top a.selected {
 	color: #CD2626;
 	cursor: default;
 	text-decoration: none;
+	font-size:14px;
+	font-weight:bold;
 }
 
 .cs-tools-top ul.cs-navi {
@@ -691,16 +659,13 @@ div.processing {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	/*width:716px;*/
 	z-index: 1000;
 }
 
 #IE6 .case-study-list .screen {
-	/*margin-top: -30px*/
 }
 
 .case-study-list .screen .screen-body { 
-	/*position:absolute;*/
 	background: #e5e5e5;
 	padding: 3px;
 	height:600px;
@@ -853,94 +818,25 @@ div.processing {
 }
 
 /* ///// Scrollable */
-div.scrollable { /* required settings */
-	/*position:absolute;*/
-	/*overflow:hidden;*/
+div.scrollable {
 	width: 700px;
 	height: 350px;
-	/* custom decorations */
 	padding: 0;
 	float: left;
 	top: 0;
 	left: 0;
 }
 
-div.scrollable div.items { /* this cannot be too large */
-	/*width:8000px;*/
-	/*position:absolute;*/
-	/*clear:both;*/
-	/* decoration */
+div.scrollable div.items { 
 	margin-left: 0px;
 }
-/* single scrollable item */
-div.scrollable div.items img,div.scrollable div.items div {
-	/*display:block;*/
-	/*float:left;*/
-	
-}
-/*.project-images a.prev, .project-images a.next {
-	position:relative;
-	display:inline-block;
-	height:0px;
-	color:#999;
-	width:300px;
-	height:300px;
-	cursor:pointer;
-	z-index:1500;
-	margin:-130px 0;
-	top:130px;
-	filter:Alpha(Opacity=25);
-	opacity: 0.25;
-}
-.project-images a.prev{
-	float:left;
-	background:url( /_images/arrow-prev.png) no-repeat 0 50%;}
-.project-images a.next{
-	float:right;
-	background:url( /_images/arrow-next.png) no-repeat 100% 50%;}
-	.project-images a.prev:hover, .project-images a.hover,.project-images a.next:hover, .project-images a.hover{
-	filter:Alpha(Opacity=75);
-	opacity: 0.75;}
 
-a.disabled{
-	visibility: hidden;}
-*/
 
-/* ///// OUR CLIENTS */
 .our-client-list img {
 	border: 5px solid #e5e5e5;
 	background: #e5e5e5;
 }
 
-#the-company-obj .top-section1 {
-	width: 150px;
-	float: left;
-	margin: 10px 0 0 20px;
-}
-
-#the-company-obj .top-section2 {
-	width: 480px;
-	float: left;
-	margin: 15px 0 0 30px;
-}
-
-#the-company-obj .lower-section1 {
-	clear: both;
-	float: left;
-	width: 320px;
-	margin: 20px 50px 0 0;
-}
-
-#the-company-obj .lower-section2 {
-	float: left;
-	width: 320px;
-	margin: 20px 0 0 0;
-}
-
-#the-company-obj .lower-section2 .book-image {
-	float: left;
-	margin: 0 25px 10px 0;
-}
 
 /* ///// WRAPPER */
 .alignleft {

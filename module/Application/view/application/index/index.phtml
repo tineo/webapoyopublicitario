@@ -139,8 +139,10 @@ div#pr-noticias p {
 			function rotate()
 			{
 			
-			$("#ns1").hide();$("#ns2").hide();$("#ns3").hide();
-			
+			$("#ns1").hide();
+			$("#ns2").hide();
+			$("#ns3").hide();
+
 			num++;
 			if(num>3)num = 1;
 			
@@ -177,7 +179,7 @@ div#pr-noticias p {
 			<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
 				<div data-thumb="images-slider/slide01-small2.png"
 					data-src="images-slider/slide01.png" data-link="/projects/tec">
-					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Tiendas y Espacios Comerciales'); ?></div>
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Dise&ntilde;o de Tiendas y Espacios Comerciales'); ?></div>
 				</div>
 				<div data-thumb="images-slider/slide04-small2.png"
 					data-src="images-slider/slide04.png" data-link="/projects/pic">
@@ -185,7 +187,7 @@ div#pr-noticias p {
 				</div>
 				<div data-thumb="images-slider/slide03-small2.png"
 					data-src="images-slider/slide03.png" data-link="/projects/tipv">
-					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Tecnolog&iacute;a e interactividad para puntos de venta') ?></div>
+					<div class="camera_caption fadeFromBottom"><?php echo $this->translate('Tecnolog&iacute;a e interactividad para espacios comerciales') ?></div>
 				</div>
 
 				<div data-thumb="images-slider/slide-ptm-small.png"
@@ -264,7 +266,8 @@ div#pr-noticias p {
 		
 		</h4>
 		
-		<p>  		
+		<p>
+<div class="glo1" style="height: 190px; font-size:9.5px;text-align:center;">
 		<a class="glo1" href="/stands/" style="display:none;" >
 		<embed width="180" height="135" align=""
 		type="application/x-shockwave-flash"
@@ -273,20 +276,23 @@ div#pr-noticias p {
 		quality="high"
 		src="images/flas_apoyo.swf"
 		href="images/flas_apoyo.swf"/>
-		<div class="glo1" style="font-size:9.5px;text-align:center;margin:-20px 0 20px 0;padding:0 0 0 0;">Operaciones en Europa, Asia, Sudamerica y Medio Oriente</div>
+		Operaciones en Europa, Asia, Sudamerica y Medio Oriente
 		</a>
-		</p>
+</div>
+</p>
 		<p>
-		<a class="glo2" href="/stands/"><img src="/images/precor.png" />
-		<div  class="glo2" style="font-size:9.5px;text-align:center;margin:-20px 0 20px 0;padding:0 0 0 0;">Stands / Expo Exhibits</div>
+<div  class="glo2" style="height: 190px; font-size:9.5px;text-align:center;">
+		<a class="glo2" href="/stands/"><img src="/images/precor.png" width="180" height="135" />
+		Stands / Expo Exhibits
 		</a>
+</div>
 		</p>
 		
 		<h4 style="margin: 0 0 0 0;padding:0 0 0 0;"><?php echo $this->translate('Nuestros Socios') ?></h4>
 		<div style="text-align:center;">
 			<a id="ns1" href="http://www.peru-retail.com/" target="_blank" style="display:none;"><img src="/images/NS-1.png" /></a>
-			<a id="ns2" href="http://www.storewars.pe/" target="_blank"  style="display:none;"><img src="/images/NS-2.png" /></a>
-			<a id="ns3" href="http://www.firperu.com/" target="_blank"><img src="/images/NS-3.png" /></a>
+			<a id="ns3" href="http://www.peru-retail.com/guiadelretail" target="_blank" style="display:none;"><img src="/images/NS-3.png" /></a>
+			<a id="ns2" href="http://www.storewars.pe/" target="_blank"><img src="/images/NS-2.png" /></a>
 		</div>
 		<p>
 			<a href="<?php echo $this->url('contactus'); ?>"><img src="/images/<?php echo $this->translate('contact_es.png') ?>" /></a>

@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
+	}
+
 	$(".case-study-item a").hover(function() {
 		$(this).addClass("hover");
 		$(this).children(".logo").fadeOut(200);
@@ -30,46 +39,84 @@ $(document).ready(function() {
 	//var count = 0;
 	$(".case-study-item a.thumb").click(function() {
 		
-		/* la carga se hace aqui */
-		var objTarget = $(this).parent().attr('id').substring(8);
-		setTarget(objTarget);
-		//alert("#cs-item-screen-" + objTarget);
 		
-		// $("#cs-item-screen-" + objTarget).show("blind", { direction:
-		// "vertical" }, 500);
-		$("#cs-item-screen-" + objTarget).show("blind", function() {
-			
-			
-			
-			//alert("st_gallery.php?trend="+objTarget);
-			$("#cs-item-screen-"+objTarget+" .screen-body").load("st_gallery.php?trend="+objTarget, function(){
-				//if( $('#cs-item-'+objTarget).is('.loaded') ){
-					//$('#camera_'+objTarget).cameraResume();
-				//}else{
-					//alert(1);
-				//$("#cs-item-screen-"+objTarget+" .screen-body").addClass("row");
+		var objTarget = $(this).parent().attr('id').substring(8);
+		console.log(objTarget);
+		
+		setTarget(objTarget);
+		
+		
+		
+		//$("#cs-item-screen-" + objTarget).show("blind", function() {
+			/*<div class="ui-overlay">
+<div class="ui-widget-overlay"></div>
+<div class="ui-widget-shadow ui-corner-all" style="width: 302px; height: 152px; position: absolute; left: 50px; top: 30px;"></div>
+</div>*/	
+			/*var galy = '<div class="ui-overlay"><div class="ui-widget-overlay"></div>
+						<div class="ui-widget-shadow ui-corner-all" style="width: 302px; height: 152px; position: absolute; left: 50px; top: 30px;"></div>
+						</div>';
+			*/
+		
+			/*var overlay = jQuery('<div id="overlay"> </div>');
+			overlay.appendTo(document.body);
+			*/
 
-	        
-				
-				
-				
-					$('#camera_'+objTarget).camera({
-						height: '50%',
-						alignment: 'left',
+			$.ajax({
+				url: "gallery",
+				data: {
+					trend : objTarget
+				}
+			}).done(function(data){
+				var galeria = '<div class="camera_wrap camera_magenta_skin" id="camera">';
+				$("#galeriatittle").text( (data.images[0].desc).split(",")[0] );
+				$.each(data.images,function(index,value){
+					galeria += '<div data-thumb="/'+value.thumbs+'" data-src="/'+value.url+'">';
+					galeria += '<div class="camera_caption fadeFromBottom">'+value.desc+'</div></div>';
+					//console.log(value.desc);
+					//console.log(value.url);
+				});
+				galeria += '</div>';
+
+				var capa = $('<div />')/*.css({'z-index':'100','position':'absolute'})*/;
+				$('<div />').append(galeria).appendTo(capa);
+				capa.appendTo("#galeria");
+
+				$("#close-gallery").show();
+
+				$('#camera').camera({
+						/*width: '100%',
+						height: '100%',/*
+						alignment: 'left',*/
 						loader: 'none',
 						time: 1500,
 						fx: 'curtainTopLeft,curtainTopRight,blindCurtainBottomRight',
 						pagination : false,
-						thumbnails : true
-					});
+						thumbnails : true,
+
+						onStartLoading: function() {
+											
+							//console.log($(".camera_target .cameraSlide.cameracurrent"));
+							//console.log($(".cameraContent > div").filter($(".cameracurrent")).length );
+							//console.log($(".cameracurrent > div").text());
+							var desc = $(".cameracurrent > div").text();
+							var ti = desc.split(",")[0];
+							console.log(desc.split(",")[0]);
+							if(ti != "" ){
+								$("#galeriatittle").text(ti);
+							}
+						}
+				});	
+				console.log(" cameracurrent :" + $(".cameracurrent > div").text());
 				
-					//$('#cs-item-'+objTarget).addClass("loaded");
-					//$('#camera_'+objTarget).cameraResume();
-					//$(".title-link").html($('#camera_'+objTarget).parent().parent().html());
-				//}
+				$('#case-study-list-container').hide();
+
 			});
-		});
+			
+					
+		//});
+		
 	});
+
 
 	/* Close */
 	$(".screen a.close-cs-item-screen").click(function() {
@@ -91,6 +138,11 @@ $(document).ready(function() {
 	
 	// filter items when filter link is clicked
 	$('ul.cs-navi a').click(function(){
+
+		$("#galeria").html("");
+		$('#close-gallery').hide();
+		$('#case-study-list-container').fadeIn(1500).isotope();
+
 		$("ul.cs-navi a").removeClass("selected");
 		$(this).addClass("selected");
 	  var selector = $(this).attr('data-filter');
@@ -102,7 +154,14 @@ $(document).ready(function() {
 	  return false;
 	});
 	
-	
+	$('#close-gallery').click(function(){
+		$("#galeriatittle").text("");
+		console.log("close");
+		$("#galeria").html("");
+		$('#case-study-list-container').fadeIn(1500).isotope();
+		$('#close-gallery').hide();
+
+	});
 	
 	//
 	// initialize isotope
@@ -110,6 +169,9 @@ $(document).ready(function() {
 	t;
 	
 	$("#cs-link-Extemin2011").addClass("selected");
+
+
+	
 	//	$("#cs-item-screen-ferreyros_09 .screen-body").load("_includes/portfolio-slides/viatorweb.html", function(){});
 	
 	//$("#cs-item-screen-ferreyros_11 .screen-body").load("st_gallery.php?trend="+objTarget, function(){});

@@ -39,6 +39,7 @@ class IndexController extends AbstractActionController {
 		return str_pad($num, $zerofill, '0', STR_PAD_LEFT);
 	}
 	
+
 	public function createThumbs( $pathToImages, $pathToThumbs, $thumbWidth )
 	{
   // open the directory
@@ -49,34 +50,33 @@ class IndexController extends AbstractActionController {
     // parse path for the extension
     $info = pathinfo($pathToImages . $fname);
     // continue only if this is a JPEG image
-    if ( strtolower($info['extension']) == 'jpg' )
+    if ( @strtolower($info['extension']) == 'jpg' )
     {
-      echo "Creating thumbnail for {$fname} <br />";
+      echo "Creating thumbnail for {$fname}\n";
 
       // load image and get image size
-      $img = imagecreatefromjpeg( "{$pathToImages}/{$fname}" );
-      $width = imagesx( $img );
-      $height = imagesy( $img );
+      $img = @imagecreatefromjpeg( "{$pathToImages}/{$fname}" );
+      $width = @imagesx( $img );
+      $height = @imagesy( $img );
 
       // calculate thumbnail size
-      $new_width = $thumbWidth;
-      $new_height = floor( $height * ( $thumbWidth / $width ) );
+      $new_width = 75;
+      $new_height = 75;
 
       // create a new temporary image
-      $tmp_img = imagecreatetruecolor( $new_width, $new_height );
+      $tmp_img = @imagecreatetruecolor( $new_width, $new_height );
 
       // copy and resize old image into new image
-      imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, 100, 100, $width, $height );
+      @imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, 100, 100, $width, $height );
 
       // save thumbnail into a file
-      imagejpeg( $tmp_img, "{$pathToThumbs}/{$fname}" );
+      @imagejpeg( $tmp_img, "{$pathToThumbs}/{$fname}" );
      
     }
   }
   // close the directory
   closedir( $dir );
-}
-	
+}	
 	
 	public function indexAction() {
 		$viewModel = new ViewModel();
@@ -92,7 +92,7 @@ class IndexController extends AbstractActionController {
 			foreach ($galerias as $g) {
 				$items = $this->getEntityManager()
 						->getRepository('Backend\Entity\Item')
-						->findBy(array('id_gallery' => $g->getId()));
+						->findBy(array('id_gallery' => $g->getId(), 'visible' => 1 ) );
 				unset($item);
 				foreach ($items as $it) {
 					$item[] = array("path_thumb" => $it->getPath_thumb());
@@ -191,11 +191,11 @@ class IndexController extends AbstractActionController {
 					->getRepository('Backend\Entity\Gallery')
 					->findOneBy(array('id'=> $this->getEvent()->getRouteMatch()->getParam('id') ));
 					
-					echo getcwd() . $g->getPath(), getcwd() . $g->getPath()."/thumbs"."<br/>";
+					echo getcwd() . $g->getPath()." * ". getcwd() . $g->getPath()."/thumbs"."<br/>";
 					
 									
 					$adapter->setDestination(getcwd() . $g->getPath());
-					chmod(getcwd() . $g->getPath() .$File['name'], 0777);
+					@chmod(getcwd() . $g->getPath() .$File['name'], 0777);
 					
 					
 					

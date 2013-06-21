@@ -9,14 +9,15 @@ body {
 }
 
 .btn-success {
-  background-color: /*#57a900*/ #A90000;
-  background-image: -moz-linear-gradient(top, /*#70d900*/ #DA0000, #A90000);
-  background-image: -ms-linear-gradient(top, #DA0000, #A90000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DA0000), to(#A90000));
-  background-image: -webkit-linear-gradient(top, #DA0000, #A90000);
-  background-image: -o-linear-gradient(top, #DA0000, #A90000);
-  background-image: linear-gradient(top, #DA0000, #A90000);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DA0000', endColorstr='#A90000', GradientType=0);
+  background-color: /*#57a900*/ #BB0000;
+  background-image: -moz-linear-gradient(top, /*#70d900*/ #BB0000, #770000);
+  background-image: -ms-linear-gradient(top, #BB0000, #770000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BB0000), to(#770000));
+  background-image: -webkit-linear-gradient(top, #BB0000, #770000);
+  background-image: -o-linear-gradient(top, #BB0000, #770000);
+  background-image: linear-gradient(top, #BB0000, #770000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BB0000', endColorstr='#770000', GradientType=0);
+	font-size: 80%;
 }
 
 .btn-success:hover,
@@ -24,11 +25,11 @@ body {
 .btn-success.active,
 .btn-success.disabled,
 .btn-success[disabled] {
-  background-color: #A90000;
+  background-color: #770000;
 }
 
 .btn-success:active, .btn-success.active {
-  background-color: #A90000;
+  background-color: #770000;
 }
 
 div.container a.brand {

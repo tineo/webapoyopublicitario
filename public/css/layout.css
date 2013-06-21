@@ -37,6 +37,15 @@ footer img{
 	font-weight: bold;
 	text-align: right;
 	margin: 35px -40px 20px 0;
-	line-height:150%;
+	line-height:80%;
 	
+}
+#slogan h3 {
+	font-size: 20px;
+	margin: 0 0 0 0;
+}
+
+#slogan h4 {
+	font-size: 16px;
+	margin: 5px 0 0 0;
 }

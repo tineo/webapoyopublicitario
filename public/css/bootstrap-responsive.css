@@ -152,6 +152,9 @@
   .span1 {
     width: 70px;
   }
+  .span_footer {
+    width: 270px;
+  }
   .offset12 {
     margin-left: 1230px;
   }
