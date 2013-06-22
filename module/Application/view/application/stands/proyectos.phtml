@@ -1,0 +1,356 @@
+<?php
+echo $this->headLink ()
+->prependStylesheet ( 'http://fonts.googleapis.com/css?family=Bitter' )
+->prependStylesheet ( $this->basePath ( '/css/main.css' ) )
+->prependStylesheet ( $this->basePath ( '/css/camera.css' ) );
+
+$this->headScript ()
+->prependFile ( $this->basePath () . '/_scripts/scripts-our-work-portfolio.js' )
+->prependFile ( $this->basePath () . '/_scripts/jquery.isotope.min.js' )
+->prependFile ( $this->basePath () . '/_scripts/scripts.js' )
+->prependFile ( $this->basePath () . '/_scripts/jquery.scrollTo-1.4.2-min.js' )
+->prependFile ( $this->basePath () . '/_scripts/jquery-ui-1.7.2.custom.min.js' )
+->prependFile ( $this->basePath () . '/js/camera.min.js' )
+->prependFile ( $this->basePath () . '/js/jquery.easing.1.3.js' )
+->prependFile ( $this->basePath () . '/js/jquery.mobile.customized.min.js' )
+->prependFile ( $this->basePath () . '/_scripts/jquery-1.7.2.min.js' );
+?>
+
+
+
+  
+
+<!--[if IE 6]>
+<script type="text/javascript" src="_scripts/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+  DD_belatedPNG.fix('.pngFix');
+</script>
+<![endif]-->
+
+<!--<script type="text/javascript" src="http://use.typekit.com/fhy4tox.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+
+<style>
+#panel {
+  background: #AAAA;
+  /*color: #bbc7cf;*/
+  padding: 15px;
+}
+
+#contenido {
+  
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 99;
+}
+#close-gallery a{
+    background: url("/_images/portfolio/cs-close.png") no-repeat scroll 1px 0 #E5E5E5;
+    display: block;
+    height: 30px;
+    outline: medium none;
+    right: 9px;
+    text-indent: -9999px;
+    top: 7px;
+    width: 30px;
+    z-index: 1600;
+  
+}
+#close-gallery a:hover{
+  background: url("/_images/portfolio/cs-close.png") no-repeat scroll 1px -30px #E5E5E5;
+}
+
+</style>
+<script>
+    $(document).ready(function() {
+      $("#galeria-titulo").html('Stands para Ferias');
+     
+	$("#cs-link-Extemin2011").click(function(){$("#slogan").html("Stands / Exhibits <br/> <h4>Extemin 2011</h4>");});
+	$("#cs-link-Extemin2009").click(function(){$("#slogan").html("Stands / Exhibits <br/> <h4>Extemin 2009</h4>");});
+	$("#cs-link-Expomina").click(function(){$("#slogan").html("Stands / Exhibits <br/> <h4>Expomina</h4>");});
+  $("#cs-link-Otras-Ferias").click(function(){$("#slogan").html("Stands / Exhibits <br/> <h4>Otras Ferias</h4>");});
+  
+      //$(".screen").hide(1);
+    });
+</script>
+<div class="row">
+
+  <div class="span4">
+    <div class="title-link">
+      <a><?php echo $this->translate('Stands / Exhibits') ?></a>
+    </div>
+  </div>
+
+  
+  <div class="span5">
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="span7">
+
+    <div style="margin: 10px 0 10px -15px; font-size: 14px; height: 30px;">
+        <div class="span5">
+    <div class="contents-innerHTML clearfix">
+      <div class="cs-tools-top clearfix" style="margin: 0 0 0 -10px;">
+        <ul class="cs-navi">
+          <!-- 
+    ########################
+    MENU SUPERIOR - CATEGORIAS
+    ########################
+     -->
+          <li><a href="javascript:;" id="cs-link-Extemin2011" data-filter=".Extemin2011">Extemin 2011</a></li>
+          <li><a href="javascript:;" id="cs-link-Motorshow" data-filter=".Motorshow">Motorshow</a></li>
+          <li><a href="javascript:;" id="cs-link-Expomina" data-filter=".Expomina">Expomina</a></li>
+          <li><a href="javascript:;" id="cs-link-Extemin2009" data-filter=".Extemin2009">Extemin 2009</a></li>
+          <li><a href="javascript:;" id="cs-link-Otras-Ferias" data-filter=".Otras-Ferias">Otras Ferias</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+    </div>
+
+
+
+  </div>
+
+  <div id="galeriatittle" style="float:right;color:#999;margin:12px 10px 0 0;font-size:17px"></div>
+
+</div>
+<div id="close-gallery" style="float:right;text-align:right;display:none"><a class=""></a></div>
+<div id="galeria">
+        
+       
+
+
+</div>
+
+
+<div class="row">
+  <div class="span12">
+    <div id="case-study-list-container" class="case-study-list"
+      style="min-height: 630px;">
+      <!-- 
+####################
+LISTADO DE CUADRADOS Y LOGOS
+####################
+ -->
+      <div class="case-study-item Extemin2009" id="cs-item-ferreyros_09">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2009" id="cs-item-angloamerican_09">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2009" id="cs-item-nissan_09">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2009" id="cs-item-petroperu_09">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2009" id="cs-item-varios_09">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-3M_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-ABB_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-Antamina_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-ferreyros_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-GeneralElectric_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-Liebherr_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-GoldFields_11">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-TECSUP_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+
+
+      <div class="case-study-item Extemin2011" id="cs-item-Motaengil_11">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-Praxair_11">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-Schulz_11">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-Pecsa_11">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Extemin2011" id="cs-item-varios_11">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      
+
+      <!-- Expomina -->
+      <div class="case-study-item Expomina" id="cs-item-nissan">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Expomina" id="cs-item-motaengil">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+     
+      <div class="case-study-item Expomina" id="cs-item-case">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Expomina" id="cs-item-flowserve">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Expomina" id="cs-item-otros_expomin">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+     
+
+      <!-- Motorshow -->
+
+      <div class="case-study-item Motorshow" id="cs-item-bmw">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      
+      <!-- Excon
+      
+      
+      <div class="case-study-item Excon" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Excon" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Excon" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Excon" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb"><span class="logo"></span>
+        </a>
+      </div>
+      <div class="case-study-item Excon" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb"> <span class="logo"></span>
+        </a>
+      </div>
+      -->
+      
+      
+      
+      
+
+      <div class="case-study-item Otras-Ferias" id="cs-item-construccion_otras">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <!--<div class="case-study-item Otras-Ferias" id="cs-item-energia_otras">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Otras-Ferias" id="cs-item-mineras_otras">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>-->
+
+      <div class="case-study-item Otras-Ferias" id="cs-item-textiles_otras">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+      <div class="case-study-item Otras-Ferias" id="cs-item-otros_otras">
+        <a href="javascript:;" class="thumb">  <span class="logo"></span>
+        </a>
+      </div>
+
+
+      <div id="case-study-list-navi">
+        <!-- NO NAVI for now -->
+      </div>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="ui-overlay">
+<div class="ui-widget-overlay"></div>
+<div class="ui-widget-shadow ui-corner-all" style="width: 302px; height: 152px; position: absolute; left: 50px; top: 30px;"></div>
+</div>
+
+<script>
+ jQuery(function(){
+  $("#slogan").html("Stands / Exhibits <h4 style='margin:0 0 0 0'>Extemin 2011</h4>");
+ });
+</script>
+<!-- class row -->
