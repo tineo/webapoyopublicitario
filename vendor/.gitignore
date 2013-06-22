@@ -3,3 +3,8 @@
 composer
 zendframework
 autoload.php
+bin
+composer
+doctrine
+symfony
+ZF2
